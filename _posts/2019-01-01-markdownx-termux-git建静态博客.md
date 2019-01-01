@@ -19,11 +19,11 @@ git clone https://gitub.com/zhogjiane/zhogjiane.github.io.git
 将这位作者的博客复制到本地去掉自己不喜欢的js css 等描述文件就好，将yml中关于他的描述，全部改成自己喜欢的或者是你的描述即可。好看的模板也可以在 jekyll模板选择选择自己喜欢的主题风格。
 
 ### git的内容（以下内容来自网络）
-####注册账户以及创建仓库
+#### 注册账户以及创建仓库
 
 要想使用github第一步当然是注册github账号了， github官网地址：https://github.com/。 之后就可以创建仓库了（免费用户只能建公共仓库），Create a New Repository，填好名称后Create，之后会出现一些仓库的配置信息，这也是一个git的简单教程。
 
-####Github 安装
+#### Github 安装
 
 下载 git OSX 版
 
@@ -31,7 +31,7 @@ git clone https://gitub.com/zhogjiane/zhogjiane.github.io.git
 
 下载 git Linux 版
 
-####配置Git
+#### 配置Git
 
 首先在本地创建ssh key；
 
@@ -71,7 +71,7 @@ $ git remote add origin git@github.com:yourName/yourRepo.git
 
 创建新文件夹，打开，然后执行 git init 以创建新的 git 仓库。
 
-####检出仓库
+#### 检出仓库
 
 执行如下命令以创建一个本地仓库的克隆版本：
 
@@ -87,7 +87,7 @@ git clone username@host:/path/to/repository
 ```
 
 
-####工作流
+#### 工作流
 
 你的本地仓库由 git 维护的三棵"树"组成。第一个是你的 工作目录，它持有实际文件；第二个是 暂存区（Index），它像个缓存区域，临时保存你的改动；最后是 HEAD，它指向你最后一次提交的结果。
 
@@ -104,7 +104,7 @@ git commit -m "代码提交信息"
 
 现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库。
 
-####推送改动
+#### 推送改动
 
 你的改动现在已经在本地仓库的 HEAD 中了。执行如下命令以将这些改动提交到远端仓库：
 git push origin master
@@ -114,7 +114,7 @@ git push origin master
 git remote add origin <server>
 如此你就能够将你的改动推送到所添加的服务器上去了。
 
-####分支
+#### 分支
 
 分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master 是"默认的"分支。在其他分支上进行开发，完成后再将它们合并到主分支上。
 
@@ -128,7 +128,7 @@ git branch -d feature_x
 除非你将分支推送到远端仓库，不然该分支就是 不为他人所见的：
 git push origin <branch>
 
-####更新与合并
+#### 更新与合并
 
 要更新你的本地仓库至最新改动，执行：
 git pull
@@ -140,7 +140,7 @@ git add <filename>
 在合并改动之前，你可以使用如下命令预览差异：
 git diff <source_branch> <target_branch>
 
-####标签
+#### 标签
 
 为软件发布创建标签是推荐的。这个概念早已存在，在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签：
 git tag 1.0.0 1b2e1d63ff
@@ -148,7 +148,7 @@ git tag 1.0.0 1b2e1d63ff
 git log
 你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性。
 
-####替换本地改动
+#### 替换本地改动
 
 假如你操作失误（当然，这最好永远不要发生），你可以使用如下命令替换掉本地改动：
 git checkout -- <filename>
@@ -158,7 +158,7 @@ git checkout -- <filename>
 git fetch origin
 git reset --hard origin/master
 
-####实用小贴士
+#### 实用小贴士
 
 内建的图形化 git：
 gitk
@@ -169,7 +169,7 @@ git config format.pretty oneline
 交互式添加文件到暂存区：
 git add -i
 
-####链接与资源
+#### 链接与资源
 
 图形化客户端
 
@@ -183,7 +183,7 @@ GitHub for Mac (OSX, 免费)
 
 GitBox (OSX, App Store)
 
-####指南和手册
+#### 指南和手册
 
 Git 社区参考书
 
@@ -195,7 +195,7 @@ GitHub 帮助
 
 图解 Git
 
-####相关文章
+#### 相关文章
 
 Github 简明指南：http://rogerdudler.github.io/git-guide/index.zh.html
 
