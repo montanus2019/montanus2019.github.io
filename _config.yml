@@ -1,0 +1,24 @@
+name: "montanus2019"
+permalink: /:year/:month/:day/:title.html
+
+author: "montanus2019"
+atom-baseurl: ""
+disqus: "gopherwood"
+
+navigations:
+  - title: Archive
+    class: fa fa-list-ul
+    href: /archive.html
+  - title: Tags
+    class: fa fa-tags
+    href: /tags.html
+  - title: About
+    class: fa fa-user
+    href: /about.html
+  - title: Gallery
+    class: fa fa-film
+    href: 
+  - title: Subscribe
+    class: fa fa-rss
+    href: /atom.xml
+
