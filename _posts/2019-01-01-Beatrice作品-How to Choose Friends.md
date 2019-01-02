@@ -1,3 +1,9 @@
+tags:
+- Beatrice作品
+- 英文写作
+categories:
+- 妞妞作品
+
 Fellow students, parents, how are you today? (Answer) I hope the Weather is well for travelling.  (Yes. / No.)  Today I want to talk about how to choose friends. (oh. /Wow. /Uh? )
 
 It is very hard to find a true friend. I, myself, had some difficulty finding my real friend. You must not be blinded by some of offers, you must think about the advantages and disadvantages. I had once chosen the wrong friend, which caused me pain in life and even now I haven't walked out of the shadows. ( Oh … )
