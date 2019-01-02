@@ -3,14 +3,10 @@ title: about
 layout: page
 ---
 
-about
+关于
  
->  |   montanus  |  
-paradisevogel  |   
-Beatrice   |
-|---|---|---|
-|   我们仨   | Writting 
-|&Thinking |
+>  |  我们仨   | Reading | 
+Writting &Thinking |
 
 走，我们一起去闯荡世界吧！
 
