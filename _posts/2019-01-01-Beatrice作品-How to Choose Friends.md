@@ -1,9 +1,17 @@
+---
+
+layout: post
+
+title: HOW TO CHOOSE FRIENDS
+
 tags:
 - Beatrice作品
 - 英文写作
 
 categories:
 - 妞妞作品
+
+---
 
 Fellow students, parents, how are you today? (Answer) I hope the Weather is well for travelling.  (Yes. / No.)  Today I want to talk about how to choose friends. (oh. /Wow. /Uh? )
 

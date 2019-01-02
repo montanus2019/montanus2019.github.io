@@ -5,22 +5,18 @@ layout: page
 
 about
  
->  |   overflower  |  zhihuior  |   日語者   |   Unixer   | Coder
+>  |   montanus  |  
+paradisevogel  |   
+Beatrice   |   我们仨   | 
+Reading+Writting&Thinking
 
-你知道的花有百样红。  
+走，我们一起去闯荡世界吧！
 
- Lucy:"They serve the purpose of changing hydrogen into breathable oxygen, and they’re as necessary here as the air is, on Earth."  
- Ray:"But I still say……they’re flowers."  
- Lucy:"If you like."  
- Ray:"Do you sell them?"  
- Lucy:"I’m afraid not."  
- Ray:"But, maybe we could make a deal."
+我们的征途是星辰大海……
 
 
-> [github](https://github.com/zhogjiane)
+> 
+[github](https://github.com/montanus2019)
 
-mail 
-
-> [gmail](zhogjiane@gmail.com)
 
 
