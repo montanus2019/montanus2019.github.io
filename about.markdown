@@ -7,8 +7,10 @@ about
  
 >  |   montanus  |  
 paradisevogel  |   
-Beatrice   |   我们仨   | 
-Reading+Writting&Thinking
+Beatrice   |
+|---|---|---|
+|   我们仨   | Writting 
+|&Thinking |
 
 走，我们一起去闯荡世界吧！
 
