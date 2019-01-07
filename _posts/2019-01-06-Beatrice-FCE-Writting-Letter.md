@@ -12,7 +12,7 @@ Dear Ms Evans,
 
 I wish to apply for summer tourist guide at Information Office, as advertised in the newspaper January 6th.
 
-I believe I can speak English farely well.  I have been communicating with British and American people on Saturday and Sundays. I can assume you we can have a lively talk together.
+I believe I can speak English fairly well.  I have been communicating with British and American people on Saturday and Sundays. I can assume you we can have a lively talk together.
 
 The other reason is I like meeting new  people and showing them around Nanjing, my town. I can promise you, Ms Evans, the people often like my talking. The History of Nanjing I can say with fluency and also let people ask questions. I would ask them if they can understand it all.
 
