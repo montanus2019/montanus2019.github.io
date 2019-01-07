@@ -22,9 +22,7 @@ them.
 2. Observe  **them for** a 
 long time to see if his/her attitude towards you.
 
-3. Consider his/her  
-~~place~~   
-**behaviour**   ~~of~~   **in**  sociality  **social situations.** 
+3. Consider his/her  ~~place~~  **behaviour**   ~~of~~   **in**  sociality  **social situations.** 
 
 I hope you are having a good day. Best wishes to you all. Thank you for listening!
 (Applaud)
