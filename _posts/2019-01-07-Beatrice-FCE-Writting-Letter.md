@@ -1,7 +1,11 @@
 ---
+
 title: Beatrice的FCE第二次书信写作作业
+
 tags:
+
 - Writting Letter
+
 ---
 
 Hi Ronnie,
@@ -26,5 +30,6 @@ Julie
 
 ![image]({{"/media/201901071.jpg"|absolute_url}})
 
-![image]({{"/media/201901072.jpg"|a$
+![image]({{"/media/201901072.jpg"|absolute_url}})
+
 

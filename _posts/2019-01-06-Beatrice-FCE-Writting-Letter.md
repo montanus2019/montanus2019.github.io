@@ -1,7 +1,11 @@
 ---
+
 title: Beatrice的FCE第一次书信写作
+
 tags:
+
 - Writting Letter
+
 ---
 
 Dear Ms Evans,
@@ -26,5 +30,6 @@ Julie Davenport
 
 ![image]({{"/media/201901061.jpg"|absolute_url}})
 
-![image]({{"/media/201901062.jpg"|a$
+![image]({{"/media/201901062.jpg"|absolute_url}})
+
 
