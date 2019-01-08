@@ -4,13 +4,6 @@ permalink: /:year/:month/:day/:title.html
 author: "montanus2019"
 atom-baseurl: ""
 markdown: kramdown
-
-plugins:
- - jekyll-mermaid
-
-mermaid: 
-  src: '/media/js/mermaid.js'
-
 navigations:
   - title: Archive
     class: fa fa-list-ul
