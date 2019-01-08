@@ -5,6 +5,9 @@ author: "montanus2019"
 atom-baseurl: ""
 disqus: "gopherwood"
 markdown: kramdown
+gems: [jekyll-mermaid]
+mermaid: 
+  src: 'media/js/mermaid.js'
 
 navigations:
   - title: Archive
