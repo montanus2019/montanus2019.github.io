@@ -9,7 +9,7 @@ plugins:
  - jekyll-mermaid
 
 mermaid: 
-  src: 'media/js/mermaid.js'
+  src: '/media/js/mermaid.js'
 
 navigations:
   - title: Archive
