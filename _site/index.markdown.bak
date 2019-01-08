@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="montanus2019" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>montanus2019</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="montanus2019" type="application/atom+xml" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/media/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script type="text/javascript"> hljs.initHighlightingOnLoad(); </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/media/js/mermaid.js"></script>
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="montanus2019" class="" href="/">montanus2019</a></h1>
+          </div>
+          <nav>
+            
+            <span><a title="Archive" href="/archive.html"><i class="fa fa-list-ul"></i></a></span>
+            
+            <span><a title="Tags" href="/tags.html"><i class="fa fa-tags"></i></a></span>
+            
+            <span><a title="About" href="/about.html"><i class="fa fa-user"></i></a></span>
+            
+            <span><a title="Gallery" href=""><i class="fa fa-film"></i></a></span>
+            
+            <span><a title="Subscribe" href="/atom.xml"><i class="fa fa-rss"></i></a></span>
+            
+          </nav>
+        </header>
+        <div id="content">
+        <div>
+  <ul class="listing">
+  
+  <article class="content">
+    <section class="title">
+      <h2><a href="/2019/01/08/%E5%B0%8F%E5%AD%A6%E5%A5%A5%E6%95%B0-%E7%89%9B%E5%90%83%E8%8D%89%E9%97%AE%E9%A2%98%E4%B9%A0%E9%A2%98.html">牛吃草问题习题集加流程图</a></h2>
+    </section>
+    <section class="meta">
+    <span class="time">
+      <time datetime="2019-01-08">2019-01-08</time>
+    </span>
+    
+    <span class="tags">
+      
+      <a href="/tags.html#小学奥数" title="小学奥数">#小学奥数</a>
+      
+    </span>
+    
+    <!-- BEGIN this would not work on any other domain -->
+    <span
+      class           = 'like-wrapper'
+      like-shortname  = ''
+      like-identifier = ''
+      like-name       = '牛吃草问题习题集加流程图'
+      like-link       = '/index.markdown.bak'
+      like-btn        = '&#xf087;'
+    ></span>
+    <script type="text/javascript">
+      var l = document.createElement('script'); l.type = 'text/javascript'; l.async = true;
+      l.src = 'https://like.lhzhang.com/javascript/widget.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(l);
+    </script>
+    <!-- END this would not work on any other domain -->
+    </section>
+    <section class="post">
+    <blockquote>
+
+  <p>小学生学好数学的真谛在于上课认真听讲，课后勤加练习，广泛收集习题集，多做题多练习
+。遇到难题，自主思考；通过多次尝试，反复思考，仍难以攻克的，可以向老师请教。如此，学生自己才能进步，老师也能知道教学效果到底如何。</p>
+</blockquote>
+
+<h3 id="牛吃草问题习题集">牛吃草问题习题集</h3>
+<ul>
+  <li>
+    <p>小明家原来有鸡蛋60个，每天鸡下蛋5个，每天吃10个鸡蛋，几天吃完？如果10天吃完，每天吃几个鸡蛋？</p>
+  </li>
+  <li>
+    <p>小明家原来有鸡蛋40个，每天鸡下蛋4个，每天吃6个鸡蛋，几天吃完？如果5天吃完，每天吃几个鸡蛋？</p>
+  </li>
+  <li>
+    <p>一牧场上的青草每天都匀速生长。这片青草可供32头牛吃6周，或供42头牛吃4周，可供36头牛吃几周？8周可以养活多少头牛？</p>
+  </li>
+</ul>
+
+<div class="mermaid">
+graph TD;
+    原有--&gt;总量;
+    每天新增--&gt;总量;
+    总量--&gt;每天吃10个;
+    每天吃10个--&gt;几天吃完;
+    总量--&gt;10天吃完;
+    10天吃完--&gt;每天吃几个;
+
+</div>
+
+
+    </section>
+    </article>
+  
+  </ul>
+  <div class="divider"></div>
+  <ul class="listing main-listing">
+    <li class="listing-seperator">Happend earlier this year</li>
+  
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-08">2019-01-08</time>
+      <a href="/2019/01/08/computer-%E8%A7%A3%E5%86%B3%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%94%AF%E6%8C%81%E9%97%AE%E9%A2%98.html" title="用Mermaid来支持静态博客绘制流程图">用Mermaid来支持静态博客绘制流程图</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-07">2019-01-07</time>
+      <a href="/2019/01/07/How-to-Choose-Friends-%E8%80%81%E5%B8%88%E4%BF%AE%E6%94%B9%E5%90%8E.html" title="How to Choose Friends（老师修改后）">How to Choose Friends（老师修改后）</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-07">2019-01-07</time>
+      <a href="/2019/01/07/Beatrice-FCE-Writting-Letter.html" title="Beatrice的FCE第二次书信写作作业">Beatrice的FCE第二次书信写作作业</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-06">2019-01-06</time>
+      <a href="/2019/01/06/%E6%9E%84%E5%BB%BA%E6%94%AF%E6%8C%81%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E5%8D%9A%E5%AE%A2.html" title="构建支持数学公式的博客">构建支持数学公式的博客</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-06">2019-01-06</time>
+      <a href="/2019/01/06/Beatrice-FCE-Writting-Letter.html" title="Beatrice的FCE第一次书信写作">Beatrice的FCE第一次书信写作</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-05">2019-01-05</time>
+      <a href="/2019/01/05/%E7%89%9B%E5%90%83%E8%8D%89%E9%97%AE%E9%A2%98.html" title="牛吃草问题">牛吃草问题</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-04">2019-01-04</time>
+      <a href="/2019/01/04/Beatrice%E4%BD%9C%E5%93%81-%E7%BE%8E%E5%A5%B3%E6%B6%82%E9%B8%A6.html" title="美女涂鸦">美女涂鸦</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-03">2019-01-03</time>
+      <a href="/2019/01/03/%E8%B7%9F%E7%9D%80%E6%9D%8E%E7%99%BD%E6%B8%B8%E6%B5%99%E4%B8%9C%E5%8D%97.html" title="跟着李白游浙东浙南">跟着李白游浙东浙南</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-02">2019-01-02</time>
+      <a href="/2019/01/02/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%96%E7%95%8C%E6%96%87%E6%98%8E%E5%8F%B2-%E4%BF%A1%E4%BB%B0%E7%9A%84%E6%97%B6%E4%BB%A3-%E4%B8%8B%E5%86%8C.html" title="《世界文明史·信仰的时代》读书笔记">《世界文明史·信仰的时代》读书笔记</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-02">2019-01-02</time>
+      <a href="/2019/01/02/%E4%B8%89%E7%9C%81%E5%90%BE%E8%BA%AB.html" title="三省吾身">三省吾身</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-01">2019-01-01</time>
+      <a href="/2019/01/01/%E8%96%84%E4%BC%BD%E6%A2%B5%E6%AD%8C.html" title="薄伽梵歌之黑天">薄伽梵歌之黑天</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-01">2019-01-01</time>
+      <a href="/2019/01/01/%E6%96%B0%E5%B9%B4%E6%96%B0%E5%B8%8C%E6%9C%9B.html" title="新年新希望">新年新希望</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-01">2019-01-01</time>
+      <a href="/2019/01/01/markdownx-termux-git%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2.html" title="用jekyll在termux上建立github静态博客">用jekyll在termux上建立github静态博客</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-01">2019-01-01</time>
+      <a href="/2019/01/01/The-Adventures-of-the-Wonderful-Wizard-Oz.html" title="The Adventures of the Wonderful “Wizard”, Oz">The Adventures of the Wonderful “Wizard”, Oz</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-01">2019-01-01</time>
+      <a href="/2019/01/01/Beatrice%E4%BD%9C%E5%93%81-How-to-Choose-Friends.html" title="HOW TO CHOOSE FRIENDS">HOW TO CHOOSE FRIENDS</a>
+    </li>
+  
+    
+    
+    
+    <li class="listing-seperator"><a href="/archive.html">Long long ago</a></li>
+  </ul>
+</div>
+
+        </div>
+        <footer>
+          <div>
+            
+            &copy; 2018 ~ 2019 montanus2019 | 
+powered by jekyll | themed 
+by <a 
+href="https://montanus2019.github.io" 
+title="montanus2019">montanus</a> 
+| fork <a 
+href="https://github.com/montanus2019" title="fork me">me</a>
+          </div>
+        </footer>
+      </div> <!-- main -->
+  </body>
+</html>

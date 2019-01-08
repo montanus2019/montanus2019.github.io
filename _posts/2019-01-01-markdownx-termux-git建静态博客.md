@@ -1,3 +1,14 @@
+---
+
+layout: post
+
+title: 用jekyll在termux上建立github静态博客
+
+tags:
+- 电脑技术
+
+---
+
 今天学习了如何用markdownx编辑，在termux下通过git上传到github，生成静态博客https://montanus2019.github.io
 
 ### markdownx生成文件的要求

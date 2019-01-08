@@ -1,4 +1,5 @@
 ---
+layout: post
 
 title: How to Choose Friends（老师修改后）
 

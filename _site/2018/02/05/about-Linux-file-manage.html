@@ -1,0 +1,49 @@
+<h4 id="linux常用命令">Linux常用命令</h4>
+
+<h4 id="关于mv">关于mv</h4>
+
+<ul>
+  <li>
+    <p>移动文件</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mv </span>file1 filepath/filepath       <span class="c"># 移动单个文件</span>
+<span class="nb">mv </span>file1 file2 file3   filepath/filepath   <span class="c"># 移动多个文件到单个目录，注意目录唯一 </span>
+<span class="nb">mv </span>file1 <span class="nt">-t</span> filepath1/filepath    file2 <span class="nt">-t</span> filepath2/filepath
+<span class="c"># 移动多个文件到多个文件夹，使用参数 -t 后接目录名字 </span>
+<span class="nb">mv </span>file1 file2 file3 filepath/filepath <span class="c">#如果目录一致可省略写法</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>重命名</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mv </span>file1 file2 <span class="c"># 将file1重命名为file2</span>
+<span class="c"># 如果当前目录下也有命名为file2时，会进行覆盖操作。</span>
+<span class="nb">mv </span>file1 filepath/file2 <span class="c">#在上一步的基础上还会移动文件。</span>
+
+</code></pre></div>    </div>
+
+    <h4 id="关于批量操作">关于批量操作</h4>
+  </li>
+  <li>
+    <p>批量操作</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c"># 下面两个例子：</span>
+<span class="c"># 利用*通配符将所有small 结尾的文件 重命名为 large 结尾的文件。</span>
+<span class="c"># 使用zsh的例子 ：</span>
+<span class="nb">cat</span> /etc/shells				<span class="c"># 看看 安装了哪些shell 是否安装过zsh</span>
+brew isntall zsh			<span class="c"># 没有安装的话，以mac为例安装zsh</span>
+autoload <span class="nt">-U</span> zmv 			<span class="c"># 初始化载入，启动zmv工具</span>
+zmv <span class="s1">'image_(*)_small.png'</span> <span class="s1">'image_$1_large.png'</span>
+chsh <span class="nt">-s</span> /bin/bash           <span class="c"># 如果要换回bash的话</span>
+<span class="c"># bash正则表达例子：</span>
+rename <span class="s2">"s/small/large/"</span> image_<span class="k">*</span>.png
+<span class="c">#关于两种方法 来说zsh似乎更长一些但是 zsh的功能强大，易于理解</span>
+<span class="c"># bash 正则表达学好了 ， 利器。</span>
+
+
+</code></pre></div>    </div>
+
+    <p>​</p>
+  </li>
+</ul>

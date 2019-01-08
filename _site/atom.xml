@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>montanus2019</title>
+ <link href="/atom.xml" rel="self"/>
+ <link href=""/>
+ <updated>2019-01-08T23:58:22+08:00</updated>
+ <id>/</id>
+ <author>
+   <name>montanus2019</name>
+ </author>
+
+ 
+ <entry>
+   <title>牛吃草问题习题集加流程图</title>
+   <link href="/2019/01/08/%E5%B0%8F%E5%AD%A6%E5%A5%A5%E6%95%B0-%E7%89%9B%E5%90%83%E8%8D%89%E9%97%AE%E9%A2%98%E4%B9%A0%E9%A2%98.html"/>
+   <updated>2019-01-08T00:00:00+08:00</updated>
+   <id>/2019/01/08/小学奥数-牛吃草问题习题</id>
+   <content type="html">&lt;blockquote&gt;
+
+  &lt;p&gt;小学生学好数学的真谛在于上课认真听讲，课后勤加练习，广泛收集习题集，多做题多练习
+。遇到难题，自主思考；通过多次尝试，反复思考，仍难以攻克的，可以向老师请教。如此，学生自己才能进步，老师也能知道教学效果到底如何。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;牛吃草问题习题集&quot;&gt;牛吃草问题习题集&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;小明家原来有鸡蛋60个，每天鸡下蛋5个，每天吃10个鸡蛋，几天吃完？如果10天吃完，每天吃几个鸡蛋？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;小明家原来有鸡蛋40个，每天鸡下蛋4个，每天吃6个鸡蛋，几天吃完？如果5天吃完，每天吃几个鸡蛋？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一牧场上的青草每天都匀速生长。这片青草可供32头牛吃6周，或供42头牛吃4周，可供36头牛吃几周？8周可以养活多少头牛？&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph TD;
+    原有--&amp;gt;总量;
+    每天新增--&amp;gt;总量;
+    总量--&amp;gt;每天吃10个;
+    每天吃10个--&amp;gt;几天吃完;
+    总量--&amp;gt;10天吃完;
+    10天吃完--&amp;gt;每天吃几个;
+
+&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>用Mermaid来支持静态博客绘制流程图</title>
+   <link href="/2019/01/08/computer-%E8%A7%A3%E5%86%B3%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%94%AF%E6%8C%81%E9%97%AE%E9%A2%98.html"/>
+   <updated>2019-01-08T00:00:00+08:00</updated>
+   <id>/2019/01/08/computer-解决流程图支持问题</id>
+   <content type="html">&lt;p&gt;不支持流程图，时序图，甘特图的静态博客不是好博客，于是今天重点折腾了一下流程图的设置问题。现将过程记录一下：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;主要修改了_layouts/default.html，以及media/js和media/css下的相关文件。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;default.html中，要在&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;中增添js脚本，内容为：
+&amp;lt;script
+src=&quot;/media/js/mermaid.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;试验了几个版本的js，最终发现官网上7.0版本的对本手机支持的最好。需将该脚本文件放到media/js目录下。&lt;/p&gt;
+
+&lt;p&gt;同时将该版本的mermaid.css放到/media/css/目录下，并在style.css中加以引用。即在style.css中需添加一句：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@import url(mermaid.css);
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;其次，在发布到_posts目录下的md文件中，如果有流程图等，则需要使用如下的表达，需要严格遵照它的语法规范：&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;mermaid&quot;&amp;gt;
+graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
+
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;如此，就可以实现如下的流程图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;时序图示例&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;mermaid&quot;&amp;gt;
+sequenceDiagram
+    participant Alice 
+    participant Bob 
+    Alice-&amp;gt;John: Hello John,how are you? 
+    loop Healthcheck 
+        John-&amp;gt;John: Fight against hypochondria 
+    end 
+    Note right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail... 
+    John--&amp;gt;Alice: Great! 
+    John-&amp;gt;Bob: How about you? 
+    Bob--&amp;gt;John: Jolly good!
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&amp;gt;John: Hello John,how are you?
+    loop Healthcheck
+        John-&amp;gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br /&gt;prevail...
+    John--&amp;gt;Alice: Great!
+    John-&amp;gt;Bob: How about you?
+    Bob--&amp;gt;John: Jolly good!
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;甘特图示例&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;mermaid&quot;&amp;gt;
+gantt 
+        dateFormat YYYY-MM-DD 
+        title Adding GANTT diagram functionality to mermaid 
+        section A section 
+        Completed task :done, des1, 2014-01-06,2014-01-08 
+        Active task :active, des2, 2014-01-09, 3d 
+        Future task : des3, after des2, 5d 
+        Future task2 : des4, after des3, 5d 
+        section Critical tasks 
+        Completed task in the critical line :crit, done, 2014-01-06,24h 
+        Implement parser and jison :crit, done, after des1, 2d 
+        Create tests for parser :crit, active, 3d 
+        Future task in critical line :crit, 5d 
+        Create tests for renderer :2d 
+        Add to mermaid :1d
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+gantt 
+        dateFormat YYYY-MM-DD 
+        title Adding GANTT diagram functionality to mermaid 
+        section A section 
+        Completed task :done, des1, 2014-01-06,2014-01-08 
+        Active task :active, des2, 2014-01-09, 3d 
+        Future task : des3, after des2, 5d 
+        Future task2 : des4, after des3, 5d 
+        section Critical tasks 
+        Completed task in the critical line :crit, done, 2014-01-06,24h 
+        Implement parser and jison :crit, done, after des1, 2d 
+        Create tests for parser :crit, active, 3d 
+        Future task in critical line :crit, 5d 
+        Create tests for renderer :2d 
+        Add to mermaid :1d
+&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to Choose Friends（老师修改后）</title>
+   <link href="/2019/01/07/How-to-Choose-Friends-%E8%80%81%E5%B8%88%E4%BF%AE%E6%94%B9%E5%90%8E.html"/>
+   <updated>2019-01-07T00:00:00+08:00</updated>
+   <id>/2019/01/07/How-to-Choose-Friends-老师修改后</id>
+   <content type="html">&lt;p&gt;Fellow students, parents, how are you today? (Answer) I hope the weather is  &lt;del&gt;well&lt;/del&gt;   &lt;strong&gt;good&lt;/strong&gt;  for travelling.  (Yes. / No.)  Today I want to talk about how to choose friends. (Oh. /Wow. /Uh? )&lt;/p&gt;
+
+&lt;p&gt;It is very hard to find a true friend. I, myself, had some difficulty finding my real friend. You must not be blinded by some  &lt;del&gt;of&lt;/del&gt;  offers,  &lt;strong&gt;and&lt;/strong&gt;  you must think about the advantages and disadvantages. I had once chosen the wrong friend, which caused me pain in  &lt;strong&gt;my&lt;/strong&gt;  life, and even now I haven’t walked out of the shadows. ( Oh … )&lt;/p&gt;
+
+&lt;p&gt;But I’m not saying you can’t trust or make any friends. I’m just saying you must be careful choosing them. Is everything clear? (Answer.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So&lt;/strong&gt; , how can you choose? Here are some tips from me which you could use:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Observe the behavior of 
+them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Observe  &lt;strong&gt;them for&lt;/strong&gt; a 
+long time to see if his/her attitude towards you.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Consider his/her  &lt;del&gt;place&lt;/del&gt;  &lt;strong&gt;behaviour&lt;/strong&gt;   &lt;del&gt;of&lt;/del&gt;   &lt;strong&gt;in&lt;/strong&gt;  sociality  &lt;strong&gt;social situations.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I hope you are having a good day. Best wishes to you all. Thank you for listening!
+(Applaud)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Teacher’s comments:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Wow, great job, Pluvia. This is a really good speech. The organisation is great, and I really like the sentence, “even now I haven’t walked out of the shadows”. That is a fantastic description of your difficult situation.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The difference between ‘well’ and ‘good’.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;‘Well’ describes a verb;
+        &lt;blockquote&gt;
+          &lt;p&gt;“She sings very well.”&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;‘Good’ describes a noun;
+        &lt;blockquote&gt;
+          &lt;p&gt;“The weather was very good today.”&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Beatrice的FCE第二次书信写作作业</title>
+   <link href="/2019/01/07/Beatrice-FCE-Writting-Letter.html"/>
+   <updated>2019-01-07T00:00:00+08:00</updated>
+   <id>/2019/01/07/Beatrice-FCE-Writting-Letter</id>
+   <content type="html">&lt;p&gt;Hi Ronnie,&lt;/p&gt;
+
+&lt;p&gt;I’m so glad to hear from you! I think it would be great to spend the holiday with you guys.&lt;/p&gt;
+
+&lt;p&gt;August would be a better month to come, because I must practise piano all July. I hope it’s no trouble.&lt;/p&gt;
+
+&lt;p&gt;As for the accommodation, I prefer your apartment because you would be staying there also. But I think they all sound good and could suit me very well.&lt;/p&gt;
+
+&lt;p&gt;I’m thinking that maybe we can swim or play polo. It would also be fun to surf, walk on the beach, and collect shells. Wouldn’t it be wonderful to have an shell collection by the end of the summer holidays?&lt;/p&gt;
+
+&lt;p&gt;I’d like to visit other places, too. Are there any famous or beautiful buildings near where we are staying? I could take some great photos with you.&lt;/p&gt;
+
+&lt;p&gt;Do you know the weather there? Is it hot or cold?&lt;/p&gt;
+
+&lt;p&gt;Write soon, miss you very much!&lt;/p&gt;
+
+&lt;p&gt;Best wishes,&lt;/p&gt;
+
+&lt;p&gt;Julie&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/201901071.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/201901072.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>构建支持数学公式的博客</title>
+   <link href="/2019/01/06/%E6%9E%84%E5%BB%BA%E6%94%AF%E6%8C%81%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E5%8D%9A%E5%AE%A2.html"/>
+   <updated>2019-01-06T00:00:00+08:00</updated>
+   <id>/2019/01/06/构建支持数学公式的博客</id>
+   <content type="html">&lt;p&gt;因为博文要用到数学公式，于是在网上搜索了如何让网页在浏览器中支持数学公式显示的方法，找到了一种方法，试验了一下，发现在小米浏览器下能显示，但在chrome下却网页加载缓慢且无法显示公式。&lt;/p&gt;
+
+&lt;p&gt;一开始还以为是markdown 解释器的缘故，在_config.yml中添加了一句&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;markdown: kramdown
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;添加后发现不仅数学公式显示不出来了，连新网页也不能生成了，猜想应该是markdown解释器没有生效。仔细检查后发现，markdown:之后， &lt;strong&gt;要空一格&lt;/strong&gt; ，然后再输入kramdown。&lt;/p&gt;
+
+&lt;p&gt;修改后，页面能生成了，但数学公式仍没有。于是再在_layouts目录下，在default.html文件的&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;部分，添加上如下内容：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot;
+src=&quot;//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;经测试，在小米浏览器和chrome下都能快速加载页面并显示数学公式。经对照，网上的说法是&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot;
+src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;但在我的博客设置上， &lt;strong&gt;要将src中的http:这几个字符去掉&lt;/strong&gt;，才能确保成功。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;另外，网上也有说添加如下内容的，但我没测试：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- mathjax config similar to math.stackexchange --&amp;gt; 
+&amp;lt;script type=&quot;text/x-mathjax-config&quot;&amp;gt; 
+       MathJax.Hub.Config({ 
+             tex2jax: { 
+                 inlineMath: [ ['$','$'], [&quot;\\(&quot;,&quot;\\)&quot;] ],               
+                 processEscapes: true
+              } 
+        }); 
+&amp;lt;/script&amp;gt; 
+
+&amp;lt;script type=&quot;text/x-mathjax-config&quot;&amp;gt; 
+        MathJax.Hub.Config({ 
+              tex2jax: { 
+                  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] 
+              } 
+         }); 
+&amp;lt;/script&amp;gt; 
+
+&amp;lt;script type=&quot;text/x-mathjax-config&quot;&amp;gt;
+        MathJax.Hub.Queue(function() { 
+              var all = MathJax.Hub.getAllJax(), i;
+              for(i=0; i &amp;lt; all.length; i += 1{ 
+                 all[i].SourceElement().parentNode.className += ' has-jax'; 
+              } 
+         }); 
+&amp;lt;/script&amp;gt; 
+
+&amp;lt;script type=&quot;text/javascript&quot; 
+src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt;
+
+
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;然后在发布的时候就可以使用$$来把需要显示的数学式子扩起来。像这样：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$a^2 + b^2 = c^2$$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;发布出来就是漂亮的公式了。&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2 + b^2 = c^2&lt;/script&gt;
+
+&lt;p&gt;还有一些更酷的例子，例如：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$ J\alpha(x) = \sum\limits{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m + \alpha + 1)}{\left({\frac{x}{2}}\right)}^{2 m + \alpha} $$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J\alpha(x) = \sum\limits{m=0}^\infty \frac{(-1)^m}{m! \, \Gamma(m + \alpha + 1)}{\left({\frac{x}{2}}\right)}^{2 m + \alpha}&lt;/script&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+$$ \left( \sum_{k=1}^n a_k bk \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \left( \sum{k=1}^n b_k^2 \right)$$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left( \sum_{k=1}^n a_k bk \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \left( \sum{k=1}^n b_k^2 \right)&lt;/script&gt;
+
+&lt;p&gt;好了，可以大显身手了;-)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Beatrice的FCE第一次书信写作</title>
+   <link href="/2019/01/06/Beatrice-FCE-Writting-Letter.html"/>
+   <updated>2019-01-06T00:00:00+08:00</updated>
+   <id>/2019/01/06/Beatrice-FCE-Writting-Letter</id>
+   <content type="html">&lt;p&gt;Dear Ms Evans,&lt;/p&gt;
+
+&lt;p&gt;I wish to apply for summer tourist guide at Information Office, as advertised in the newspaper January 6th.&lt;/p&gt;
+
+&lt;p&gt;I believe I can speak English fairly well.  I have been communicating with British and American people on Saturday and Sundays. I can assume you we can have a lively talk together.&lt;/p&gt;
+
+&lt;p&gt;The other reason is I like meeting new  people and showing them around Nanjing, my town. I can promise you, Ms Evans, the people often like my talking. The History of Nanjing I can say with fluency and also let people ask questions. I would ask them if they can understand it all.&lt;/p&gt;
+
+&lt;p&gt;Can I ask more about the salary? Would it be large or small. Would it dependon the Tours I had given?&lt;/p&gt;
+
+&lt;p&gt;I hope this information will be sufficient for you to consider my application. If you need further details, please do not hesitate to contact me. For an interview I could make myself available at any time.&lt;/p&gt;
+
+&lt;p&gt;I look forward to hearing from you.&lt;/p&gt;
+
+&lt;p&gt;Yours sincerely,&lt;/p&gt;
+
+&lt;p&gt;Julie Davenport&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/201901061.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/201901062.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>牛吃草问题</title>
+   <link href="/2019/01/05/%E7%89%9B%E5%90%83%E8%8D%89%E9%97%AE%E9%A2%98.html"/>
+   <updated>2019-01-05T00:00:00+08:00</updated>
+   <id>/2019/01/05/牛吃草问题</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;以下内容来自百度百科
+https://baike.baidu.com/item/%E7%89%9B%E5%90%83%E8%8D%89/8591859?fr=aladdin&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;牛吃草问题概述&quot;&gt;牛吃草问题概述&lt;/h3&gt;
+
+&lt;p&gt;牛吃草问题又称为消长问题或牛顿问题，是17世纪英国伟大的科学家牛顿提出来的。&lt;/p&gt;
+
+&lt;p&gt;典型牛吃草问题的条件是假设草的生长速度固定不变，不同头数的牛吃光同一片草地所需的天数各不相同，求若干头牛吃这片草地可以吃多少天。&lt;/p&gt;
+
+&lt;p&gt;由于吃的天数不同，草又是天天在生长的，所以草的存量随牛吃的天数不断地变化。&lt;/p&gt;
+
+&lt;h3 id=&quot;基本解法&quot;&gt;基本解法&lt;/h3&gt;
+
+&lt;p&gt;解决牛吃草问题常用到4个基本的公式，分别是︰&lt;/p&gt;
+
+&lt;p&gt;（1） &lt;strong&gt;求草的生长速度 =（对应的牛头数×吃的较多天数－对应的牛头数×吃的较少天数）÷（吃的较多天数－吃的较少天数）；&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;（2）  &lt;strong&gt;求原有草量=牛头数×吃的天数－草的生长速度×吃的天数；&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;（3） &lt;strong&gt;假设有一些牛专吃刚生长的草，剩下的牛吃原有的草。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;（4） &lt;strong&gt;原有草量÷剩下的牛数量=天数&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;这4个公式是解决牛吃草问题的基础。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;由于牛在吃草的过程中，草是不断生长的，所以解决消长问题的重点是要想办法从变化中找到不变量。&lt;/strong&gt; 牧场上原有的草是不变的，新长的草虽然在变化，但由于是匀速生长，所以每天新长出的草量应该是不变的。正是由于这个不变量，才能够导出上面的四个基本公式。&lt;/p&gt;
+
+&lt;p&gt;牛吃草问题经常给出不同头数的牛吃同一片次的草，这块地既有原有的草，又有每天新长出的草。由于吃草的牛头数不同，求若干头牛吃的这片地的草可以吃多少天。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;例如：&lt;/strong&gt;一片草地,每周都匀速生长。这片草地可以供12头牛吃9周，或者共15头牛吃6周。那么,这片草地可供9头牛吃几周?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;12头×9周 =原有草+9周新生草 
+
+15头×6周 =原有草+6周新生草
+
+新生草=（12×9-15×6）÷（9-6）=6
+
+草原有草:15×6-6×6=54
+
+六头牛吃新生草,其余3头牛吃原有草
+
+9-6=3(头)
+
+54÷3=18(周)
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;解题关键&lt;/strong&gt; 是弄清楚已知条件，进行对比分析，从而求出每日新长草的数量，再求出草地里原有草的数量，进而解答题总所求的问题。&lt;/p&gt;
+
+&lt;p&gt;这类问题的基本数量关系是：&lt;/p&gt;
+
+&lt;p&gt;1.吃的天数=原有草量÷（牛头数－草的生长速度）&lt;/p&gt;
+
+&lt;p&gt;2.牛的头数×吃草天数-每天新长量×吃草天数=草地原有的草。&lt;/p&gt;
+
+&lt;h3 id=&quot;例子&quot;&gt;例子&lt;/h3&gt;
+
+&lt;h4 id=&quot;例1&quot;&gt;例1&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;牧场上一片青草，每天牧草都匀速生长。这片牧草可供10头牛吃20天，或者可供15头牛吃10天。问：可供25头牛吃几天？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;分析与解：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;这类题难就难在牧场上草的数量每天都在发生变化，我们要想办法从变化当中找到不变的量。&lt;/li&gt;
+  &lt;li&gt;总草量可以分为牧场上原有的草和新生长出来的草两部分。牧场上原有的草是不变的，新长出的草虽然在变化，因为是匀速生长，所以这片草地每天新长出的草的数量相同，即每天新长出的草是不变的。&lt;/li&gt;
+  &lt;li&gt;下面，就要设法计算出原有的草量和每天新长出的草量这两个不变量。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;设：1头牛一天吃的草为1份。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;那么，10头牛20天吃200份，草被吃完；15头牛10天吃150份，草也被吃完。前者的总草量是200份，后者的总草量是150份，前者是原有的草加 20天新长出的草，后者是原有的草加10天新长出的草。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;200－150=50（份），20—10=10（天），&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;说明牧场10天长草50份，1天长草5份。也就是说，5头牛专吃新长出来的草刚好吃完，5头牛以外的牛吃的草就是牧场上原有的草。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;由此得出，牧场上原有草&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;（10—5）× 20=100（份），或：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;（15—5）×10=100（份）。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;已经知道原有草100份，每天新长出草5份。当有25头牛时，其中的5头专吃新长出来的草，剩下的20头吃原有的草，吃完需100÷20=5（天）。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;所以，这片草地可供25头牛吃5天。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在例1的解法中要注意三点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;（1）每天新长出的草量是通过已知的两种不同情况吃掉的总草量的差及吃的天数的差计算出来的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;（2）在已知的两种情况中，任选一种，假定其中几头牛专吃新长出的草，由剩下的牛吃原有的草，根据吃的天数可以计算出原有的草量。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;（3）在所求的问题中，让几头牛专吃新长出的草，其余的牛吃原有的草，根据原有的草量可以计算出能吃几天。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;例2&quot;&gt;例2：&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;一个水池装一个进水管和三个同样的出水管。先打开进水管，等水池存了一些水后，再打开出水管。如果同时打开2个出水管，那么8分钟后水池空；如果同时打开3个出水管，那么5分钟后水池空。那么出水管比进水管晚开多少分钟？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;分析与解：&lt;/strong&gt;虽然表面上没有“牛吃草”，但因为总的水量在均匀变化，“水”相当于“草”，进水管进的水相当于新长出的草，出水管排的水相当于牛在吃草，所以也是牛吃草问题，解法自然也与例1相似。&lt;/p&gt;
+
+&lt;p&gt;出水管所排出的水可以分为两部分：一部分是出水管打开之前原有的水量，另一部分是开始排水至排空这段时间内进水管放进的水。因为原有的水量是不变的，所以可以从比较两次排水所用的时间及排水量入手解决问题。&lt;/p&gt;
+
+&lt;p&gt;设出水管每分钟排出水池的水为1份，则2个出水管8分钟所排的水是2×8=16（份），3个出水管5分钟所排的水是3×5=15（份），这两次排出的水量都包括原有水量和从开始排水至排空这段时间内的进水量。两者相减就是在8-5=3（分）内所放进的水量，所以每分钟的进水量是：（16-15）÷3=1/3（份）&lt;/p&gt;
+
+&lt;p&gt;假设让1/3个出水管专门排进水管新近的水，两相抵消，其余的出水管排原有的水，可以求出原有水的水量为：&lt;/p&gt;
+
+&lt;p&gt;（2-1/3）×8=40/3（份）或（3-1/3）×5=40/3（份）。&lt;/p&gt;
+
+&lt;p&gt;解：设出水管每分钟排出的水为1份。每分钟进水量：&lt;/p&gt;
+
+&lt;p&gt;（2×8-3×5）÷（8-5）=1/3（份），进水管提前开了（2-1/3）×8÷1/3=40（分钟）。&lt;/p&gt;
+
+&lt;p&gt;答：出水管比进水管晚开40分钟。&lt;/p&gt;
+
+&lt;h4 id=&quot;例3&quot;&gt;例3：&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;由于天气逐渐冷起来，牧场上的草不仅不长大，反而以固定的速度在减少。已知某块草地上的草可供20头牛吃5天，或可供15头牛吃6天。照此计算，可供多少头牛吃10天？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;分析与解：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;与例1不同的是，不仅没有新长出的草，而且原有的草还在减少。但是，我们同样可以利用例1的方法，求出每天减少的草量和原有的草量。&lt;/p&gt;
+
+&lt;p&gt;设1头牛1天吃的草为1份。20头牛5天吃100份，15头牛6天吃90份，100-90=10（份），说明寒冷使牧场1天减少青草10份，也就是说，寒冷相当于10头牛在吃草。由“草地上的草可供20头牛吃5天”，再加上“寒冷”代表的10头牛同时在吃草，所以牧场原有草（20+10）×5=150（份）。&lt;/p&gt;
+
+&lt;p&gt;由 150÷10=15知，牧场原有草可供15头牛吃 10天，寒冷占去10头牛，所以，可供5头牛吃10天。&lt;/p&gt;
+
+&lt;h4 id=&quot;例4&quot;&gt;例4：&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;自动扶梯以均匀速度由下往上行驶着，两位性急的孩子要从扶梯上楼。已知男孩每分钟走20级梯级，女孩每分钟走15级梯级，结果男孩用了5分钟到达楼上，女孩用了6分钟到达楼上。问：该扶梯共有多少级？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;分析与解：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;与例3比较，“总的草量”变成了“扶梯的梯级总数”，“草”变成了“梯级”，“牛”变成了“速度”，也可以看成牛吃草问题。&lt;/p&gt;
+
+&lt;p&gt;上楼的速度可以分为两部分：一部分是男、女孩自己的速度，另一部分是自动扶梯的速度。男孩5分钟走了20×5= 100（级），女孩6分钟走了15×6=90（级），女孩比男孩少走了100－90=10（级），多用了6－5=1（分），说明电梯1分钟走10级。由男孩5分钟到达楼上，他上楼的速度是自己的速度与扶梯的速度之和，所以扶梯共有（20+10）×5=150（级）。&lt;/p&gt;
+
+&lt;p&gt;解：自动扶梯每分钟走&lt;/p&gt;
+
+&lt;p&gt;（20×5－15×6）÷（6—5）=10（级），&lt;/p&gt;
+
+&lt;p&gt;自动扶梯共有（20+10）×5=150（级）。&lt;/p&gt;
+
+&lt;p&gt;答：扶梯共有150级。&lt;/p&gt;
+
+&lt;h4 id=&quot;例5&quot;&gt;例5：&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;某车站在检票前若干分钟就开始排队，每分钟来的旅客人数一样多。从开始检票到等候检票的队伍消失，同时开4个检票口需30分钟，同时开5个检票口需20分钟。如果同时打开7个检票口，那么需多少分钟？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;分析与解：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;等候检票的旅客人数在变化，“旅客”相当于“草”，“检票口”相当于“牛”，可以用牛吃草问题的解法求解。&lt;/p&gt;
+
+&lt;p&gt;旅客总数由两部分组成：一部分是开始检票前已经在排队的原有旅客，另一部分是开始检票后新来的旅客。&lt;/p&gt;
+
+&lt;p&gt;设1个检票口1分钟检票的人数为1份。因为4个检票口30分钟通过（4×30）份，5个检票口20分钟通过（5×20）份，说明在（30-20）分钟内新来旅客（4×30-5×20）份，所以每分钟新来旅客（4×30-5×20）÷（30-20）=2（份）。&lt;/p&gt;
+
+&lt;p&gt;假设让2个检票口专门通过新来的旅客，两相抵消，其余的检票口通过原来的旅客，可以求出原有旅客为（4-2）×30=60（份）或（5-2）×20=60（份）。&lt;/p&gt;
+
+&lt;p&gt;同时打开7个检票口时，让2个检票口专门通过新来的旅客，其余的检票口通过原来的旅客，需要60÷（7-2）=12（分）。&lt;/p&gt;
+
+&lt;h4 id=&quot;例6&quot;&gt;例6：&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;有三块草地，面积分别为5，6和8公顷。草地上的草一样厚，而且长得一样快。第一块草地可供11头牛吃10天，第二块草地可供12头牛吃14天。问：第三块草地可供19头牛吃多少天？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;分析与解：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;例1是在同一块草地上，例6是三块面积不同的草地。为了解决这个问题，只需将三块草地的面积统一起来。&lt;/p&gt;
+
+&lt;p&gt;[5，6，8]=120。&lt;/p&gt;
+
+&lt;p&gt;因为 5公顷草地可供11头牛吃10天， 120÷5=24，所以120公顷草地可供11×24=264（头）牛吃10天。&lt;/p&gt;
+
+&lt;p&gt;因为6公顷草地可供12头牛吃14天，120÷6=20，所以120公顷草地可供12×20=240（头）牛吃14天。&lt;/p&gt;
+
+&lt;p&gt;120÷8=15，问题变为： 120公顷草地可供19×15=285（头）牛吃几天？&lt;/p&gt;
+
+&lt;p&gt;因为草地面积相同，可忽略具体公顷数，所以原题可变为：&lt;/p&gt;
+
+&lt;p&gt;“一块匀速生长的草地，可供264头牛吃10天，或供240头牛吃14天，那么可供285头牛吃几天？”&lt;/p&gt;
+
+&lt;p&gt;这与例1完全一样。设1头牛1天吃的草为1份。每天新长出的草有（240×14－264×10）÷（14－10）=180（份）。草地原有草（264—180）×10=840（份）。可供285头牛吃840÷（285—180）=8（天）。&lt;/p&gt;
+
+&lt;p&gt;所以，第三块草地可供19头牛吃8天。&lt;/p&gt;
+
+&lt;h3 id=&quot;练习&quot;&gt;练习&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;一牧场上的青草每天都匀速生长。这片青草可供27头牛吃6周或供30头牛吃5周，问可供42头牛吃几周？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一牧场上的青草每天都匀速生长。这片青草可供17头牛吃30天，或供19头牛吃24天。现有一群牛，吃了6天后卖掉4头，余下的牛又吃了2天将草吃完，这群牛原来有多少头？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;经测算，地球上的资源可供100亿人生活100年，或可供80亿人生活300年。假设地球新生成的资源增长速度是一定的，为使人类有不断发展的潜力，地球最多能养活多少亿人？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;有一水池，池底有泉水不断涌出。用10部抽水机20时可以把水抽干；用15部同样的抽水机，10时可以把水抽干。那么，用25部这样的抽水机多少小时可以把水抽干？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;某车站在检票前若干分钟就开始排队，每分钟来的旅客人数一样多。如果同时开放3个检票口，那么40分钟检票口前的队伍恰好消失；如果同时开放4个检票口，那么25分钟队伍恰好消失。如果同时开放8个检票口，那么队伍多少分钟恰好消失？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;两只蜗牛由于耐不住阳光的照射，从井顶逃向井底。白天往下爬，两只蜗牛白天爬行的速度是不同的，一只每个白天爬20分米，另一只爬15分米。黑夜里往下滑，两只蜗牛滑行的速度却是相同的。结果一只蜗牛恰好用5个昼夜到达井底，另一只蜗牛恰好用6个昼夜到达井底。那么，井深多少米？&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;两位顽皮的孩子逆着自动扶梯的方向行走。在20秒钟里，男孩可走27级梯级，女孩可走24级梯级，结果男孩走了2分钟到达另一端，女孩走了3分钟到达另一端。问：该扶梯共多少级？&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;方程解法&quot;&gt;方程解法&lt;/h3&gt;
+
+&lt;p&gt;知道方程的人，这题目很容易就解决了。&lt;/p&gt;
+
+&lt;p&gt;以练习第1题为例，我们有以下解法：&lt;/p&gt;
+
+&lt;p&gt;假设原来有的草为x份，每周长出来的草为y份，每头牛每周吃草1份。&lt;/p&gt;
+
+&lt;p&gt;那么可以列方程：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases} 
+x+6y=27\times6\\ 
+x+5y=30\times5\\ 
+\end{cases}&lt;/script&gt;
+
+&lt;p&gt;解得x=90,y=12&lt;/p&gt;
+
+&lt;p&gt;若放42头牛，设n周可以吃完，则：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;90+12n=42n&lt;/script&gt;
+
+&lt;p&gt;n=3周&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>美女涂鸦</title>
+   <link href="/2019/01/04/Beatrice%E4%BD%9C%E5%93%81-%E7%BE%8E%E5%A5%B3%E6%B6%82%E9%B8%A6.html"/>
+   <updated>2019-01-04T00:00:00+08:00</updated>
+   <id>/2019/01/04/Beatrice作品-美女涂鸦</id>
+   <content type="html">&lt;p&gt;在找草稿纸的时候，在她的废纸堆里看到了这份涂鸦，于是就拍了下来。&lt;/p&gt;
+
+&lt;p&gt;仔细观察后，发觉身材比例似乎不对，不过乍看起来还是觉得不错的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20190104_214818.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>跟着李白游浙东浙南</title>
+   <link href="/2019/01/03/%E8%B7%9F%E7%9D%80%E6%9D%8E%E7%99%BD%E6%B8%B8%E6%B5%99%E4%B8%9C%E5%8D%97.html"/>
+   <updated>2019-01-03T00:00:00+08:00</updated>
+   <id>/2019/01/03/跟着李白游浙东南</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;《送王屋山人魏万还王屋·并序》&lt;/strong&gt; 
+唐代 李白&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;王屋山人魏万，云自嵩宋沿吴相访，数千里不遇。乘兴游台越，经永嘉，观谢公石门。后于广陵相见，美其爱文好古，浪迹方外，因述其行而赠是诗。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;仙人东方生，浩荡弄云海。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;沛然乘天游，独往失所在。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;魏侯继大名，本家聊摄城。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;卷舒入元化，迹与古贤并。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;十三弄文史，挥笔如振绮。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;辩折田巴生，心齐鲁连子。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;西涉清洛源，颇惊人世喧。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;采秀卧王屋，因窥洞天门。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;朅来游嵩峰，羽客何双双。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;朝携月光子，暮宿玉女窗。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;鬼谷上窈窕，龙潭下奔潈。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;东浮汴河水，访我三千里。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;逸兴满吴云，飘飖浙江汜。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;挥手杭越间，樟亭望潮还。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;涛卷海门石，云横天际山。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;白马走素车，雷奔骇心颜。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;遥闻会稽美，且度耶溪水。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;万壑与千岩，峥嵘镜湖里。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;秀色不可名，清辉满江城。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;人游月边去，舟在空中行。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;此中久延伫，入剡寻王许。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;笑读曹娥碑，沉吟黄绢语。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;天台连四明，日入向国清。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;五峰转月色，百里行松声。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;灵溪咨沿越，华顶殊超忽。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;石梁横青天，侧足履半月。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;忽然思永嘉，不惮海路赊。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;挂席历海峤，回瞻赤城霞。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;赤城渐微没，孤屿前峣兀。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;水续万古流，亭空千霜月。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;缙云川谷难，石门最可观。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;瀑布挂北斗，莫穷此水端。&lt;/strong&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;喷壁洒素雪，空濛生昼寒。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;却思恶溪去，宁惧恶溪恶。 &lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;咆哮七十滩，水石相喷薄。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;路创李北海，岩开谢康乐。&lt;/strong&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;松风和猿声，搜索连洞壑。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;径出梅花桥，双溪纳归潮。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;落帆金华岸，赤松若可招。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;沈约八咏楼，城西孤岧峣。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;岧峣四荒外，旷望群川会。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;云卷天地开，波连浙西大。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;乱流新安口，北指严光濑。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;钓台碧云中，邈与苍岭对。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;稍稍来吴都，裴回上姑苏。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;烟绵横九疑，漭荡见五湖。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;目极心更远，悲歌但长吁。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;回桡楚江滨，挥策扬子津。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;身著日本裘，昂藏出风尘。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;五月造我语，知非儓儗人。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;相逢乐无限，水石日在眼。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;徒干五诸侯，不致百金产。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;吾友扬子云，弦歌播清芬。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;虽为江宁宰，好与山公群。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;乘兴但一行，且知我爱君。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;君来几何时，仙台应有期。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;东窗绿玉树，定长三五枝。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;至今天坛人，当笑尔归迟。 &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我苦惜远别，茫然使心悲。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;黄河若不断，白首长相思。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;李白的这首诗，恰恰是将浙江游了一圈。下次按照他的线路走一次试试。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>《世界文明史·信仰的时代》读书笔记</title>
+   <link href="/2019/01/02/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0-%E4%B8%96%E7%95%8C%E6%96%87%E6%98%8E%E5%8F%B2-%E4%BF%A1%E4%BB%B0%E7%9A%84%E6%97%B6%E4%BB%A3-%E4%B8%8B%E5%86%8C.html"/>
+   <updated>2019-01-02T00:00:00+08:00</updated>
+   <id>/2019/01/02/读书笔记-世界文明史-信仰的时代-下册</id>
+   <content type="html">&lt;h4 id=&quot;佛罗伦萨的崛起1095-1308&quot;&gt;佛罗伦萨的崛起(1095-1308)&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;佛罗伦萨是因该地的花而得名。&lt;/li&gt;
+  &lt;li&gt;Beatrice， 但丁《神曲》中重要的出场人物。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;但丁赠送给卡瓦尔堪提等诗人的第一首诗歌是一首他对一名叫贝阿特丽采（Beatrice)的爱情十四行诗歌。后来在但丁那部不朽的名著《神曲》中我们又看到这个女孩的名字，学者们经过考证找到了这个女孩的原型，并且牵引出了一段世界文学史上最著名的柏拉图式的恋爱。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;但丁是意大利诗人，现代意大利语的奠基者，欧洲文艺复兴时代的开拓人物之一，以长诗《神曲》闻名于世。除《神曲》外，但丁还写了《新生》、《论俗语》、《飨宴》及《诗集》等著作。《新生》中包括三十一首抒情诗，主要抒发对贝阿特丽采的眷恋之情，质朴清丽，优美动人。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;贝阿特丽采，是但丁一生刻骨铭心的挚爱，在其文学创作中留下了不可磨灭的烙印。她是《神曲》中的重要出场人物之一，甚至可以说但丁是为了贝阿特丽采而写的神曲。在但丁的一生中，她有着十分重要的意义。《神曲》中不断提到的这位圣女，她曾是但丁的恋人。但丁对她的爱是一种精神上的爱情。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;传说在但丁九岁的时候，见到一位小姑娘。小姑娘的名字就叫贝阿特丽采。他第一次见到贝阿特丽采，心中就油然地萌发出一种异样的情感，一种爱慕之情。后来，但丁在他的诗集《新生》中曾描写他九岁时见到贝阿特丽采时的感情：&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;“这个时候，藏在生命中最深处的生命之精灵，开始激烈地颤动起来，就连很微弱的脉搏里也感觉了震动。”&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;然而诗人对这位女子的爱并非是世俗的爱，而是一种纯粹的精神上的，就像基督徒对圣母的虔诚的爱一样。这种爱陶冶他的情操，洗涤他的灵魂，使他的心智得到一种升华。这是一种伟大的精神力量和道德力量，使他变得更纯洁，更高尚。八年以后，春光明媚的上午，阳光洒在阿尔诺河上，远处是意大利佛罗伦萨最著名的老桥。高贵而美丽的贝阿特丽采在河畔散步，与从另一头走来的诗人但丁不期而遇。但丁凝视着贝阿特丽采，既惊喜又怅然。而贝阿特丽采却手捧着一朵玫瑰，径直从但丁身边走过，仿佛没有看见诗人，她眼里的异样光芒和脸上的潮红却透露出少女青春的萌动。但丁惊呆了，不知怎样开口，她给他留下了一种震撼心灵的印象关于这一次相见，有很多画作留传至今。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;贝阿特丽采的真实原型是福尔科·波尔蒂纳里（Folco Portinari)的女儿。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;历经种种痛苦与流血，方使伟大的”再生”运动降临。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;基督教巅峰的文明&quot;&gt;基督教巅峰的文明&lt;/h3&gt;
+&lt;h4 id=&quot;罗马天主教1095-1294&quot;&gt;罗马天主教(1095-1294)&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;宗教是人类最有趣的行为方式之一，因为它是人类生命的最终诠释，也是对抗死亡的唯一利器。&lt;/li&gt;
+  &lt;li&gt;生活于舒适与富裕中的人们，很难体会在混乱与贫困中孕育出的中古信仰。&lt;/li&gt;
+  &lt;li&gt;世界需要种教义， 它能使人产生盼望以平衡其苦难，给予人慰藉以缓和其伤恸，以如诗般的信仰来补偿平凡乏味的辛劳，以永恒的观念消除人生短哲之叹，赋予一出宇宙性的戏剧，否则这只是一幕幕生灵、生物及万物相继跌落于无可避免的灭亡中，毫无意义且令人难以忍受的戏剧。&lt;/li&gt;
+  &lt;li&gt;中世纪信仰最大的恩赐，即予人以信心，让他们相信正义终必伸张，而恶虽一时得逞，终将为善的取胜所净化。&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ 
+</feed>

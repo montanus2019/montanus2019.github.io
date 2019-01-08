@@ -1,4 +1,5 @@
 ---
+layout: post
 
 title: Beatrice的FCE第二次书信写作作业
 

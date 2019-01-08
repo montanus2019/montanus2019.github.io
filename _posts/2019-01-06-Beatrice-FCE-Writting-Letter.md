@@ -1,4 +1,5 @@
 ---
+layout: post
 
 title: Beatrice的FCE第一次书信写作
 
