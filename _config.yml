@@ -3,7 +3,6 @@ permalink: /:year/:month/:day/:title.html
 
 author: "montanus2019"
 atom-baseurl: ""
-disqus: "gopherwood"
 markdown: kramdown
 gems: [jekyll-mermaid]
 mermaid: 
