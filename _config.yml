@@ -4,8 +4,12 @@ permalink: /:year/:month/:day/:title.html
 author: "montanus2019"
 atom-baseurl: ""
 markdown: kramdown
-gems: [jekyll-mermaid]
-mermaid: 'media/js/mermaid.js'
+
+plugins:
+ - jekyll-mermaid
+
+mermaid: 
+  src: 'media/js/mermaid.js'
 
 navigations:
   - title: Archive
