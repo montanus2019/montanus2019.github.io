@@ -244,36 +244,38 @@ graph LR
 
 <h3 id="子图语法subgraph">子图语法(subgraph)</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>subgraph title
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+subgraph title
 ​	graph definition
-  end
+end
+
 </code></pre></div></div>
 
 <p>示例：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>graph TB
 ​		subgraph 子图1
-​		a1 --&gt;a2[fa:fa-ban forbidden]
+​		a1--&gt;a2[forbidden]
 ​		end
 ​		subgraph 子图2
-​		b1--&gt;b2[fa:fa-spinner spinner]
+​		b1--&gt;b2[spinner]
 ​		end
 ​		subgraph 子图3
-​		c1--&gt;c2["fa:fa-twitter for peace"]
+​		c1--&gt;c2["peace"]
 ​		end
 ​		c1--&gt;a2​		
 </code></pre></div></div>
 
 <div class="mermaid">
 	graph TB
-		subgraph 子图1
-		a1 --&gt;a2[fa:fa-ban forbidden]
+		subgraph p1
+		a1--&gt;a2[forbidden]
 		end
-		subgraph 子图2
-		b1--&gt;b2[fa:fa-spinner spinner]
+		subgraph p2
+		b1--&gt;b2[spinner]
 		end
-		subgraph 子图3
-		c1--&gt;c2["fa:fa-twitter for peace"]
+		subgraph p3
+		c1--&gt;c2[peace]
 		end
 		c1--&gt;a2
 </div>

@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-09T21:22:13+08:00</updated>
+ <updated>2019-01-09T21:37:29+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -204,36 +204,38 @@ graph LR
 
 &lt;h3 id=&quot;子图语法subgraph&quot;&gt;子图语法(subgraph)&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;subgraph title
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+subgraph title
 ​	graph definition
-  end
+end
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;示例：&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph TB
 ​		subgraph 子图1
-​		a1 --&amp;gt;a2[fa:fa-ban forbidden]
+​		a1--&amp;gt;a2[forbidden]
 ​		end
 ​		subgraph 子图2
-​		b1--&amp;gt;b2[fa:fa-spinner spinner]
+​		b1--&amp;gt;b2[spinner]
 ​		end
 ​		subgraph 子图3
-​		c1--&amp;gt;c2[&quot;fa:fa-twitter for peace&quot;]
+​		c1--&amp;gt;c2[&quot;peace&quot;]
 ​		end
 ​		c1--&amp;gt;a2​		
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;mermaid&quot;&gt;
 	graph TB
-		subgraph 子图1
-		a1 --&amp;gt;a2[fa:fa-ban forbidden]
+		subgraph p1
+		a1--&amp;gt;a2[forbidden]
 		end
-		subgraph 子图2
-		b1--&amp;gt;b2[fa:fa-spinner spinner]
+		subgraph p2
+		b1--&amp;gt;b2[spinner]
 		end
-		subgraph 子图3
-		c1--&amp;gt;c2[&quot;fa:fa-twitter for peace&quot;]
+		subgraph p3
+		c1--&amp;gt;c2[peace]
 		end
 		c1--&amp;gt;a2
 &lt;/div&gt;
