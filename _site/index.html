@@ -100,10 +100,6 @@
 
 </div>
 
-<pre><code class="language-mermaid">graph LR
-		A--&gt;B
-</code></pre>
-
 <h3 id="节点与形状">节点与形状</h3>
 
 <p>分为：</p>
@@ -128,17 +124,6 @@
 ​		id6{这是菱形节点}
 </code></pre></div></div>
 <p>​</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="mermaid"&gt;
-​	graph TB
-​		id1
-​		id2[这是矩形节点]
-​		id3(这是圆角节点)
-​		id4((这是圆节点))
-​		id5&gt;这是右向旗帜节点]
-​		id6{这是菱形节点}
-&lt;/div&gt;
-</code></pre></div></div>
-
 <div class="mermaid">
 	graph TB
 		id1
@@ -148,15 +133,6 @@
 		id5&gt;这是右向旗帜节点]
 		id6{这是菱形节点}
 </div>
-
-<pre><code class="language-mermaid">	graph TB
-		id1
-		id2[这是矩形节点]
-		id3(这是圆角节点)
-		id4((这是圆节点))
-		id5&gt;这是右向旗帜节点]
-		id6{这是菱形节点}
-</code></pre>
 
 <h3 id="连接线">连接线</h3>
 
@@ -188,10 +164,6 @@ graph LR
 	A---B
 </div>
 
-<pre><code class="language-mermaid">graph LR
-	A---B
-</code></pre>
-
 <h4 id="带标签连接">带标签连接</h4>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>graph LR
@@ -204,10 +176,6 @@ graph LR
 graph LR
 	A--这是标签---B
 </div>
-
-<pre><code class="language-mermaid">graph LR
-	A--这是标签---B
-</code></pre>
 
 <h4 id="带箭头标签连接">带箭头标签连接</h4>
 
@@ -222,10 +190,6 @@ graph LR
 	A--这是标签--&gt;B
 </div>
 
-<pre><code class="language-mermaid">graph LR
-	A--这是标签--&gt;B
-</code></pre>
-
 <h4 id="虚线连接">虚线连接</h4>
 <h5 id="虚线带箭头连接">虚线带箭头连接</h5>
 
@@ -238,10 +202,6 @@ graph LR
 	A-.-&gt;B
 </div>
 
-<pre><code class="language-mermaid">graph LR
-	A-.-&gt;B
-</code></pre>
-
 <h5 id="虚线无箭头连接">虚线无箭头连接</h5>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>graph LR
@@ -252,10 +212,6 @@ graph LR
 graph LR
 	A-.-B
 </div>
-
-<pre><code class="language-mermaid">graph LR
-	A-.-B
-</code></pre>
 
 <h5 id="虚线带标签连接">虚线带标签连接</h5>
 
@@ -268,10 +224,6 @@ graph LR
 	A-.这是标签.-B
 </div>
 
-<pre><code class="language-mermaid">graph LR
-	A-.这是标签.-B
-</code></pre>
-
 <h5 id="虚线带标签带箭头连接">虚线带标签带箭头连接</h5>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>graph LR
 ​	A-.这是标签.-&gt;B
@@ -281,10 +233,6 @@ graph LR
 graph LR
 	A-.这是标签.-&gt;B
 </div>
-
-<pre><code class="language-mermaid">graph LR
-	A-.这是标签.-&gt;B
-</code></pre>
 
 <h4 id="粗实线连接">粗实线连接</h4>
 
@@ -320,7 +268,6 @@ graph LR
 </code></pre></div></div>
 
 <div class="mermaid">
-	
 	graph TB
 		subgraph 子图1
 		a1 --&gt;a2[fa:fa-ban forbidden]
@@ -333,20 +280,6 @@ graph LR
 		end
 		c1--&gt;a2
 </div>
-
-<pre><code class="language-mermaid">	
-	graph TB
-		subgraph 子图1
-		a1 --&gt;a2[fa:fa-ban forbidden]
-		end
-		subgraph 子图2
-		b1--&gt;b2[fa:fa-spinner spinner]
-		end
-		subgraph 子图3
-		c1--&gt;c2["fa:fa-twitter for peace"]
-		end
-		c1--&gt;a2
-</code></pre>
 
 <h3 id="基础fontawesome支持语法">基础fontawesome支持语法</h3>
 

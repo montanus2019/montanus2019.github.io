@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-09T21:11:32+08:00</updated>
+ <updated>2019-01-09T21:22:13+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -57,10 +57,6 @@
 
 &lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-		A--&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;
-
 &lt;h3 id=&quot;节点与形状&quot;&gt;节点与形状&lt;/h3&gt;
 
 &lt;p&gt;分为：&lt;/p&gt;
@@ -85,17 +81,6 @@
 ​		id6{这是菱形节点}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;​&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;mermaid&quot;&amp;gt;
-​	graph TB
-​		id1
-​		id2[这是矩形节点]
-​		id3(这是圆角节点)
-​		id4((这是圆节点))
-​		id5&amp;gt;这是右向旗帜节点]
-​		id6{这是菱形节点}
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
 &lt;div class=&quot;mermaid&quot;&gt;
 	graph TB
 		id1
@@ -105,15 +90,6 @@
 		id5&amp;gt;这是右向旗帜节点]
 		id6{这是菱形节点}
 &lt;/div&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;	graph TB
-		id1
-		id2[这是矩形节点]
-		id3(这是圆角节点)
-		id4((这是圆节点))
-		id5&amp;gt;这是右向旗帜节点]
-		id6{这是菱形节点}
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;连接线&quot;&gt;连接线&lt;/h3&gt;
 
@@ -145,10 +121,6 @@ graph LR
 	A---B
 &lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-	A---B
-&lt;/code&gt;&lt;/pre&gt;
-
 &lt;h4 id=&quot;带标签连接&quot;&gt;带标签连接&lt;/h4&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
@@ -161,10 +133,6 @@ graph LR
 graph LR
 	A--这是标签---B
 &lt;/div&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-	A--这是标签---B
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&quot;带箭头标签连接&quot;&gt;带箭头标签连接&lt;/h4&gt;
 
@@ -179,10 +147,6 @@ graph LR
 	A--这是标签--&amp;gt;B
 &lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-	A--这是标签--&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;
-
 &lt;h4 id=&quot;虚线连接&quot;&gt;虚线连接&lt;/h4&gt;
 &lt;h5 id=&quot;虚线带箭头连接&quot;&gt;虚线带箭头连接&lt;/h5&gt;
 
@@ -195,10 +159,6 @@ graph LR
 	A-.-&amp;gt;B
 &lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-	A-.-&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;
-
 &lt;h5 id=&quot;虚线无箭头连接&quot;&gt;虚线无箭头连接&lt;/h5&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
@@ -209,10 +169,6 @@ graph LR
 graph LR
 	A-.-B
 &lt;/div&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-	A-.-B
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h5 id=&quot;虚线带标签连接&quot;&gt;虚线带标签连接&lt;/h5&gt;
 
@@ -225,10 +181,6 @@ graph LR
 	A-.这是标签.-B
 &lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-	A-.这是标签.-B
-&lt;/code&gt;&lt;/pre&gt;
-
 &lt;h5 id=&quot;虚线带标签带箭头连接&quot;&gt;虚线带标签带箭头连接&lt;/h5&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
 ​	A-.这是标签.-&amp;gt;B
@@ -238,10 +190,6 @@ graph LR
 graph LR
 	A-.这是标签.-&amp;gt;B
 &lt;/div&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-	A-.这是标签.-&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&quot;粗实线连接&quot;&gt;粗实线连接&lt;/h4&gt;
 
@@ -277,7 +225,6 @@ graph LR
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;mermaid&quot;&gt;
-	
 	graph TB
 		subgraph 子图1
 		a1 --&amp;gt;a2[fa:fa-ban forbidden]
@@ -290,20 +237,6 @@ graph LR
 		end
 		c1--&amp;gt;a2
 &lt;/div&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;	
-	graph TB
-		subgraph 子图1
-		a1 --&amp;gt;a2[fa:fa-ban forbidden]
-		end
-		subgraph 子图2
-		b1--&amp;gt;b2[fa:fa-spinner spinner]
-		end
-		subgraph 子图3
-		c1--&amp;gt;c2[&quot;fa:fa-twitter for peace&quot;]
-		end
-		c1--&amp;gt;a2
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;基础fontawesome支持语法&quot;&gt;基础fontawesome支持语法&lt;/h3&gt;
 
