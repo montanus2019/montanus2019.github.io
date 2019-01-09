@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-09T21:37:29+08:00</updated>
+ <updated>2019-01-09T21:56:51+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -214,30 +214,31 @@ end
 &lt;p&gt;示例：&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph TB
-​		subgraph 子图1
-​		a1--&amp;gt;a2[forbidden]
-​		end
-​		subgraph 子图2
-​		b1--&amp;gt;b2[spinner]
-​		end
-​		subgraph 子图3
-​		c1--&amp;gt;c2[&quot;peace&quot;]
-​		end
-​		c1--&amp;gt;a2​		
+subgraph 子图1
+a1 --&amp;gt; a2[fa:fa-ban forbidden]
+end
+subgraph 子图2
+b1 --&amp;gt; b2[fa:fa-spinner spinner]
+end
+subgraph 子图3
+c1 --&amp;gt; c2[&quot;fa:fa-twitter for peace&quot;]
+end
+c1 --&amp;gt; a2
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;mermaid&quot;&gt;
-	graph TB
-		subgraph p1
-		a1--&amp;gt;a2[forbidden]
-		end
-		subgraph p2
-		b1--&amp;gt;b2[spinner]
-		end
-		subgraph p3
-		c1--&amp;gt;c2[peace]
-		end
-		c1--&amp;gt;a2
+graph TB
+subgraph 子图1
+a1 --&amp;gt; a2[fa:fa-ban forbidden]
+end
+subgraph 子图2
+b1 --&amp;gt; b2[fa:fa-spinner spinner]
+end
+subgraph 子图3
+c1 --&amp;gt; c2[&quot;fa:fa-twitter for peace&quot;]
+end
+c1 --&amp;gt; a2
 &lt;/div&gt;
 
 &lt;h3 id=&quot;基础fontawesome支持语法&quot;&gt;基础fontawesome支持语法&lt;/h3&gt;

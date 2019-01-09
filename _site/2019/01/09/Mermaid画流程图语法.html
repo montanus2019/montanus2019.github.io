@@ -254,30 +254,31 @@ end
 <p>示例：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>graph TB
-​		subgraph 子图1
-​		a1--&gt;a2[forbidden]
-​		end
-​		subgraph 子图2
-​		b1--&gt;b2[spinner]
-​		end
-​		subgraph 子图3
-​		c1--&gt;c2["peace"]
-​		end
-​		c1--&gt;a2​		
+subgraph 子图1
+a1 --&gt; a2[fa:fa-ban forbidden]
+end
+subgraph 子图2
+b1 --&gt; b2[fa:fa-spinner spinner]
+end
+subgraph 子图3
+c1 --&gt; c2["fa:fa-twitter for peace"]
+end
+c1 --&gt; a2
+
 </code></pre></div></div>
 
 <div class="mermaid">
-	graph TB
-		subgraph p1
-		a1--&gt;a2[forbidden]
-		end
-		subgraph p2
-		b1--&gt;b2[spinner]
-		end
-		subgraph p3
-		c1--&gt;c2[peace]
-		end
-		c1--&gt;a2
+graph TB
+subgraph 子图1
+a1 --&gt; a2[fa:fa-ban forbidden]
+end
+subgraph 子图2
+b1 --&gt; b2[fa:fa-spinner spinner]
+end
+subgraph 子图3
+c1 --&gt; c2["fa:fa-twitter for peace"]
+end
+c1 --&gt; a2
 </div>
 
 <h3 id="基础fontawesome支持语法">基础fontawesome支持语法</h3>
