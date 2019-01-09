@@ -4,12 +4,316 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-09T10:33:13+08:00</updated>
+ <updated>2019-01-09T21:11:32+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>Mermaid画流程图语法</title>
+   <link href="/2019/01/09/Mermaid%E7%94%BB%E6%B5%81%E7%A8%8B%E5%9B%BE%E8%AF%AD%E6%B3%95.html"/>
+   <updated>2019-01-09T00:00:00+08:00</updated>
+   <id>/2019/01/09/Mermaid画流程图语法</id>
+   <content type="html">&lt;p&gt;在markdown下使用mermaid绘制流程图flowchart，通过javascript实现图表的生成，是一种简便实用的方法。&lt;/p&gt;
+
+&lt;h2 id=&quot;基本语法分类&quot;&gt;基本语法分类&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;方向申明&lt;/li&gt;
+  &lt;li&gt;节点与形状&lt;/li&gt;
+  &lt;li&gt;连接线&lt;/li&gt;
+  &lt;li&gt;特殊语法&lt;/li&gt;
+  &lt;li&gt;子图语法&lt;/li&gt;
+  &lt;li&gt;基础fontawesome支持语法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;方向申明&quot;&gt;方向申明&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;graph 方向代码&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;方向代码有：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;TB: top-bottom 从上到下&lt;/li&gt;
+  &lt;li&gt;BT: bottom-top从下到上&lt;/li&gt;
+  &lt;li&gt;RL: right-left从右到左&lt;/li&gt;
+  &lt;li&gt;LR: left-right从左到右&lt;/li&gt;
+  &lt;li&gt;TD: same as TB从上到下&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A--&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+
+    graph LR
+
+          A--&amp;gt;B
+
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+		A--&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;节点与形状&quot;&gt;节点与形状&lt;/h3&gt;
+
+&lt;p&gt;分为：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;默认节点：仅有&lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;文本节点：又称矩形节点，用&lt;code class=&quot;highlighter-rouge&quot;&gt;id[文本内容]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;圆角节点：用&lt;code class=&quot;highlighter-rouge&quot;&gt;id(文本内容)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;圆节点：用&lt;code class=&quot;highlighter-rouge&quot;&gt;id((文本内容))&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;右向旗帜节点：用&lt;code class=&quot;highlighter-rouge&quot;&gt;id&amp;gt;文本内容]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;菱形节点：用&lt;code class=&quot;highlighter-rouge&quot;&gt;id{文本内容}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph TB
+​		id1
+​		id2[这是矩形节点]
+​		id3(这是圆角节点)
+​		id4((这是圆节点))
+​		id5&amp;gt;这是右向旗帜节点]
+​		id6{这是菱形节点}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;mermaid&quot;&amp;gt;
+​	graph TB
+​		id1
+​		id2[这是矩形节点]
+​		id3(这是圆角节点)
+​		id4((这是圆节点))
+​		id5&amp;gt;这是右向旗帜节点]
+​		id6{这是菱形节点}
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+	graph TB
+		id1
+		id2[这是矩形节点]
+		id3(这是圆角节点)
+		id4((这是圆节点))
+		id5&amp;gt;这是右向旗帜节点]
+		id6{这是菱形节点}
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;	graph TB
+		id1
+		id2[这是矩形节点]
+		id3(这是圆角节点)
+		id4((这是圆节点))
+		id5&amp;gt;这是右向旗帜节点]
+		id6{这是菱形节点}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;连接线&quot;&gt;连接线&lt;/h3&gt;
+
+&lt;p&gt;节点间的连接线有多种形状，并可以在连接线中加入标签：&lt;/p&gt;
+
+&lt;h4 id=&quot;箭头形连接&quot;&gt;箭头形连接&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A--&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR
+	A--&amp;gt;B
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+	A--&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;无箭头连接&quot;&gt;无箭头连接&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A---B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR
+	A---B
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+	A---B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;带标签连接&quot;&gt;带标签连接&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A--这是标签---B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;需注意，标签前面是两短横，后面是三短横。&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR
+	A--这是标签---B
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+	A--这是标签---B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;带箭头标签连接&quot;&gt;带箭头标签连接&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A--这是标签--&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;需注意，标签前面是两短横，后面是两短横与一”&amp;gt;”号。&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR
+	A--这是标签--&amp;gt;B
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+	A--这是标签--&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;虚线连接&quot;&gt;虚线连接&lt;/h4&gt;
+&lt;h5 id=&quot;虚线带箭头连接&quot;&gt;虚线带箭头连接&lt;/h5&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A-.-&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR
+	A-.-&amp;gt;B
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+	A-.-&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;虚线无箭头连接&quot;&gt;虚线无箭头连接&lt;/h5&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A-.-B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR
+	A-.-B
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+	A-.-B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;虚线带标签连接&quot;&gt;虚线带标签连接&lt;/h5&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A-.这是标签.-B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR
+	A-.这是标签.-B
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+	A-.这是标签.-B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;虚线带标签带箭头连接&quot;&gt;虚线带标签带箭头连接&lt;/h5&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
+​	A-.这是标签.-&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR
+	A-.这是标签.-&amp;gt;B
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
+	A-.这是标签.-&amp;gt;B
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;粗实线连接&quot;&gt;粗实线连接&lt;/h4&gt;
+
+&lt;p&gt;语法与上类似，只是将其中“-”改为“=”即可。示例略。&lt;/p&gt;
+
+&lt;h3 id=&quot;特殊语法&quot;&gt;特殊语法&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用引号可以抑制一些特殊的字符使用，避免歧义。&lt;/li&gt;
+  &lt;li&gt;转义字符可以使用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;子图语法subgraph&quot;&gt;子图语法(subgraph)&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;subgraph title
+​	graph definition
+  end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;示例：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph TB
+​		subgraph 子图1
+​		a1 --&amp;gt;a2[fa:fa-ban forbidden]
+​		end
+​		subgraph 子图2
+​		b1--&amp;gt;b2[fa:fa-spinner spinner]
+​		end
+​		subgraph 子图3
+​		c1--&amp;gt;c2[&quot;fa:fa-twitter for peace&quot;]
+​		end
+​		c1--&amp;gt;a2​		
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+	
+	graph TB
+		subgraph 子图1
+		a1 --&amp;gt;a2[fa:fa-ban forbidden]
+		end
+		subgraph 子图2
+		b1--&amp;gt;b2[fa:fa-spinner spinner]
+		end
+		subgraph 子图3
+		c1--&amp;gt;c2[&quot;fa:fa-twitter for peace&quot;]
+		end
+		c1--&amp;gt;a2
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;	
+	graph TB
+		subgraph 子图1
+		a1 --&amp;gt;a2[fa:fa-ban forbidden]
+		end
+		subgraph 子图2
+		b1--&amp;gt;b2[fa:fa-spinner spinner]
+		end
+		subgraph 子图3
+		c1--&amp;gt;c2[&quot;fa:fa-twitter for peace&quot;]
+		end
+		c1--&amp;gt;a2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;基础fontawesome支持语法&quot;&gt;基础fontawesome支持语法&lt;/h3&gt;
+
+&lt;p&gt;要加入来自fontawesome的图表字体，需要作如上引用。&lt;/p&gt;
+
+&lt;p&gt;引用的语法为：fa:#icon class name#&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;以上内容摘自网络&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>牛吃草问题习题集加流程图</title>
@@ -710,265 +1014,6 @@ x+5y=30\times5\\
 &lt;p&gt;仔细观察后，发觉身材比例似乎不对，不过乍看起来还是觉得不错的。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20190104_214818.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>跟着李白游浙东浙南</title>
-   <link href="/2019/01/03/%E8%B7%9F%E7%9D%80%E6%9D%8E%E7%99%BD%E6%B8%B8%E6%B5%99%E4%B8%9C%E5%8D%97.html"/>
-   <updated>2019-01-03T00:00:00+08:00</updated>
-   <id>/2019/01/03/跟着李白游浙东南</id>
-   <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;《送王屋山人魏万还王屋·并序》&lt;/strong&gt; 
-唐代 李白&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;王屋山人魏万，云自嵩宋沿吴相访，数千里不遇。乘兴游台越，经永嘉，观谢公石门。后于广陵相见，美其爱文好古，浪迹方外，因述其行而赠是诗。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;仙人东方生，浩荡弄云海。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;沛然乘天游，独往失所在。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;魏侯继大名，本家聊摄城。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;卷舒入元化，迹与古贤并。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;十三弄文史，挥笔如振绮。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;辩折田巴生，心齐鲁连子。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;西涉清洛源，颇惊人世喧。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;采秀卧王屋，因窥洞天门。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;朅来游嵩峰，羽客何双双。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;朝携月光子，暮宿玉女窗。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;鬼谷上窈窕，龙潭下奔潈。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;东浮汴河水，访我三千里。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;逸兴满吴云，飘飖浙江汜。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;挥手杭越间，樟亭望潮还。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;涛卷海门石，云横天际山。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;白马走素车，雷奔骇心颜。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;遥闻会稽美，且度耶溪水。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;万壑与千岩，峥嵘镜湖里。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;秀色不可名，清辉满江城。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;人游月边去，舟在空中行。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;此中久延伫，入剡寻王许。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;笑读曹娥碑，沉吟黄绢语。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;天台连四明，日入向国清。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;五峰转月色，百里行松声。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;灵溪咨沿越，华顶殊超忽。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;石梁横青天，侧足履半月。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;忽然思永嘉，不惮海路赊。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;挂席历海峤，回瞻赤城霞。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;赤城渐微没，孤屿前峣兀。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;水续万古流，亭空千霜月。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;缙云川谷难，石门最可观。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;瀑布挂北斗，莫穷此水端。&lt;/strong&gt;  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;喷壁洒素雪，空濛生昼寒。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;却思恶溪去，宁惧恶溪恶。 &lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;咆哮七十滩，水石相喷薄。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;路创李北海，岩开谢康乐。&lt;/strong&gt;  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;松风和猿声，搜索连洞壑。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;径出梅花桥，双溪纳归潮。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;落帆金华岸，赤松若可招。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;沈约八咏楼，城西孤岧峣。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;岧峣四荒外，旷望群川会。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;云卷天地开，波连浙西大。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;乱流新安口，北指严光濑。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;钓台碧云中，邈与苍岭对。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;稍稍来吴都，裴回上姑苏。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;烟绵横九疑，漭荡见五湖。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;目极心更远，悲歌但长吁。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;回桡楚江滨，挥策扬子津。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;身著日本裘，昂藏出风尘。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;五月造我语，知非儓儗人。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;相逢乐无限，水石日在眼。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;徒干五诸侯，不致百金产。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;吾友扬子云，弦歌播清芬。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;虽为江宁宰，好与山公群。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;乘兴但一行，且知我爱君。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;君来几何时，仙台应有期。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;东窗绿玉树，定长三五枝。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;至今天坛人，当笑尔归迟。 &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我苦惜远别，茫然使心悲。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;黄河若不断，白首长相思。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;李白的这首诗，恰恰是将浙江游了一圈。下次按照他的线路走一次试试。&lt;/p&gt;
-
 </content>
  </entry>
  
