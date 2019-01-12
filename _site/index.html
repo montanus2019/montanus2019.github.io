@@ -62,6 +62,19 @@
     <p>为了偷点懒，收集点有关Linux下的
 bash小知识，用来管理这个静态博客。</p>
 
+<ul>
+  <li>shell脚本中模拟手动输入实现</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+fdisk /dev/mmcblk0 <span class="o">&lt;&lt;</span> <span class="no">XXG</span><span class="sh">
+p
+d
+1
+</span><span class="no">XXG
+</span></code></pre></div></div>
+
+<p>重定向输入即可，注意前后标号XXG！</p>
 
     </section>
     </article>

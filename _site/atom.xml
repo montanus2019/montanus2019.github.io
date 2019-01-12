@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-12T10:28:22+08:00</updated>
+ <updated>2019-01-12T10:39:25+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -19,6 +19,19 @@
    <content type="html">&lt;p&gt;为了偷点懒，收集点有关Linux下的
 bash小知识，用来管理这个静态博客。&lt;/p&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;shell脚本中模拟手动输入实现&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+fdisk /dev/mmcblk0 &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;XXG&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;
+p
+d
+1
+&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;XXG
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;重定向输入即可，注意前后标号XXG！&lt;/p&gt;
 </content>
  </entry>
  
