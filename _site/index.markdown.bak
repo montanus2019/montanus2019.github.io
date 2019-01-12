@@ -44,7 +44,7 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/01/10/3L-uno.html">Disco Lingua Latina Unus</a></h2>
+      <h2><a href="/2019/01/10/3L-uno.html">Disco Linguam Latinam Prīmae</a></h2>
     </section>
     <section class="meta">
     <span class="time">
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = 'Disco Lingua Latina Unus'
+      like-name       = 'Disco Linguam Latinam Prīmae'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,7 +74,12 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <p><strong>Aut disce aut discēde; 
+    <p>棍棒教育从来就不是独此一家、
+别无分号的。你看，来自中世纪基督教
+学校的教育名言，说明了在教育问题上
+，大家都高明不到哪里去：）</p>
+
+<p><strong>Aut disce aut discēde; 
 manet sors tertia caedi.</strong></p>
 
 <p>要么学习要么离开;此外命中注定受鞭笞。</p>
