@@ -4,12 +4,23 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-12T08:13:01+08:00</updated>
+ <updated>2019-01-12T10:28:22+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>学一点bash知识</title>
+   <link href="/2019/01/11/bash%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0.html"/>
+   <updated>2019-01-11T00:00:00+08:00</updated>
+   <id>/2019/01/11/bash知识学习</id>
+   <content type="html">&lt;p&gt;为了偷点懒，收集点有关Linux下的
+bash小知识，用来管理这个静态博客。&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Disco Linguam Latinam Prīmae</title>
@@ -1031,38 +1042,6 @@ $$ \left( \sum_{k=1}^n a_k bk \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \le
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\left( \sum_{k=1}^n a_k bk \right)^2 \leq \left( \sum{k=1}^n ak^2 \right) \left( \sum{k=1}^n b_k^2 \right)&lt;/script&gt;
 
 &lt;p&gt;好了，可以大显身手了;-)&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Beatrice的FCE第一次书信写作</title>
-   <link href="/2019/01/06/Beatrice-FCE-Writting-Letter.html"/>
-   <updated>2019-01-06T00:00:00+08:00</updated>
-   <id>/2019/01/06/Beatrice-FCE-Writting-Letter</id>
-   <content type="html">&lt;p&gt;Dear Ms Evans,&lt;/p&gt;
-
-&lt;p&gt;I wish to apply for summer tourist guide at Information Office, as advertised in the newspaper January 6th.&lt;/p&gt;
-
-&lt;p&gt;I believe I can speak English fairly well.  I have been communicating with British and American people on Saturday and Sundays. I can assume you we can have a lively talk together.&lt;/p&gt;
-
-&lt;p&gt;The other reason is I like meeting new  people and showing them around Nanjing, my town. I can promise you, Ms Evans, the people often like my talking. The History of Nanjing I can say with fluency and also let people ask questions. I would ask them if they can understand it all.&lt;/p&gt;
-
-&lt;p&gt;Can I ask more about the salary? Would it be large or small. Would it dependon the Tours I had given?&lt;/p&gt;
-
-&lt;p&gt;I hope this information will be sufficient for you to consider my application. If you need further details, please do not hesitate to contact me. For an interview I could make myself available at any time.&lt;/p&gt;
-
-&lt;p&gt;I look forward to hearing from you.&lt;/p&gt;
-
-&lt;p&gt;Yours sincerely,&lt;/p&gt;
-
-&lt;p&gt;Julie Davenport&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/201901061.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/201901062.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
 </content>
  </entry>
  

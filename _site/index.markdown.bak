@@ -44,16 +44,16 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/01/10/3L-uno.html">Disco Linguam Latinam Prīmae</a></h2>
+      <h2><a href="/2019/01/11/bash%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0.html">学一点bash知识</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-01-10">2019-01-10</time>
+      <time datetime="2019-01-11">2019-01-11</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#Latina" title="Latina">#Latina</a>
+      <a href="/tags.html#电脑技术" title="电脑技术">#电脑技术</a>
       
     </span>
     
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = 'Disco Linguam Latinam Prīmae'
+      like-name       = '学一点bash知识'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,339 +74,8 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <p>棍棒教育从来就不是独此一家、
-别无分号的。你看，来自中世纪基督教
-学校的教育名言，说明了在教育问题上
-，大家都高明不到哪里去：）</p>
-
-<p><strong>Aut disce aut discēde; 
-manet sors tertia caedi.</strong></p>
-
-<p>要么学习要么离开;此外命中注定受鞭笞。</p>
-
-<ul>
-  <li><strong>Aut</strong>
-    <blockquote>
-      <p>conj.</p>
-
-      <p>or; either … or; or else, or at least, or rather</p>
-    </blockquote>
-  </li>
-  <li><strong>disce</strong>
-    <blockquote>
-      <p>verb.</p>
-
-      <p>second-person singular present
- active imperative of  <strong>discō</strong></p>
-      <blockquote>
-        <p><strong>disco</strong>
- (present infinitive 
-<strong>discere</strong>, perfect active 
-<strong>didicī</strong>, supine 
-<strong>discitum</strong>); 
-third conjugation</p>
-      </blockquote>
-    </blockquote>
-  </li>
-</ul>
-
-<blockquote>
-  <blockquote>
-    <ol>
-      <li>I learn</li>
-      <li>(drama) I study, 
-practise</li>
-    </ol>
-
-    <p>-o,-(i)s,-(i)t,-(i)mus,-(i)tis,-unt.</p>
-  </blockquote>
-</blockquote>
-
-<ul>
-  <li>
-    <p><strong>aut</strong></p>
-  </li>
-  <li><strong>discēde</strong>
-    <blockquote>
-      <p>verb.
-second-person singular 
-present active imperative of 
-<strong>discēdō</strong></p>
-      <blockquote>
-        <p><strong>discēdō</strong>
-I leave, depart.</p>
-
-        <p>-ō,-(i)s,-(i)t,-(i)mus,-(i)tis, 
--unt</p>
-      </blockquote>
-    </blockquote>
-  </li>
-  <li><strong>manet</strong>
-    <blockquote>
-      <p>third-person singular 
-present active indicative of 
-<strong>maneō</strong>
-From Proto-Indo-European 
-*men- (“to stay, stand 
-still”) (with mānsum 
-influenced by mānsī), 
-related to Persian ماندن‎ 
-(mândan, “to remain”), 
-Ancient Greek μένω (ménō, “I 
-remain”).</p>
-      <blockquote>
-        <p>Verb.
-<strong>maneō</strong> (present 
-infinitive 
-<strong>manēre</strong>, perfect active 
-<strong>mānsī</strong>, supine 
-<strong>mānsum</strong>); 
-second conjugation</p>
-        <ul>
-          <li>I stay, remain
-            <blockquote>
-              <p>Paulisper mane!</p>
-
-              <p>Stay a little.</p>
-            </blockquote>
-          </li>
-          <li>(transitive) I wait 
-for, expect</li>
-          <li>I last, endure</li>
-          <li>I spend the night
-            <blockquote>
-              <p>maneō manēs manet 
-manēmus manētis manent</p>
-
-              <p>-ō,-s,-t,-mus,-tis,-ent</p>
-            </blockquote>
-          </li>
-        </ul>
-      </blockquote>
-    </blockquote>
-  </li>
-  <li><strong>sors</strong>
-    <blockquote>
-      <p>Noun
-sors f (genitive sortis); 
-third declension</p>
-      <ul>
-        <li>
-          <ul>
-            <li>lot, fate</li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>oracular response
-Third declension i-stem.</li>
-          </ul>
-        </li>
-      </ul>
-    </blockquote>
-  </li>
-</ul>
-
-<table>
-  <thead>
-    <tr>
-      <th>Case</th>
-      <th>Singular</th>
-      <th>Plural</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Nominative</strong></td>
-      <td>sors</td>
-      <td>sortēs</td>
-    </tr>
-    <tr>
-      <td>Genitive</td>
-      <td>sortis</td>
-      <td>sortium</td>
-    </tr>
-    <tr>
-      <td>Dative</td>
-      <td>sortī</td>
-      <td>sortibus</td>
-    </tr>
-    <tr>
-      <td>Accusative</td>
-      <td>sortem</td>
-      <td>sortēs</td>
-    </tr>
-    <tr>
-      <td>Ablative</td>
-      <td>sorte</td>
-      <td>sortibus</td>
-    </tr>
-    <tr>
-      <td>Vocative</td>
-      <td>sors</td>
-      <td>sortēs</td>
-    </tr>
-  </tbody>
-</table>
-
-<ul>
-  <li><strong>tertia</strong>
-    <blockquote>
-      <p>ablative feminine singular 
-of <strong>tertius</strong></p>
-      <blockquote>
-        <p><strong>tertius</strong>
-m (feminine tertia, 
-neuter tertium); 
-first/second declension
-(ordinal) third, the 
-ordinal number after 
-secundus (“second”) and 
-before quartus (“fourth”)
-In poetical sense it is 
-used for the Roman “Third 
-World”, that is the 
-“Underworld”, of Pluto</p>
-        <blockquote>
-          <p>tertia tertiae tertiae 
-tertiam tertiā tertia</p>
-        </blockquote>
-      </blockquote>
-    </blockquote>
-  </li>
-</ul>
-
-<blockquote>
-  <blockquote>
-    <blockquote>
-      <p>tertiae tertiārum 
-tertiīs tertiās tertiīs 
-tertiae</p>
-    </blockquote>
-  </blockquote>
-</blockquote>
-
-<ul>
-  <li><strong>caedi</strong>
-    <blockquote>
-      <p>dative singular of 
-<strong>caedēs</strong></p>
-    </blockquote>
-  </li>
-</ul>
-
-<blockquote>
-  <blockquote>
-    <p><strong>caedēs</strong></p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <p>Noun</p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <p>caedēs f (genitive 
-caedis); 
-third declension</p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <ul>
-      <li>The act of cutting or 
-lopping something off.</li>
-    </ul>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <ul>
-      <li>The act of striking 
-with the 
-fist, a beating.</li>
-    </ul>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <ul>
-      <li>(by extension) A 
-murder, 
-assassination, killing, 
-slaughter, massacre, 
-carnage.</li>
-    </ul>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <ul>
-      <li>(metonymically) The 
-corpses 
-of the slain or murdered.</li>
-    </ul>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <ul>
-      <li>(metonymically) The 
-blood 
-shed by murder, gore.</li>
-    </ul>
-  </blockquote>
-</blockquote>
-
-<table>
-  <thead>
-    <tr>
-      <th>Case</th>
-      <th>Singular</th>
-      <th>Plural</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Nominative</td>
-      <td>caedēs</td>
-      <td>caedēs</td>
-    </tr>
-    <tr>
-      <td>Genitive</td>
-      <td>caedis</td>
-      <td>caedium</td>
-    </tr>
-    <tr>
-      <td><strong>Dative</strong></td>
-      <td>caedī</td>
-      <td>caedibus</td>
-    </tr>
-    <tr>
-      <td>Accusative</td>
-      <td>caedem</td>
-      <td>caedēs</td>
-    </tr>
-    <tr>
-      <td>Ablative</td>
-      <td>caede</td>
-      <td>caedibus</td>
-    </tr>
-    <tr>
-      <td>Vocative</td>
-      <td>caedēs</td>
-      <td>caedēs</td>
-    </tr>
-  </tbody>
-</table>
+    <p>为了偷点懒，收集点有关Linux下的
+bash小知识，用来管理这个静态博客。</p>
 
 
     </section>
@@ -417,6 +86,13 @@ shed by murder, gore.</li>
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-10">2019-01-10</time>
+      <a href="/2019/01/10/3L-uno.html" title="Disco Linguam Latinam Prīmae">Disco Linguam Latinam Prīmae</a>
+    </li>
   
     
     
