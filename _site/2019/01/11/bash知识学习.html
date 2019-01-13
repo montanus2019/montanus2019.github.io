@@ -83,8 +83,7 @@ bash小知识，用来管理这个静态博客。</p>
 这个文件的类型的，有点类似于 
 Windows 
 系统下用不同文件后缀
-来表示不同文件类型的意思
-（但不相同）。Linux 
+来表示不同文件类型的意思。Linux 
 系统根据 “#!” 
 及该字串后面的信息确定
 该文件的类型，可以通过 
@@ -116,30 +115,34 @@ BASH 软件包了。</p>
 <p>第二行的 “# This is a …” 
 就是 BASH 程序的注释，在 
 BASH 
-程序中从“#”号（注意：后面紧接着是“!”号的除外）开始到行尾的多有部分均被看作是程序的注释。的三行的 
-echo 语句的功能是把 echo 
-后面的字符串输出到标准输出中去。由于 
-echo 后跟的是 “Hello World” 
-这个字符串，因此 “Hello 
-World”这个字串就被显示在控制台终端的屏幕上了。需要注意的是 
-BASH 
+程序中从“#”号（注意：后面紧接着
+是“!”号的除外）开始到行尾的所有
+部分均被看作是程序的注释。</p>
+
+<p>第三行的 echo 语句的功能是把 echo 
+后面的字符串输出到标准输出中去。
+由于 echo 后跟的是 “Hello World” 
+这个字符串，因此 “Hello World”这
+个字串就被显示在控制台终端的屏幕
+上了。需要注意的是 BASH 
 中的绝大多数语句结尾处都没有分号。</p>
 
-<p>如何执行该程序呢？有两种方法：一种是显式制定 
-BASH 去执行：</p>
+<p>如何执行该程序呢？有两种方法：</p>
 
-<p>bash hello或bash hello或 sh 
-hello （这里 sh 是指向 bash 
-的一个链接）</p>
+<p>一种是显式指定 BASH 去执行：</p>
+
+<ul>
+  <li><code class="highlighter-rouge">bash hello</code></li>
+  <li>或 <code class="highlighter-rouge">sh hello</code> （这里 sh 
+是指向 bash 的一个链接）</li>
+</ul>
 
 <p>或者可以先将 hello 
 文件改为可以执行的文件，
-然后直接运行它，此时由于 
-hello 文件第一行的 “#! 
-/bin/bash” 
+然后直接运行它。此时由于 
+hello 文件第一行的 “#! /bin/bash” 
 的作用，系统会自动用/bin/bash 
-程序去解释执行 hello 
-文件的：</p>
+程序去解释执行 hello 文件的：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod u+x hello
 chmod u+x hello ./hello
@@ -167,7 +170,9 @@ d
 </span><span class="no">XXG
 </span></code></pre></div></div>
 
-<p>重定向输入即可，注意前后标号XXG！</p>
+<p>重定向输入即可，注意前后标号XXG！
+但这种方法只适用于带输入参数的命
+令。</p>
 
   </section>
   
