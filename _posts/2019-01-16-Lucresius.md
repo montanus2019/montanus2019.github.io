@@ -49,3 +49,64 @@ weibo @拉丁语言文学 01.16
 如此，轮到宗教被征服，被踩在脚底，
 
 他的胜利让我们与天国平起平坐。​​​
+
+original latin text from
+De rerum natura (Titus 
+Lucretius Carus)/Liber I 
+https://la.wikisource.org/wiki/De_rerum_natura_(Titus_Lucretius_Carus)
+
+---
+
+Humana ante oculos foede cum 
+vita iaceret        62
+
+in terris oppressa gravi sub 
+religione,
+
+quae caput a caeli 
+regionibus ostendebat
+
+horribili super aspectu 
+mortalibus instans,        65
+
+primum Graius homo mortalis 
+tollere contra
+
+est oculos ausus primusque 
+obsistere contra;
+
+quem neque fama deum nec 
+fulmina nec minitanti
+
+murmure compressit caelum, 
+sed eo magis acrem
+
+inritat animi virtutem, 
+effringere ut arta        70
+
+naturae primus portarum 
+claustra cupiret.
+
+ergo vivida vis animi 
+pervicit et extra
+
+processit longe flammantia 
+moenia mundi
+
+atque omne immensum 
+peragravit mente animoque,
+
+unde refert nobis victor 
+quid possit oriri,        75
+
+quid nequeat, finita 
+potestas denique cuique
+
+quanam sit ratione atque 
+alte terminus haerens.
+
+quare religio pedibus 
+subiecta vicissim
+
+opteritur, nos exaequat 
+victoria caelo.
