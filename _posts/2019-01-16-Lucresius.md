@@ -2,8 +2,7 @@
 
 layout: post
 
-title: 
-卢克莱修的伊壁鸠鲁颂歌(zt)
+title: 卢克莱修的伊壁鸠鲁颂歌(zt)
 
 tags:
 
