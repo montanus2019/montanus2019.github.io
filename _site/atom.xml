@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-18T18:35:21+08:00</updated>
+ <updated>2019-01-18T19:07:09+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -29,6 +29,39 @@
 &lt;p&gt;解题图示：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/pic201901182.jpg&quot; alt=&quot;图解&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;解题过程：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;过M点作AM的垂线&lt;/li&gt;
+  &lt;li&gt;过C点作CM的垂线&lt;/li&gt;
+  &lt;li&gt;两线相交于D点。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;∵∠AMC=45°，&lt;/p&gt;
+
+&lt;p&gt;∴∠CMD=45°&lt;/p&gt;
+
+&lt;p&gt;∴直角三角形⊿MCD为等腰直角三角形&lt;/p&gt;
+
+&lt;p&gt;∴MC=CD&lt;/p&gt;
+
+&lt;p&gt;又∵AC=BC,∠BCM=90°+∠ACM, 
+∠ACD=∠ACM+∠MCD=∠ACM+90°&lt;/p&gt;
+
+&lt;p&gt;∴∠BCM=∠ACD&lt;/p&gt;
+
+&lt;p&gt;∴△BCM≌△ACD 全等&lt;/p&gt;
+
+&lt;p&gt;∴AD=13&lt;/p&gt;
+
+&lt;p&gt;∵⊿AMD是直角三角形，根据勾股定理知
+MD=12&lt;/p&gt;
+
+&lt;p&gt;又⊿MCD是等腰直角三角形，根据勾股
+定理，得&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;CM=12\times\sqrt{2}\div2=6\sqrt{2}&lt;/script&gt;
 
 </content>
  </entry>

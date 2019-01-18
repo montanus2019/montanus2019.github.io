@@ -88,6 +88,39 @@
 
 <p><img src="http://localhost:4000/media/pic201901182.jpg" alt="图解" /></p>
 
+<p>解题过程：</p>
+
+<ul>
+  <li>过M点作AM的垂线</li>
+  <li>过C点作CM的垂线</li>
+  <li>两线相交于D点。</li>
+</ul>
+
+<p>∵∠AMC=45°，</p>
+
+<p>∴∠CMD=45°</p>
+
+<p>∴直角三角形⊿MCD为等腰直角三角形</p>
+
+<p>∴MC=CD</p>
+
+<p>又∵AC=BC,∠BCM=90°+∠ACM, 
+∠ACD=∠ACM+∠MCD=∠ACM+90°</p>
+
+<p>∴∠BCM=∠ACD</p>
+
+<p>∴△BCM≌△ACD 全等</p>
+
+<p>∴AD=13</p>
+
+<p>∵⊿AMD是直角三角形，根据勾股定理知
+MD=12</p>
+
+<p>又⊿MCD是等腰直角三角形，根据勾股
+定理，得</p>
+
+<script type="math/tex; mode=display">CM=12\times\sqrt{2}\div2=6\sqrt{2}</script>
+
 
     </section>
     </article>
