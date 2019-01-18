@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-17T22:20:16+08:00</updated>
+ <updated>2019-01-18T18:35:21+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -12,13 +12,34 @@
 
  
  <entry>
+   <title>谁是谁的辅助线</title>
+   <link href="/2019/01/18/%E8%B0%81%E6%98%AF%E8%B0%81%E7%9A%84%E8%BE%85%E5%8A%A9%E7%BA%BF.html"/>
+   <updated>2019-01-18T00:00:00+08:00</updated>
+   <id>/2019/01/18/谁是谁的辅助线</id>
+   <content type="html">&lt;p&gt;在网上看到这样一道数学题，是八年级上
+学期的期末考试填空题。如下:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/pic201901181.jpg&quot; alt=&quot;数学题&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;思路：&lt;/p&gt;
+
+&lt;p&gt;添加辅助线，利用全等三角形，勾股定理
+来将已知条件转化为可资利用的数据。&lt;/p&gt;
+
+&lt;p&gt;解题图示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/pic201901182.jpg&quot; alt=&quot;图解&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>东方的遗产</title>
    <link href="/2019/01/17/dongfangdewenming.html"/>
    <updated>2019-01-17T00:00:00+08:00</updated>
    <id>/2019/01/17/dongfangdewenming</id>
    <content type="html">&lt;p&gt;世界文明史：东方的遗产
-威尔·杜兰特
-61个想法&lt;/p&gt;
+威尔·杜兰特&lt;/p&gt;
 
 &lt;p&gt;◆ 致读者&lt;/p&gt;
 
@@ -54,7 +75,7 @@ Writing，成书于13世纪）一书中有这样几句话：假如我等到完�
   &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Vesta,罗马女灶神&lt;/p&gt;
+&lt;p&gt;Vesta,罗马女灶神，通常翻译为维斯塔。&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;维斯太&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -70,14 +91,6 @@ Writing，成书于13世纪）一书中有这样几句话：假如我等到完�
 &lt;blockquote&gt;
   &lt;p&gt;牛在当时轻而易举地变成了猎人与畜牧人用来做交易的媒介，并用来作为价值的标准。因为在游牧中携带较方便，牧人对饲养牛群极感兴趣。甚至在荷马时代，人与物的价值仍用牛来衡量：希腊武士狄俄墨得斯（Diomedes）的盔甲值9头牛，一个身怀技术的奴隶只值4头。罗马人使用两个很类似的词—— 
 pecus和pecunia来代表牛与钱，并在早期使用的钱币上印上牛的形状。我们所用的词，如资本、动产（chattel）及牛都是由拉丁文Capitale一词经法文传下来的，该词原义就是财产（property）。“capital”又由Caput一词衍化而来，原意为“头”（head），也就是说，牛的头数。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-
-    &lt;p&gt;牛在当时轻而易举地变成了猎人与畜牧人用来做交易的媒介，并用来作为价值的标准。因为在游牧中携带较方便，牧人对饲养牛群极感兴趣。甚至在荷马时代，人与物的价值仍用牛来衡量：希腊武士狄俄墨得斯（Diomedes）的盔甲值9头牛，一个身怀技术的奴隶只值4头。罗马人使用两个很类似的词—— 
-pecus和pecunia来代表牛与钱，并在早期使用的钱币上印上牛的形状。我们所用的词，如资本、动产（chattel）及牛都是由拉丁文Capitale一词经法文传下来的，该词原义就是财产（property）。“capital”又由Caput一词衍化而来，原意为“头”（head），也就是说，牛的头数。&lt;/p&gt;
-  &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
 &lt;blockquote&gt;
@@ -533,10 +546,6 @@ un homme!）来赞美他。&lt;/p&gt;
   &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;世界文明史：东方的遗产
-威尔·杜兰特
-51个想法&lt;/p&gt;
-
 &lt;table&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
@@ -926,10 +935,6 @@ vow），虔敬地，默想着我，想着我而忘怀一切。&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;无疑，我们的气候在最后将给予我们保护。&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;世界文明史：东方的遗产
-威尔·杜兰特
-75个想法&lt;/p&gt;
 
 &lt;table&gt;
   &lt;tbody&gt;
@@ -1534,10 +1539,6 @@ Kyuso），他年轻时曾在一寺院中潜修，彻夜祈祷深思，坚志追
     &lt;p&gt;曾经有一位年轻人向他问道：“您除读书之外是否别有嗜好？”他答道：“人生之乐趣莫过于吃烧豆及批判日本历代伟人。”&lt;/p&gt;
   &lt;/blockquote&gt;
 &lt;/blockquote&gt;
-
-&lt;p&gt;世界文明史：东方的遗产
-威尔·杜兰特
-5个想法&lt;/p&gt;
 
 &lt;p&gt;◆ 第八章 | 
 古代日本的思想与艺术&lt;/p&gt;
@@ -4246,246 +4247,6 @@ shed by murder, gore.&lt;/li&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>Mermaid画流程图语法</title>
-   <link href="/2019/01/09/Mermaid%E7%94%BB%E6%B5%81%E7%A8%8B%E5%9B%BE%E8%AF%AD%E6%B3%95.html"/>
-   <updated>2019-01-09T00:00:00+08:00</updated>
-   <id>/2019/01/09/Mermaid画流程图语法</id>
-   <content type="html">&lt;p&gt;在markdown下使用mermaid绘制流程图flowchart，通过javascript实现图表的生成，是一种简便实用的方法。&lt;/p&gt;
-
-&lt;h2 id=&quot;基本语法分类&quot;&gt;基本语法分类&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;方向申明&lt;/li&gt;
-  &lt;li&gt;节点与形状&lt;/li&gt;
-  &lt;li&gt;连接线&lt;/li&gt;
-  &lt;li&gt;特殊语法&lt;/li&gt;
-  &lt;li&gt;子图语法&lt;/li&gt;
-  &lt;li&gt;基础fontawesome支持语法&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;方向申明&quot;&gt;方向申明&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;graph 方向代码&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;方向代码有：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;TB: top-bottom 从上到下&lt;/li&gt;
-  &lt;li&gt;BT: bottom-top从下到上&lt;/li&gt;
-  &lt;li&gt;RL: right-left从右到左&lt;/li&gt;
-  &lt;li&gt;LR: left-right从左到右&lt;/li&gt;
-  &lt;li&gt;TD: same as TB从上到下&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;例如：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A--&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-
-    graph LR
-
-          A--&amp;gt;B
-
-&lt;/div&gt;
-
-&lt;h3 id=&quot;节点与形状&quot;&gt;节点与形状&lt;/h3&gt;
-
-&lt;p&gt;分为：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;默认节点：仅有&lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;文本节点：又称矩形节点，用&lt;code class=&quot;highlighter-rouge&quot;&gt;id[文本内容]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;圆角节点：用&lt;code class=&quot;highlighter-rouge&quot;&gt;id(文本内容)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;圆节点：用&lt;code class=&quot;highlighter-rouge&quot;&gt;id((文本内容))&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;右向旗帜节点：用&lt;code class=&quot;highlighter-rouge&quot;&gt;id&amp;gt;文本内容]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;菱形节点：用&lt;code class=&quot;highlighter-rouge&quot;&gt;id{文本内容}&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;例如：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph TB
-​		id1
-​		id2[这是矩形节点]
-​		id3(这是圆角节点)
-​		id4((这是圆节点))
-​		id5&amp;gt;这是右向旗帜节点]
-​		id6{这是菱形节点}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;​&lt;/p&gt;
-&lt;div class=&quot;mermaid&quot;&gt;
-	graph TB
-		id1
-		id2[这是矩形节点]
-		id3(这是圆角节点)
-		id4((这是圆节点))
-		id5&amp;gt;这是右向旗帜节点]
-		id6{这是菱形节点}
-&lt;/div&gt;
-
-&lt;h3 id=&quot;连接线&quot;&gt;连接线&lt;/h3&gt;
-
-&lt;p&gt;节点间的连接线有多种形状，并可以在连接线中加入标签：&lt;/p&gt;
-
-&lt;h4 id=&quot;箭头形连接&quot;&gt;箭头形连接&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A--&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph LR
-	A--&amp;gt;B
-&lt;/div&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph LR
-	A--&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&quot;无箭头连接&quot;&gt;无箭头连接&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A---B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph LR
-	A---B
-&lt;/div&gt;
-
-&lt;h4 id=&quot;带标签连接&quot;&gt;带标签连接&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A--这是标签---B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;需注意，标签前面是两短横，后面是三短横。&lt;/p&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph LR
-	A--这是标签---B
-&lt;/div&gt;
-
-&lt;h4 id=&quot;带箭头标签连接&quot;&gt;带箭头标签连接&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A--这是标签--&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;需注意，标签前面是两短横，后面是两短横与一”&amp;gt;”号。&lt;/p&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph LR
-	A--这是标签--&amp;gt;B
-&lt;/div&gt;
-
-&lt;h4 id=&quot;虚线连接&quot;&gt;虚线连接&lt;/h4&gt;
-&lt;h5 id=&quot;虚线带箭头连接&quot;&gt;虚线带箭头连接&lt;/h5&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A-.-&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph LR
-	A-.-&amp;gt;B
-&lt;/div&gt;
-
-&lt;h5 id=&quot;虚线无箭头连接&quot;&gt;虚线无箭头连接&lt;/h5&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A-.-B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph LR
-	A-.-B
-&lt;/div&gt;
-
-&lt;h5 id=&quot;虚线带标签连接&quot;&gt;虚线带标签连接&lt;/h5&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A-.这是标签.-B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph LR
-	A-.这是标签.-B
-&lt;/div&gt;
-
-&lt;h5 id=&quot;虚线带标签带箭头连接&quot;&gt;虚线带标签带箭头连接&lt;/h5&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph LR
-​	A-.这是标签.-&amp;gt;B
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph LR
-	A-.这是标签.-&amp;gt;B
-&lt;/div&gt;
-
-&lt;h4 id=&quot;粗实线连接&quot;&gt;粗实线连接&lt;/h4&gt;
-
-&lt;p&gt;语法与上类似，只是将其中“-”改为“=”即可。示例略。&lt;/p&gt;
-
-&lt;h3 id=&quot;特殊语法&quot;&gt;特殊语法&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;使用引号可以抑制一些特殊的字符使用，避免歧义。&lt;/li&gt;
-  &lt;li&gt;转义字符可以使用&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;子图语法subgraph&quot;&gt;子图语法(subgraph)&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-subgraph title
-​	graph definition
-end
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;示例：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;graph TB
-subgraph 子图1
-a1 --&amp;gt; a2[fa:fa-ban forbidden]
-end
-subgraph 子图2
-b1 --&amp;gt; b2[fa:fa-spinner spinner]
-end
-subgraph 子图3
-c1 --&amp;gt; c2[&quot;fa:fa-twitter for peace&quot;]
-end
-c1 --&amp;gt; a2
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-graph TB
-subgraph 子图1
-a1 --&amp;gt; a2[fa:fa-ban forbidden]
-end
-subgraph 子图2
-b1 --&amp;gt; b2[fa:fa-spinner spinner]
-end
-subgraph 子图3
-c1 --&amp;gt; c2[&quot;fa:fa-twitter for peace&quot;]
-end
-c1 --&amp;gt; a2
-&lt;/div&gt;
-
-&lt;h3 id=&quot;基础fontawesome支持语法&quot;&gt;基础fontawesome支持语法&lt;/h3&gt;
-
-&lt;p&gt;要加入来自fontawesome的图表字体，需要作如上引用。&lt;/p&gt;
-
-&lt;p&gt;引用的语法为：fa:#icon class name#&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;以上内容摘自网络&lt;/em&gt;&lt;/p&gt;
 </content>
  </entry>
  
