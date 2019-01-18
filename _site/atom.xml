@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-18T19:07:09+08:00</updated>
+ <updated>2019-01-18T22:38:41+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -16,15 +16,13 @@
    <link href="/2019/01/18/%E8%B0%81%E6%98%AF%E8%B0%81%E7%9A%84%E8%BE%85%E5%8A%A9%E7%BA%BF.html"/>
    <updated>2019-01-18T00:00:00+08:00</updated>
    <id>/2019/01/18/谁是谁的辅助线</id>
-   <content type="html">&lt;p&gt;在网上看到这样一道数学题，是八年级上
-学期的期末考试填空题。如下:&lt;/p&gt;
+   <content type="html">&lt;p&gt;在网上看到这样一道数学题，是八年级上学期的期末考试填空题。如下:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/pic201901181.jpg&quot; alt=&quot;数学题&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;思路：&lt;/p&gt;
 
-&lt;p&gt;添加辅助线，利用全等三角形，勾股定理
-来将已知条件转化为可资利用的数据。&lt;/p&gt;
+&lt;p&gt;添加辅助线，利用全等三角形，勾股定理来将已知条件转化为可资利用的数据。&lt;/p&gt;
 
 &lt;p&gt;解题图示：&lt;/p&gt;
 
@@ -33,35 +31,50 @@
 &lt;p&gt;解题过程：&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;过M点作AM的垂线&lt;/li&gt;
-  &lt;li&gt;过C点作CM的垂线&lt;/li&gt;
+  &lt;li&gt;过M点作&lt;script type=&quot;math/tex&quot;&gt;\overline{AM}&lt;/script&gt;的垂线&lt;/li&gt;
+  &lt;li&gt;过C点作&lt;script type=&quot;math/tex&quot;&gt;\overline{CM}&lt;/script&gt;的垂线&lt;/li&gt;
   &lt;li&gt;两线相交于D点。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;∵∠AMC=45°，&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\because \angle AMC=45°&lt;/script&gt;
 
-&lt;p&gt;∴∠CMD=45°&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore \angle CMD=45°&lt;/script&gt;
 
-&lt;p&gt;∴直角三角形⊿MCD为等腰直角三角形&lt;/p&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\therefore&lt;/script&gt;直角三角形&lt;script type=&quot;math/tex&quot;&gt;\triangle 
+MCD&lt;/script&gt;为等腰直角三角形&lt;/p&gt;
 
-&lt;p&gt;∴MC=CD&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore 
+\overline{MC}=\overline{CD}&lt;/script&gt;
 
-&lt;p&gt;又∵AC=BC,∠BCM=90°+∠ACM, 
-∠ACD=∠ACM+∠MCD=∠ACM+90°&lt;/p&gt;
+&lt;p&gt;又&lt;script type=&quot;math/tex&quot;&gt;\because 
+\overline{AC}=\overline{BC}&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;\angle 
+BCM=90°+\angle 
+ACM&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;\angle 
+ACD=\angle 
+ACM+\angle MCD=\angle 
+ACM+90°&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;∴∠BCM=∠ACD&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore \angle 
+BCM=\angle ACD&lt;/script&gt;
 
-&lt;p&gt;∴△BCM≌△ACD 全等&lt;/p&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\therefore 
+\triangle BCM\triangleq 
+\triangle ACD&lt;/script&gt; 
+两个三角形全等&lt;/p&gt;
 
-&lt;p&gt;∴AD=13&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore 
+\overline{AD}=13&lt;/script&gt;
 
-&lt;p&gt;∵⊿AMD是直角三角形，根据勾股定理知
-MD=12&lt;/p&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\because 
+\triangle 
+AMD&lt;/script&gt;是直角三角形，根据勾股定理知
+&lt;script type=&quot;math/tex&quot;&gt;\overline{MD}=12&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;又⊿MCD是等腰直角三角形，根据勾股
+&lt;p&gt;又&lt;script type=&quot;math/tex&quot;&gt;\triangle 
+MCD&lt;/script&gt;是等腰直角三角形，根据勾股
 定理，得&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;CM=12\times\sqrt{2}\div2=6\sqrt{2}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\overline{CM}=12\times\sqrt{2}\div2=6\sqrt{2}&lt;/script&gt;
 
 </content>
  </entry>
