@@ -1,3 +1,5 @@
+#gems: ['jekyll-plantuml']
+
 name: "montanus2019"
 permalink: /:year/:month/:day/:title.html
 
