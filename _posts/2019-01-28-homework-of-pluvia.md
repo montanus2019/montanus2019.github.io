@@ -2,11 +2,12 @@
 
 layout: post
 
-title: 2019-01-28-阅读课作业
+title: The Case of the 
+Midnight Vistor
 
 tags:
 
-- 电脑技术
+- 英文写作
 
 ---
 
@@ -16,3 +17,5 @@ tags:
 
 He suddenly got an idea. "Let's go to the costume store!"
  
+![画]({{"/media/IMG_20190128_120503.jpg"|absolute_url}})
+
