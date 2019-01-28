@@ -75,6 +75,35 @@
 
 <p><img src="http://localhost:4000/media/vim.jpg" alt="vim键盘" /></p>
 
+<h2 id="windows下vim中文乱码处理">windows下vim中文乱码处理</h2>
+
+<p>现象：</p>
+
+<p>gvim安装后，打开中文utf-8编码的文件中文显示乱码</p>
+
+<p>处理：</p>
+
+<p>1、启动gvim8.0，菜单 ”编辑“-&gt;”启动设定”</p>
+
+<p>在文件最开始处添加如下两行</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+set fileencodings=utf-8,ucs-bom,cp936,big5
+set fileencoding=utf-8
+
+</code></pre></div></div>
+
+<h2 id="vim关于文件编码常用的命令">vim关于文件编码常用的命令</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+:set fileencoding    查看文件编码
+:set fileformat       查看文件格式
+:set fileencoding=utf-8 转换文件编码为utf-8
+
+</code></pre></div></div>
+
+<p>windows在命令行使用vim,只需要把gvim的路径配置到环境变量Path就可以了。</p>
+
 
   </section>
   

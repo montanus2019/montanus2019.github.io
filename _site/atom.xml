@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-01-28T16:49:57+08:00</updated>
+ <updated>2019-01-28T19:54:57+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -50,6 +50,35 @@
 &lt;/table&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/vim.jpg&quot; alt=&quot;vim键盘&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;windows下vim中文乱码处理&quot;&gt;windows下vim中文乱码处理&lt;/h2&gt;
+
+&lt;p&gt;现象：&lt;/p&gt;
+
+&lt;p&gt;gvim安装后，打开中文utf-8编码的文件中文显示乱码&lt;/p&gt;
+
+&lt;p&gt;处理：&lt;/p&gt;
+
+&lt;p&gt;1、启动gvim8.0，菜单 ”编辑“-&amp;gt;”启动设定”&lt;/p&gt;
+
+&lt;p&gt;在文件最开始处添加如下两行&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+set fileencodings=utf-8,ucs-bom,cp936,big5
+set fileencoding=utf-8
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;vim关于文件编码常用的命令&quot;&gt;vim关于文件编码常用的命令&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+:set fileencoding    查看文件编码
+:set fileformat       查看文件格式
+:set fileencoding=utf-8 转换文件编码为utf-8
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;windows在命令行使用vim,只需要把gvim的路径配置到环境变量Path就可以了。&lt;/p&gt;
 
 </content>
  </entry>
