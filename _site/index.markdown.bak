@@ -44,16 +44,16 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/01/18/%E8%B0%81%E6%98%AF%E8%B0%81%E7%9A%84%E8%BE%85%E5%8A%A9%E7%BA%BF.html">谁是谁的辅助线</a></h2>
+      <h2><a href="/2019/01/28/homework-of-pluvia.html">The Case of the Midnight Vistor</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-01-18">2019-01-18</time>
+      <time datetime="2019-01-28">2019-01-28</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#数学" title="数学">#数学</a>
+      <a href="/tags.html#英文写作" title="英文写作">#英文写作</a>
       
     </span>
     
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = '谁是谁的辅助线'
+      like-name       = 'The Case of the Midnight Vistor'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,65 +74,13 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <p>在网上看到这样一道数学题，是八年级上学期的期末考试填空题。如下:</p>
+    <h2 id="the-case-of-the-midnight-vistor">The case of the midnight vistor</h2>
 
-<p><img src="http://localhost:4000/media/pic201901181.jpg" alt="数学题" /></p>
+<p>“E.B.,I have found some very interesting footprints here!” Sally said. E.B.’s town was suffering from midnight robbery. “Maybe this is the clue to the solution!” E.B. said. The thief had stolen their sign, and Mr O’Hara’s money, and a few other items. The foot print looks like an animal paw. “It must be human, and a growup or junior. Because animals can’t steal money.”</p>
 
-<p>思路：</p>
+<p>He suddenly got an idea. “Let’s go to the costume store!”</p>
 
-<p>添加辅助线，利用全等三角形，勾股定理来将已知条件转化为可资利用的数据。</p>
-
-<p>解题图示：</p>
-
-<p><img src="http://localhost:4000/media/pic201901182.jpg" alt="图解" /></p>
-
-<p>解题过程：</p>
-
-<ul>
-  <li>过M点作<script type="math/tex">\overline{AM}</script>的垂线</li>
-  <li>过C点作<script type="math/tex">\overline{CM}</script>的垂线</li>
-  <li>两线相交于D点。</li>
-</ul>
-
-<script type="math/tex; mode=display">\because \angle AMC=45°</script>
-
-<script type="math/tex; mode=display">\therefore \angle CMD=45°</script>
-
-<p><script type="math/tex">\therefore</script>直角三角形<script type="math/tex">\triangle 
-MCD</script>为等腰直角三角形</p>
-
-<script type="math/tex; mode=display">\therefore 
-\overline{MC}=\overline{CD}</script>
-
-<p>又<script type="math/tex">\because 
-\overline{AC}=\overline{BC}</script>，<script type="math/tex">\angle 
-BCM=90°+\angle 
-ACM</script>，<script type="math/tex">\angle 
-ACD=\angle 
-ACM+\angle MCD=\angle 
-ACM+90°</script></p>
-
-<script type="math/tex; mode=display">\therefore \angle 
-BCM=\angle ACD</script>
-
-<p><script type="math/tex">\therefore 
-\triangle BCM\triangleq 
-\triangle ACD</script> 
-两个三角形全等</p>
-
-<script type="math/tex; mode=display">\therefore 
-\overline{AD}=13</script>
-
-<p><script type="math/tex">\because 
-\triangle 
-AMD</script>是直角三角形，根据勾股定理知
-<script type="math/tex">\overline{MD}=12</script></p>
-
-<p>又<script type="math/tex">\triangle 
-MCD</script>是等腰直角三角形，根据勾股
-定理，得</p>
-
-<script type="math/tex; mode=display">\overline{CM}=12\times\sqrt{2}\div2=6\sqrt{2}</script>
+<p><img src="http://localhost:4000/media/IMG_20190128_120503.jpg" alt="画" /></p>
 
 
     </section>
@@ -143,6 +91,34 @@ MCD</script>是等腰直角三角形，根据勾股
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-28">2019-01-28</time>
+      <a href="/2019/01/28/VIM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html" title="VIM学习笔记">VIM学习笔记</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-27">2019-01-27</time>
+      <a href="/2019/01/27/exploring-venus.html" title="Exploring Venus">Exploring Venus</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-26">2019-01-26</time>
+      <a href="/2019/01/26/zhi.html" title="Heraclit">Heraclit</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-01-18">2019-01-18</time>
+      <a href="/2019/01/18/%E8%B0%81%E6%98%AF%E8%B0%81%E7%9A%84%E8%BE%85%E5%8A%A9%E7%BA%BF.html" title="谁是谁的辅助线">谁是谁的辅助线</a>
+    </li>
   
     
     
