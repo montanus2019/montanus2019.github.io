@@ -10,7 +10,7 @@ tags:
 
 ---
 
-** Exploring Venus**
+** Exploring Venus **
 
 
 Do you know? Venus is the planet that is closest in size compared to Earth. But it is not at all like Earth. Who would know that Venus is both beauty and beast?
