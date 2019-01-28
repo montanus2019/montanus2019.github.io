@@ -2,8 +2,7 @@
 
 layout: post
 
-title: The Case of the 
-Midnight Vistor
+title: The Case of the Midnight Vistor
 
 tags:
 
