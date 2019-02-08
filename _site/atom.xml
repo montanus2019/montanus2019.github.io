@@ -4,12 +4,135 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-02-02T18:42:49+08:00</updated>
+ <updated>2019-02-08T18:32:28+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>termux下gboard中文输入法在vim中的应用</title>
+   <link href="/2019/02/08/termux-gboard-vim.html"/>
+   <updated>2019-02-08T00:00:00+08:00</updated>
+   <id>/2019/02/08/termux-gboard-vim</id>
+   <content type="html">&lt;p&gt;在termux中用gboard输入法输入中文，实在是有点麻烦。通过多次搜索尝试，终于找到了窍门：&lt;/p&gt;
+
+&lt;p&gt;左划长按keyboard会出现快捷键条，把它往左划就能输中文了&lt;/p&gt;
+
+&lt;p&gt;不过，就是在左划时，手指最好放在end键附近，否则光标总会跑到别的地方去，徒增烦扰。&lt;/p&gt;
+
+&lt;p&gt;另外，为了解决vim中出现中文乱码问题，最好在.vimrc中增加如下设置：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~
+vim .vimrc
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030
+set termencoding=utf-8
+set expandtab
+set ts=4
+set shiftwidth=4
+set nu
+syntax on
+
+if has('mouse')
+set mouse-=a
+endif
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;如此，就可以解决中文乱码问题。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>流浪地球digest</title>
+   <link href="/2019/02/07/earth.html"/>
+   <updated>2019-02-07T00:00:00+08:00</updated>
+   <id>/2019/02/07/earth</id>
+   <content type="html">&lt;p&gt;◆ 第1章 刹车时代&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;你在平原上走着走着，突然迎面遇到一堵墙，这墙向上无限高，向下无限深，向左无限远，向右无限远，这墙是什么？&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;◆ 第2章 逃逸时代&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;我们必须抱有希望，这并不是因为希望真的存在，而是因为我们要做高贵的人。&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;希望是这个时代的黄金和宝石&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>最怕过年过节</title>
+   <link href="/2019/02/03/%E6%9C%80%E6%80%95%E8%BF%87%E5%B9%B4%E8%BF%87%E8%8A%82.html"/>
+   <updated>2019-02-03T00:00:00+08:00</updated>
+   <id>/2019/02/03/最怕过年过节</id>
+   <content type="html">&lt;p&gt;最怕的就是过年过节，每逢这个时候，心里无端地烦恼，个中缘由不堪与外人道。&lt;/p&gt;
+
+&lt;p&gt;外面世界的灯红酒绿莺歌燕舞，于我格格不入，说是心远地自偏，无非是自欺欺人。其实，只是囊中羞涩罢了。穷人难过年，年节于我无非就是年劫。&lt;/p&gt;
+
+&lt;p&gt;遗世而独立,已然缥缈难再寻……&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;补记：每每这个时候，往往事务繁多，反而把最重要的事–每天都要服用的药忘带在身边了。悲催！&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>浮生若梦</title>
+   <link href="/2019/02/02/%E6%B5%AE%E7%94%9F%E8%8B%A5%E6%A2%A6.html"/>
+   <updated>2019-02-02T00:00:00+08:00</updated>
+   <id>/2019/02/02/浮生若梦</id>
+   <content type="html">&lt;p&gt;于尘世隐约的微光中，&lt;/p&gt;
+
+&lt;p&gt;生命仅是春梦一场：&lt;/p&gt;
+
+&lt;p&gt;在梦中，人扮演种种角色，&lt;/p&gt;
+
+&lt;p&gt;醒时万事却已成空。&lt;/p&gt;
+
+&lt;p&gt;国王梦见他是国王，&lt;/p&gt;
+
+&lt;p&gt;拥有无限权威地活在虚幻之宫。&lt;/p&gt;
+
+&lt;p&gt;环绕他的一切欢乐，&lt;/p&gt;
+
+&lt;p&gt;来自幽幻而飘荡的虚空，&lt;/p&gt;
+
+&lt;p&gt;终而死神夺去富贵荣华。&lt;/p&gt;
+
+&lt;p&gt;梦境醒时，&lt;/p&gt;
+
+&lt;p&gt;谁能将冠冕带过死神的门洞？&lt;/p&gt;
+
+&lt;p&gt;不问出生如何，&lt;/p&gt;
+
+&lt;p&gt;举世之人，浑然皆如梦。&lt;/p&gt;
+
+&lt;p&gt;生命究系何物？&lt;/p&gt;
+
+&lt;p&gt;虚幻的琼楼，虚幻的沉醉，一切转头空。&lt;/p&gt;
+
+&lt;p&gt;浮生至多成一梦，&lt;/p&gt;
+
+&lt;p&gt;梦中复有梦。&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>中华门城墙上的灯会展</title>
@@ -44,9 +167,9 @@
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20190201_181706.jpg&quot; alt=&quot;龙&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;灯的海洋中，外在的影子已无所遁形，落寞却不知不觉爬上了心头，遮蔽了天空……&lt;/p&gt;
+&lt;p&gt;灯的海洋中，身外的影子已无所遁形，心头的落寞却不知不觉爬了上来，遮蔽了天空……&lt;/p&gt;
 
-&lt;p&gt;百年的梦醒来吧，是龙就该翱翔在九天之上！&lt;/p&gt;
+&lt;p&gt;百年的梦，醒来吧！是龙就该翱翔在九天之上的！&lt;/p&gt;
 
 </content>
  </entry>
@@ -1800,174 +1923,6 @@
 &lt;p&gt;He suddenly got an idea. “Let’s go to the costume store!”&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20190128_120503.jpg&quot; alt=&quot;画&quot; /&gt;&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>VIM学习笔记</title>
-   <link href="/2019/01/28/VIM%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
-   <updated>2019-01-28T00:00:00+08:00</updated>
-   <id>/2019/01/28/VIM学习笔记</id>
-   <content type="html">&lt;h2 id=&quot;常规操作&quot;&gt;常规操作&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;命令&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;说明&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;x&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;删除光标下的字符&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/vim.jpg&quot; alt=&quot;vim键盘&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;windows下vim中文乱码处理&quot;&gt;windows下vim中文乱码处理&lt;/h2&gt;
-
-&lt;p&gt;现象：&lt;/p&gt;
-
-&lt;p&gt;gvim安装后，打开中文utf-8编码的文件中文显示乱码&lt;/p&gt;
-
-&lt;p&gt;处理：&lt;/p&gt;
-
-&lt;p&gt;1、启动gvim8.0，菜单 ”编辑“-&amp;gt;”启动设定”&lt;/p&gt;
-
-&lt;p&gt;在文件最开始处添加如下两行&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-set fileencodings=utf-8,ucs-bom,cp936,big5
-set fileencoding=utf-8
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;vim关于文件编码常用的命令&quot;&gt;vim关于文件编码常用的命令&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-:set fileencoding    查看文件编码
-:set fileformat       查看文件格式
-:set fileencoding=utf-8 转换文件编码为utf-8
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;windows在命令行使用vim,只需要把gvim的路径配置到环境变量Path就可以了。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>Exploring Venus</title>
-   <link href="/2019/01/27/exploring-venus.html"/>
-   <updated>2019-01-27T00:00:00+08:00</updated>
-   <id>/2019/01/27/exploring-venus</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;Exploring Venus&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Do you know? Venus is the planet that is closest in size compared to Earth. But it is not at all like Earth. Who would know that Venus is both beauty and beast?&lt;/p&gt;
-
-&lt;p&gt;Venus is the brightest ‘star’ in our night sky. People have admired this dazzling point of light from the beginning of humans.
-Venus is a bizarre world that is part beauty and part beast. Venus is an extremely hostile place——Maybe even hotter the hottest place on Mercury! It also has towering mountains, vast plains, gigantic volcanoes, deep craters, and many other amazing features for use to see.&lt;/p&gt;
-
-&lt;p&gt;What is the green house effect? Venus has huge clouds that trap heat and make Venus’ average temperature about 870℉! The clouds that trap heat are Venus’ atmosphere. It is made out of large amounts of carbon dioxide, which is very efficient in trapping heat.&lt;/p&gt;
-
-&lt;p&gt;Layers of air can be very heavy, just as large amounts of sand. The air on Venus is so weighty that if you were able to stand on its surface, the air pressure would soon crush you!&lt;/p&gt;
-
-&lt;p&gt;Venus is undoubtedly possessed a strange beauty of its own. Both beauty and beast, that’s Venus!&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>Heraclit</title>
-   <link href="/2019/01/26/zhi.html"/>
-   <updated>2019-01-26T00:00:00+08:00</updated>
-   <id>/2019/01/26/zhi</id>
-   <content type="html">&lt;p&gt;Πολυμαθίη νόον έχειν ού 
-διδάσκει.
-___‘Ηράκλειτος&lt;/p&gt;
-
-&lt;p&gt;Knowing many things does not 
-teach insight.
-___Heraclit&lt;/p&gt;
-
-&lt;p&gt;知道很多还不会教导人获得智慧。
-___赫拉克利特&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;我觉得可以直接翻译为“知障”即可。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>谁是谁的辅助线</title>
-   <link href="/2019/01/18/%E8%B0%81%E6%98%AF%E8%B0%81%E7%9A%84%E8%BE%85%E5%8A%A9%E7%BA%BF.html"/>
-   <updated>2019-01-18T00:00:00+08:00</updated>
-   <id>/2019/01/18/谁是谁的辅助线</id>
-   <content type="html">&lt;p&gt;在网上看到这样一道数学题，是八年级上学期的期末考试填空题。如下:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/pic201901181.jpg&quot; alt=&quot;数学题&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;思路：&lt;/p&gt;
-
-&lt;p&gt;添加辅助线，利用全等三角形，勾股定理来将已知条件转化为可资利用的数据。&lt;/p&gt;
-
-&lt;p&gt;解题图示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/pic201901182.jpg&quot; alt=&quot;图解&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;解题过程：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;过M点作&lt;script type=&quot;math/tex&quot;&gt;\overline{AM}&lt;/script&gt;的垂线&lt;/li&gt;
-  &lt;li&gt;过C点作&lt;script type=&quot;math/tex&quot;&gt;\overline{CM}&lt;/script&gt;的垂线&lt;/li&gt;
-  &lt;li&gt;两线相交于D点。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\because \angle AMC=45°&lt;/script&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore \angle CMD=45°&lt;/script&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\therefore&lt;/script&gt;直角三角形&lt;script type=&quot;math/tex&quot;&gt;\triangle 
-MCD&lt;/script&gt;为等腰直角三角形&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore 
-\overline{MC}=\overline{CD}&lt;/script&gt;
-
-&lt;p&gt;又&lt;script type=&quot;math/tex&quot;&gt;\because 
-\overline{AC}=\overline{BC}&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;\angle 
-BCM=90°+\angle 
-ACM&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;\angle 
-ACD=\angle 
-ACM+\angle MCD=\angle 
-ACM+90°&lt;/script&gt;&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore \angle 
-BCM=\angle ACD&lt;/script&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\therefore 
-\triangle BCM\triangleq 
-\triangle ACD&lt;/script&gt; 
-两个三角形全等&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore 
-\overline{AD}=13&lt;/script&gt;
-
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\because 
-\triangle 
-AMD&lt;/script&gt;是直角三角形，根据勾股定理知
-&lt;script type=&quot;math/tex&quot;&gt;\overline{MD}=12&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;又&lt;script type=&quot;math/tex&quot;&gt;\triangle 
-MCD&lt;/script&gt;是等腰直角三角形，根据勾股
-定理，得&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\overline{CM}=12\times\sqrt{2}\div2=6\sqrt{2}&lt;/script&gt;
 
 </content>
  </entry>

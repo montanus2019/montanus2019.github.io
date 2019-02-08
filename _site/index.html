@@ -44,53 +44,47 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/02/01/%E4%B8%AD%E5%8D%8E%E9%97%A8%E5%9F%8E%E5%A2%99%E4%B8%8A%E7%9A%84%E7%81%AF.html">中华门城墙上的灯会展</a></h2>
+      <h2><a href="/2019/02/08/termux-gboard-vim.html">termux下gboard中文输入法在vim中的应用</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-02-01">2019-02-01</time>
+      <time datetime="2019-02-08">2019-02-08</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#感悟" title="感悟">#感悟</a>
+      <a href="/tags.html#电脑技术" title="电脑技术">#电脑技术</a>
       
     </span>
     
     </section>
     <section class="post">
-    <blockquote>
-  <p>阻止了我的脚步的，并不是我所看见的东西，而是我所无法看见的那些东西。你明白么？我看不见的那些。在那个无限蔓延的城市里，什么东西都有，可惟独没有尽头。——电影《海上钢琴师》</p>
-</blockquote>
+    <p>在termux中用gboard输入法输入中文，实在是有点麻烦。通过多次搜索尝试，终于找到了窍门：</p>
 
-<p><img src="http://localhost:4000/media/IMG_20190201_212037.jpg" alt="钢筋森林" /></p>
+<p>左划长按keyboard会出现快捷键条，把它往左划就能输中文了</p>
 
-<p>一年一度的灯会开始了，趁现在刚刚开始，看灯的人还不多，加之雨雪天间隔放晴之机，拖着残破之躯，顶着凌冽寒风，搭上2路汽车，来到了古称“聚宝门”的中华门城堡内，观看巨型灯展，满眼都是猪灯。</p>
+<p>不过，就是在左划时，手指最好放在end键附近，否则光标总会跑到别的地方去，徒增烦扰。</p>
 
-<p>沿着跑马道，爬上了城墙，放眼望去，城墙内满是一组组反映六朝古都十朝都会历史故事的大型彩灯，向东而行东晋、孙吴、宋齐梁陈、朱明，宛若流淌的时间之河上朵朵偶然翻滚的浪花被彩灯采撷而出。</p>
+<p>另外，为了解决vim中出现中文乱码问题，最好在.vimrc中增加如下设置：</p>
 
-<p>城外远处大报恩寺的琉璃宝塔在灯光的映衬下五光十色、熠熠生辉，分外好看；城内近处老门东屋顶上的条形灯横平竖直地勾勒出了马头墙的外框架，条理分明。</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~
+vim .vimrc
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030
+set termencoding=utf-8
+set expandtab
+set ts=4
+set shiftwidth=4
+set nu
+syntax on
 
-<p>在一座巨大的莲花灯下，投影在地的彩鲤在莲花池内自由地嬉戏。下到老门东的城墙出口就在近旁，而若沿城墙继续向东可以一直到达东水关。老门东的热闹是定然要去感受一下的，于是下了城墙根。蓦然发现此处竟然正对着秦淮外国语学校的南校门，原来此处已离老门东的江宁路出口不远了。</p>
+if has('mouse')
+set mouse-=a
+endif
 
-<p>回头向西行，来到了老门东的主广场，一只巨大的肥猪灯闯入眼帘，红红火火地预示着己亥年的幸福与富足。两旁的行道树也不甘寂寞地披上了五彩缤纷的彩带灯，让人不由得想起这首词：</p>
+</code></pre></div></div>
 
-<blockquote>
-  <p><strong>青玉案·元夕</strong></p>
-
-  <p>宋·辛弃疾</p>
-
-  <p>东风夜放花千树。更吹落、星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。</p>
-
-  <p>蛾儿雪柳黄金缕。笑语盈盈暗香去。众里寻他千百度。蓦然回首，那人却在，灯火阑珊处。</p>
-</blockquote>
-
-<p><img src="http://localhost:4000/media/IMG_20190201_181706.jpg" alt="龙" /></p>
-
-<p>灯的海洋中，外在的影子已无所遁形，落寞却不知不觉爬上了心头，遮蔽了天空……</p>
-
-<p>百年的梦醒来吧，是龙就该翱翔在九天之上！</p>
-
+<p>如此，就可以解决中文乱码问题。</p>
 
     </section>
     </article>
@@ -100,6 +94,34 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-07">2019-02-07</time>
+      <a href="/2019/02/07/earth.html" title="流浪地球digest">流浪地球digest</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-03">2019-02-03</time>
+      <a href="/2019/02/03/%E6%9C%80%E6%80%95%E8%BF%87%E5%B9%B4%E8%BF%87%E8%8A%82.html" title="最怕过年过节">最怕过年过节</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-02">2019-02-02</time>
+      <a href="/2019/02/02/%E6%B5%AE%E7%94%9F%E8%8B%A5%E6%A2%A6.html" title="浮生若梦">浮生若梦</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-01">2019-02-01</time>
+      <a href="/2019/02/01/%E4%B8%AD%E5%8D%8E%E9%97%A8%E5%9F%8E%E5%A2%99%E4%B8%8A%E7%9A%84%E7%81%AF.html" title="中华门城墙上的灯会展">中华门城墙上的灯会展</a>
+    </li>
   
     
     

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="montanus2019" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>termux下gboard中文输入法在vim中的应用</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="montanus2019" type="application/atom+xml" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/media/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script type="text/javascript"> hljs.initHighlightingOnLoad(); </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/media/js/mermaid.js"></script>
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="montanus2019" class="" href="/">montanus2019</a></h1>
+          </div>
+          <nav>
+            
+            <span><a title="Archive" href="/archive.html"><i class="fa fa-list-ul"></i></a></span>
+            
+            <span><a title="Tags" href="/tags.html"><i class="fa fa-tags"></i></a></span>
+            
+            <span><a title="About" href="/about.html"><i class="fa fa-user"></i></a></span>
+            
+            <span><a title="Gallery" href=""><i class="fa fa-film"></i></a></span>
+            
+            <span><a title="Subscribe" href="/atom.xml"><i class="fa fa-rss"></i></a></span>
+            
+          </nav>
+        </header>
+        <div id="content">
+        <article>
+  <section class="title">
+    <h2>termux下gboard中文输入法在vim中的应用 </h2>
+  </section>
+  <section class="meta">
+  <span class="time">
+    <time datetime="2019-02-08">2019-02-08</time>
+  </span>
+  
+  <span class="tags">
+    
+    <a href="/tags.html#电脑技术" title="电脑技术">#电脑技术</a>
+    
+  </span>
+  
+  </section>
+  <section class="post">
+  <p>在termux中用gboard输入法输入中文，实在是有点麻烦。通过多次搜索尝试，终于找到了窍门：</p>
+
+<p>左划长按keyboard会出现快捷键条，把它往左划就能输中文了</p>
+
+<p>不过，就是在左划时，手指最好放在end键附近，否则光标总会跑到别的地方去，徒增烦扰。</p>
+
+<p>另外，为了解决vim中出现中文乱码问题，最好在.vimrc中增加如下设置：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~
+vim .vimrc
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030
+set termencoding=utf-8
+set expandtab
+set ts=4
+set shiftwidth=4
+set nu
+syntax on
+
+if has('mouse')
+set mouse-=a
+endif
+
+</code></pre></div></div>
+
+<p>如此，就可以解决中文乱码问题。</p>
+
+  </section>
+  
+</article>
+
+        </div>
+        <footer>
+          <div>
+            
+            &copy; 2018 ~ 2019 montanus2019 | 
+powered by jekyll | themed 
+by <a 
+href="https://montanus2019.github.io" 
+title="montanus2019">montanus</a> 
+| fork <a 
+href="https://github.com/montanus2019" title="fork me">me</a>
+          </div>
+        </footer>
+      </div> <!-- main -->
+  </body>
+</html>
