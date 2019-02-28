@@ -44,11 +44,11 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/02/25/%E6%A2%B5%E8%AF%AD49%E9%9F%B3.html">梵语四十九音</a></h2>
+      <h2><a href="/2019/02/28/%E6%A2%B5%E6%96%87%E5%A4%8D%E5%85%83%E9%9F%B3.html">梵文复元音发音与书写</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-02-25">2019-02-25</time>
+      <time datetime="2019-02-28">2019-02-28</time>
     </span>
     
     <span class="tags">
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = '梵语四十九音'
+      like-name       = '梵文复元音发音与书写'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,65 +74,60 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <p>元音</p>
+    <p>发音</p>
+<ul>
+  <li>舌面元音ए e ऐ ai</li>
+  <li>双唇元音ओ o औ au</li>
+  <li>复元音总是长音，没有相应的短音；</li>
+  <li>ए e的发音：
+    <blockquote>
+      <p>舌尖抵下齿，舌前部抬高，上下齿全闭，双唇平扁，气流中出，声带振动，近似英/e/</p>
+    </blockquote>
+  </li>
+  <li>ऐ ai的发音
+    <blockquote>
+      <p>口腔张开，舌身后缩，舌后部向软腭抬起，从ā滑向i；口腔从开到合，舌位从第6到高；前音长而清，后音短而糊；声带振动。类似英/ai/</p>
+    </blockquote>
+  </li>
+  <li>ओ o的发音
+    <blockquote>
+      <p>ā口型，唇收圆，气唇出，声带振。</p>
+    </blockquote>
+  </li>
+  <li>औ au的发音
+    <blockquote>
+      <p>आ ā口型，滑向उ u，口腔从开到合，舌位由低到高，前清且长，后糊而短，声带振动。</p>
+    </blockquote>
+  </li>
+</ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>短元音</th>
-      <th>长元音</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>अ a</td>
-      <td>आ ā</td>
-    </tr>
-    <tr>
-      <td>इ i</td>
-      <td>ई ī</td>
-    </tr>
-    <tr>
-      <td>उ u</td>
-      <td>ऊ ū</td>
-    </tr>
-    <tr>
-      <td>ऋ ṛ</td>
-      <td>ॠ ṝ</td>
-    </tr>
-    <tr>
-      <td>ऌ ḷ</td>
-      <td>ॡ ḹ</td>
-    </tr>
-    <tr>
-      <td>ए e</td>
-      <td>ऐ ai</td>
-    </tr>
-    <tr>
-      <td>ओ o</td>
-      <td>औ au</td>
-    </tr>
-  </tbody>
-</table>
+<p>书写</p>
+<ul>
+  <li>完整形式
+    <blockquote>
+      <p>在字首或居于一元音之后时</p>
+    </blockquote>
+  </li>
+  <li>简记形式
+    <blockquote>
+      <p>与次前辅音结合时，简记。</p>
+    </blockquote>
+  </li>
+  <li>
+    <ul>
+      <li>ए和ऐ分别简记为े和ै，写在辅音的上端。</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>ओ和औ分别简记为ो和ौ，写在辅音的右边。</li>
+    </ul>
+  </li>
+</ul>
 
-<p>辅音</p>
+<p>一点感触：</p>
 
-<p>喉音：    क ka    ख khā    ग ga    घ ghā    ङ ṅa</p>
-
-<p>腭音：    च ca    छ cha    ज ja    झ jha    ञ ña</p>
-
-<p>卷舌音：  ट ṭa    ठ ṭha    ड ḍa    ढ ḍha    ण ṇa</p>
-
-<p>齿音：    त ta    थ tha    द da    ध dha    न na</p>
-
-<p>唇音：    प pa    फ pha    ब ba    भ bha    म ma</p>
-
-<p>半元音：  य ya    र ra    ल la    व va</p>
-
-<p>咝音：    श śa    ष ṣa    स sa</p>
-
-<p>气音：    ह ha</p>
-
+<p>课本还是罗世方先生的好懂，千万别拿季先生的书来入门，不然梵门未入，脑门堪忧。</p>
 
     </section>
     </article>
@@ -142,6 +137,13 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-25">2019-02-25</time>
+      <a href="/2019/02/25/%E6%A2%B5%E8%AF%AD49%E9%9F%B3.html" title="梵语四十九音">梵语四十九音</a>
+    </li>
   
     
     
