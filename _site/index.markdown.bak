@@ -44,16 +44,16 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/02/13/%E5%A6%9E%E5%A6%9E%E8%AF%B4.html">妞妞说</a></h2>
+      <h2><a href="/2019/02/25/%E6%A2%B5%E8%AF%AD49%E9%9F%B3.html">梵语四十九音</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-02-13">2019-02-13</time>
+      <time datetime="2019-02-25">2019-02-25</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#妞妞说" title="妞妞说">#妞妞说</a>
+      <a href="/tags.html#梵文" title="梵文">#梵文</a>
       
     </span>
     
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = '妞妞说'
+      like-name       = '梵语四十九音'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,11 +74,64 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <p>二十三点，妞妈对妞妞说，小朋友不可以这么晚睡觉，应该九点钟就睡觉。</p>
+    <p>元音</p>
 
-<p>妞妞回答道：<strong>“都是被生活逼的！”</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>短元音</th>
+      <th>长元音</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>अ a</td>
+      <td>आ ā</td>
+    </tr>
+    <tr>
+      <td>इ i</td>
+      <td>ई ī</td>
+    </tr>
+    <tr>
+      <td>उ u</td>
+      <td>ऊ ū</td>
+    </tr>
+    <tr>
+      <td>ऋ ṛ</td>
+      <td>ॠ ṝ</td>
+    </tr>
+    <tr>
+      <td>ऌ ḷ</td>
+      <td>ॡ ḹ</td>
+    </tr>
+    <tr>
+      <td>ए e</td>
+      <td>ऐ ai</td>
+    </tr>
+    <tr>
+      <td>ओ o</td>
+      <td>औ au</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>妞妈复述给我听，妞妞在旁插嘴道：“不要再剧透了！”</p>
+<p>辅音</p>
+
+<p>喉音：    क ka    ख khā    ग ga    घ ghā    ङ ṅa</p>
+
+<p>腭音：    च ca    छ cha    ज ja    झ jha    ञ ña</p>
+
+<p>卷舌音：  ट ṭa    ठ ṭha    ड ḍa    ढ ḍha    ण ṇa</p>
+
+<p>齿音：    त ta    थ tha    द da    ध dha    न na</p>
+
+<p>唇音：    प pa    फ pha    ब ba    भ bha    म ma</p>
+
+<p>半元音：  य ya    र ra    ल la    व va</p>
+
+<p>咝音：    श śa    ष ṣa    स sa</p>
+
+<p>气音：    ह ha</p>
 
 
     </section>
@@ -89,6 +142,41 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-24">2019-02-24</time>
+      <a href="/2019/02/24/latina.html" title="你能你上">你能你上</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-16">2019-02-16</time>
+      <a href="/2019/02/16/%E6%A2%B5%E6%96%87%E4%B9%A0%E9%A2%98%E7%BB%83%E4%B9%A0%E4%BA%8C.html" title="梵文学习练习二">梵文学习练习二</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-15">2019-02-15</time>
+      <a href="/2019/02/15/%E5%A4%A9%E5%9C%B0%E6%9C%89%E6%AD%A3%E6%B0%94.html" title="天地有正气 薪火永相续——“我们的节日∙春节”活动纪实">天地有正气 薪火永相续——“我们的节日∙春节”活动纪实</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-14">2019-02-14</time>
+      <a href="/2019/02/14/%E6%A2%B5%E6%96%87%E4%B9%A0%E9%A2%98%E7%BB%83%E4%B9%A0%E4%B8%80.html" title="梵文习题练习一">梵文习题练习一</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-02-13">2019-02-13</time>
+      <a href="/2019/02/13/%E5%A6%9E%E5%A6%9E%E8%AF%B4.html" title="妞妞说">妞妞说</a>
+    </li>
   
     
     
