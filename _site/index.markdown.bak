@@ -44,16 +44,16 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/03/18/wheelock1.html">韦洛克拉丁语教程读书笔记1</a></h2>
+      <h2><a href="/2019/04/05/zhushi.html">黑海书简</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-03-18">2019-03-18</time>
+      <time datetime="2019-04-05">2019-04-05</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#latina" title="latina">#latina</a>
+      <a href="/tags.html#latin" title="latin">#latin</a>
       
     </span>
     
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = '韦洛克拉丁语教程读书笔记1'
+      like-name       = '黑海书简'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,115 +74,149 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <h2 id="发音">发音</h2>
+    <html>
+<head>
+<meta charset="utf-8" />
+<title>黑海书简</title>
+</head>
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
 
-<p>双元音ui的发音：只见于huius, cuius, huic, cui, hui。在其他地方，这两个字母要分开发音，比如fu-it, frūctu-ī.</p>
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
 
-<p>bs和bt发ps和pt的音，如：urbs, obtineō.</p>
+    /* 定位 */
+    position: absolute;
+    left:-20px;
+    top:30px;
+    z-index: 1;
+}
 
-<p>c总是像在can中那样发硬音。</p>
+.tooltip .tooltiptextk {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
 
-<p>g总是像在get中那样发硬音。</p>
+    /* 定位 */
+    position: absolute;
+    left:-100px;
+    top:30px;
+    z-index: 1;
+}
 
-<p>h是一个送气音。</p>
 
-<p>i的发音：</p>
-<ul>
-  <li>用在词首元音之前时，通常充当辅音，发音为y，就像在yes中那样；</li>
-  <li>用在两个元音之间时起两个作用：既作为元音i与前一元音构成双元音，同时也作为辅音y；</li>
-  <li>在其他情况下通常是一个元音。</li>
-</ul>
 
-<p>m和在英语中一样发闭口音。在某些情况下，元音之后的词尾m发音时双唇不闭合，从而造成它之前的元音的鼻音化。</p>
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
-<p>q后面总是跟着辅音性的u，其组合发<em>kw</em>的音。</p>
+.tooltip:hover .tooltiptextk {
+    visibility: visible;
+}
 
-<p>r发舌尖颤音。</p>
+</style>
+<body style="text-align:center;">
+<div class="tooltip">Naso
+  <span class="tooltiptext">主格，奥维德的姓</span>
+</div> 
 
-<p>s总是像在see中那样发清音。</p>
+<div class="tooltip">Tomitanae<span class="tooltiptext">属格，地名Tomis</span>
+</div>
 
-<p>t的发音如同tired中的t。</p>
+<div class="tooltip"> iam<span class="tooltiptext"> 副词，now, already</span>
+</div>
 
-<p>v的发音如同w。</p>
+<div class="tooltip"> non<span class="tooltiptext"> iam non有no longer之意</span>
+</div>
 
-<p>x的发音如同axle中的ks。</p>
+<div class="tooltip">nouus<span class="tooltiptext">novus, 形容词，
+        主格，阳性，单数，new</span>
+</div>
 
-<p>送气音</p>
-<ul>
-  <li>
-    <p>ch  相当于希腊语中的chi χ，发音如同blockhead中的ckh.</p>
-  </li>
-  <li>
-    <p>ph 相当于希腊语中的phi φ ，发音如同uphill中的ph。</p>
-  </li>
-  <li>
-    <p>th 相当于希腊语中的theta, θ，发音如同hothouse中的th。</p>
-  </li>
-</ul>
+<div class="tooltip">incola<span class="tooltiptext">incola, -ae,inhabitant, resident </span>
+</div>
 
-<p>罗马人非常恰当地将双辅音按照两个分开的辅音来发音。</p>
+<div class="tooltip">terrae<span class="tooltiptext"> terra,-ae 属格</span>
+</div>
 
-<h2 id="音节">音节</h2>
-<p>一个词的音节数等于它的元音和双元音的个数。</p>
+<br />
+<div class="tooltip">hoc <span class="tooltiptext">hic, hac, hoc, with dative,to this place </span>
+</div>
 
-<h3 id="音节划分">音节划分</h3>
-<ul>
-  <li>
-    <p>两个临近的元音，或者一个元音和一个辅音，要分开。</p>
-  </li>
-  <li>两个元音之间的单辅音附属于第二个元音。</li>
-  <li>当两个元音之间有两个或多个辅音时，一般只有最后一个辅音从属于后面那个元音。</li>
-  <li>
-    <ul>
-      <li>但是，一个塞音（p, b, t, d, c, g)+一个流音（l，r）通常算作单辅音（诗歌一般除外），它们都从属于后面那个元音。</li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>此外，qu和送气音ch, ph, th也算作单辅音，它们在音节划分时不能分开。</li>
-    </ul>
-  </li>
-</ul>
+<div class="tooltip">tibi <span class="tooltiptext"> Dat. of tū</span>
+</div>
 
-<h3 id="音节音量">音节音量</h3>
-<p>也就是音节音长。</p>
-<ul>
-  <li>天然长：如果一个音节中包含有长音节或双元音，则该音节为天然长。</li>
-  <li>凭借位置长： 如果一个音节中包含有短元音，而且该元音后面跟着两个或多个辅音，或者跟着x（它是一个双辅音，=ks），则该音节为凭借位置长。</li>
-  <li>在其他情况下，音节都是短的。</li>
-  <li>一个塞音+一个流音，以及qu、送气音ch、ph和th通常都算作单辅音。</li>
-</ul>
+<div class="tooltip"> de Getico litore <span class="tooltiptext"> 从色雷斯的郊外</span>
+</div>
 
-<p><strong>音节音量决定着：</strong></p>
-<ul>
-  <li>拉丁语诗歌节奏</li>
-  <li>有两三个音节的词的加重重音的位置。</li>
-</ul>
+<div class="tooltip"> mittit <span class="tooltiptext">mittiō, mittere, mīsī, missum, send, let go.</span>
+</div>
 
-<p><strong>变位时，长元音通常会变短：</strong></p>
-<ul>
-  <li>如果该元音之后紧跟着另一个元音；</li>
-  <li>或者位于词末的-m，-r, -t的前面，</li>
-  <li>或者处于任何位置的nt或nd的前面。</li>
-  <li>对于第一变位法或-a变位法动词(与第二变位法或-变位法动词不同),词干元音不仅会变短，而且还会与词末的缩约，在第一人称单数中完全消失。</li>
-</ul>
+<div class="tooltip">opus<span class="tooltiptext">opus, operis, n. work, workmanship; work, building, book. 3rd declension. acc.</span>
+</div>
 
-<h3 id="重音">重音</h3>
-<ul>
-  <li>双音节词的重音总是落在第一个音节上；</li>
-  <li>对于三音节或多音节词：</li>
-  <li>
-    <ul>
-      <li>1.如果它的倒数第二个音节是长的，那么重音落在倒数第二个音节上(penult)</li>
-    </ul>
-  </li>
-  <li>
-    <ul>
-      <li>2.否则，重音落在倒数第三个音节上。（antepenult)</li>
-    </ul>
-  </li>
-</ul>
+<br />
 
+<div class="tooltip">整句翻译<span class="tooltiptextk">托密斯的拿骚，已不是这个地方的新住民，从色雷斯城郊这儿寄送这本书给你</span>
+</div>
+
+<br />
+
+Si <div class="tooltip">uacat,<span class="tooltiptext">vacō, vacāre, vacāvī, vacātum, be free from, be unoccupied.</span>
+</div>
+
+<div class="tooltip">hospitio<span class="tooltiptext">hospitium,-ī.  中性名词，夺格，单数.friendship; lodging, inn. &lt;款待，招待，留客； 旅馆，旅舍； 交际，友谊。</span>
+</div>
+
+<div class="tooltip">peregrinos,<span class="tooltiptext">peregrinus,-a,-um adj. foreign,strange; M. foreigner,alien. 行旅者，游客； 异乡，异地者，外籍，客籍者； 外行，门外汉。Acc. </span>
+</div>
+
+<div class="tooltip">Brute,<span class="tooltiptext"> 呼格</span>
+</div>
+
+<div class="tooltip">libellos<span class="tooltiptext">libellus, -ī; M. small book; diary, letter; notice, handbill...</span>
+</div>
+
+<br />
+
+<div class="tooltip">  excipe<span class="tooltiptext">excipiō, -ipere, -ēpī, -eptum 第三变位法，现在时、命令式、主动态，单数，to take out, remove; catch; receive</span>
+</div>
+
+<div class="tooltip">dumque<span class="tooltiptext">dum=while, until, que=and</span>
+</div>
+
+<div class="tooltip">aliquo<span class="tooltiptext">adv. to some place,somewhere else</span>,
+</div>
+
+<div class="tooltip">quolibet<span class="tooltiptext">adv. anywhere</span>
+</div>
+
+<div class="tooltip">abde<span class="tooltiptext">abdō, abdere, abdidī, abditum ; 第三变位法，现在时、主动态、命令式， hide, conceal, keep secret, cover; remove, put away.</span>
+</div>
+
+<div class="tooltip">modo<span class="tooltiptext">adv. just, only; just now; presently</span>
+</div>
+
+<div class="tooltip">整句翻译<span class="tooltiptextk">如果他淡漠友谊于异乡者，布鲁图，当（你）于别处收到这本小册子，请立刻将其放置一旁。 </span>
+</div>
+
+
+</body>
+</html>
 
     </section>
     </article>
@@ -192,6 +226,55 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-04-05">2019-04-05</time>
+      <a href="/2019/04/05/zhushi.html" title="黑海书简">黑海书简</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-03-29">2019-03-29</time>
+      <a href="/2019/03/29/animus-noster.html" title="animus noster变格">animus noster变格</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-03-28">2019-03-28</time>
+      <a href="/2019/03/28/latina-noun12adj.html" title="拉丁语名词和形容词第一第二变格法">拉丁语名词和形容词第一第二变格法</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-03-26">2019-03-26</time>
+      <a href="/2019/03/26/iustiniai-institutiones.html" title="优士丁尼-法学阶梯（二）">优士丁尼-法学阶梯（二）</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-03-25">2019-03-25</time>
+      <a href="/2019/03/25/iustiniai-institutiones.html" title="优士丁尼«法学阶梯»（一）">优士丁尼«法学阶梯»（一）</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-03-21">2019-03-21</time>
+      <a href="/2019/03/21/%E8%AF%AD%E8%A8%80.html" title="语言随想">语言随想</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-03-18">2019-03-18</time>
+      <a href="/2019/03/18/wheelock1.html" title="韦洛克拉丁语教程读书笔记1">韦洛克拉丁语教程读书笔记1</a>
+    </li>
   
     
     

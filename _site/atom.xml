@@ -4,12 +4,566 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-03-20T11:19:03+08:00</updated>
+ <updated>2019-04-07T10:57:59+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>黑海书简</title>
+   <link href="/2019/04/05/zhushi.html"/>
+   <updated>2019-04-05T00:00:00+08:00</updated>
+   <id>/2019/04/05/zhushi</id>
+   <content type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;title&gt;黑海书简&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    left:-20px;
+    top:30px;
+    z-index: 1;
+}
+
+.tooltip .tooltiptextk {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    left:-100px;
+    top:30px;
+    z-index: 1;
+}
+
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip:hover .tooltiptextk {
+    visibility: visible;
+}
+
+&lt;/style&gt;
+&lt;body style=&quot;text-align:center;&quot;&gt;
+&lt;div class=&quot;tooltip&quot;&gt;Naso
+  &lt;span class=&quot;tooltiptext&quot;&gt;主格，奥维德的姓&lt;/span&gt;
+&lt;/div&gt; 
+
+&lt;div class=&quot;tooltip&quot;&gt;Tomitanae&lt;span class=&quot;tooltiptext&quot;&gt;属格，地名Tomis&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; iam&lt;span class=&quot;tooltiptext&quot;&gt; 副词，now, already&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; non&lt;span class=&quot;tooltiptext&quot;&gt; iam non有no longer之意&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;nouus&lt;span class=&quot;tooltiptext&quot;&gt;novus, 形容词，
+        主格，阳性，单数，new&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;incola&lt;span class=&quot;tooltiptext&quot;&gt;incola, -ae,inhabitant, resident &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;terrae&lt;span class=&quot;tooltiptext&quot;&gt; terra,-ae 属格&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div class=&quot;tooltip&quot;&gt;hoc &lt;span class=&quot;tooltiptext&quot;&gt;hic, hac, hoc, with dative,to this place &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;tibi &lt;span class=&quot;tooltiptext&quot;&gt; Dat. of tū&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; de Getico litore &lt;span class=&quot;tooltiptext&quot;&gt; 从色雷斯的郊外&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; mittit &lt;span class=&quot;tooltiptext&quot;&gt;mittiō, mittere, mīsī, missum, send, let go.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;opus&lt;span class=&quot;tooltiptext&quot;&gt;opus, operis, n. work, workmanship; work, building, book. 3rd declension. acc.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;整句翻译&lt;span class=&quot;tooltiptextk&quot;&gt;托密斯的拿骚，已不是这个地方的新住民，从色雷斯城郊这儿寄送这本书给你&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+
+Si &lt;div class=&quot;tooltip&quot;&gt;uacat,&lt;span class=&quot;tooltiptext&quot;&gt;vacō, vacāre, vacāvī, vacātum, be free from, be unoccupied.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;hospitio&lt;span class=&quot;tooltiptext&quot;&gt;hospitium,-ī.  中性名词，夺格，单数.friendship; lodging, inn. &amp;lt;款待，招待，留客； 旅馆，旅舍； 交际，友谊。&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;peregrinos,&lt;span class=&quot;tooltiptext&quot;&gt;peregrinus,-a,-um adj. foreign,strange; M. foreigner,alien. 行旅者，游客； 异乡，异地者，外籍，客籍者； 外行，门外汉。Acc. &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;Brute,&lt;span class=&quot;tooltiptext&quot;&gt; 呼格&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;libellos&lt;span class=&quot;tooltiptext&quot;&gt;libellus, -ī; M. small book; diary, letter; notice, handbill...&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;  excipe&lt;span class=&quot;tooltiptext&quot;&gt;excipiō, -ipere, -ēpī, -eptum 第三变位法，现在时、命令式、主动态，单数，to take out, remove; catch; receive&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;dumque&lt;span class=&quot;tooltiptext&quot;&gt;dum=while, until, que=and&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;aliquo&lt;span class=&quot;tooltiptext&quot;&gt;adv. to some place,somewhere else&lt;/span&gt;,
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;quolibet&lt;span class=&quot;tooltiptext&quot;&gt;adv. anywhere&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;abde&lt;span class=&quot;tooltiptext&quot;&gt;abdō, abdere, abdidī, abditum ; 第三变位法，现在时、主动态、命令式， hide, conceal, keep secret, cover; remove, put away.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;modo&lt;span class=&quot;tooltiptext&quot;&gt;adv. just, only; just now; presently&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;整句翻译&lt;span class=&quot;tooltiptextk&quot;&gt;如果他淡漠友谊于异乡者，布鲁图，当（你）于别处收到这本小册子，请立刻将其放置一旁。 &lt;/span&gt;
+&lt;/div&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>黑海书简</title>
+   <link href="/2019/04/05/zhushi.html"/>
+   <updated>2019-04-05T00:00:00+08:00</updated>
+   <id>/2019/04/05/zhushi</id>
+   <content type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;黑海书简&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    left:-20px;
+    top:30px;
+    z-index: 1;
+}
+
+.tooltip .tooltiptextk {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    left:-100px;
+    top:30px;
+    z-index: 1;
+}
+
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip:hover .tooltiptextk {
+    visibility: visible;
+}
+
+&lt;/style&gt;
+&lt;body style=&quot;text-align:center;&quot;&gt;
+&lt;div class=&quot;tooltip&quot;&gt;Naso
+  &lt;span class=&quot;tooltiptext&quot;&gt;主格，奥维德的姓&lt;/span&gt;
+&lt;/div&gt; 
+
+&lt;div class=&quot;tooltip&quot;&gt;Tomitanae&lt;span class=&quot;tooltiptext&quot;&gt;属格，地名Tomis&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; iam&lt;span class=&quot;tooltiptext&quot;&gt; 副词，now, already&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; non&lt;span class=&quot;tooltiptext&quot;&gt; iam non有no longer之意&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;nouus&lt;span class=&quot;tooltiptext&quot;&gt;novus, 形容词，
+        主格，阳性，单数，new&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;incola&lt;span class=&quot;tooltiptext&quot;&gt;incola, -ae,inhabitant, resident &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;terrae&lt;span class=&quot;tooltiptext&quot;&gt; terra,-ae 属格&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;div class=&quot;tooltip&quot;&gt;hoc &lt;span class=&quot;tooltiptext&quot;&gt;hic, hac, hoc, with dative,to this place &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;tibi &lt;span class=&quot;tooltiptext&quot;&gt; Dat. of tū&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; de Getico litore &lt;span class=&quot;tooltiptext&quot;&gt; 从色雷斯的郊外&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; mittit &lt;span class=&quot;tooltiptext&quot;&gt;mittiō, mittere, mīsī, missum, send, let go.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;opus&lt;span class=&quot;tooltiptext&quot;&gt;opus, operis, n. work, workmanship; work, building, book. 3rd declension. acc.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;整句翻译&lt;span class=&quot;tooltiptextk&quot;&gt;托密斯的拿骚，已不是这个地方的新住民，从色雷斯城郊这儿寄送这本书给你&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>animus noster变格</title>
+   <link href="/2019/03/29/animus-noster.html"/>
+   <updated>2019-03-29T00:00:00+08:00</updated>
+   <id>/2019/03/29/animus-noster</id>
+   <content type="html">&lt;p&gt;阳性 -us名词 -er形容词&lt;/p&gt;
+
+&lt;p&gt;单数&lt;/p&gt;
+
+&lt;p&gt;主格：animus noster&lt;/p&gt;
+
+&lt;p&gt;属格：animī nostrī&lt;/p&gt;
+
+&lt;p&gt;与格：animō nostrō&lt;/p&gt;
+
+&lt;p&gt;宾格：animum nostrum&lt;/p&gt;
+
+&lt;p&gt;夺格：animō nostrō&lt;/p&gt;
+
+&lt;p&gt;呼格：anime noster&lt;/p&gt;
+
+&lt;p&gt;复数&lt;/p&gt;
+
+&lt;p&gt;主格：animī nostrī&lt;/p&gt;
+
+&lt;p&gt;属格：animōrum nostrōrum&lt;/p&gt;
+
+&lt;p&gt;与格：animīs nostrīs&lt;/p&gt;
+
+&lt;p&gt;宾格：animōs nostrōs&lt;/p&gt;
+
+&lt;p&gt;夺格：animīs nostrīs&lt;/p&gt;
+
+&lt;p&gt;呼格：animī noster&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>拉丁语名词和形容词第一第二变格法</title>
+   <link href="/2019/03/28/latina-noun12adj.html"/>
+   <updated>2019-03-28T00:00:00+08:00</updated>
+   <id>/2019/03/28/latina-noun12adj</id>
+   <content type="html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;格&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;第一变格（阴）&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;第二变格（阳）&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;第二变格（中）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;主格&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-a&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-us/-er&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-um&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;属格&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ae&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ī&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ī&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;与格&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ae&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ō&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ō&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;宾格&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-am&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-um&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-um&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;夺格&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ā&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ō&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ō&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;呼格&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-a&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-e/-er&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;X&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;主复&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ae&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ī&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-a&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;属复&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ārum&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ōrum&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ōrum&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;与复&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-īs&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-īs&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-īs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;宾复&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ās&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ōs&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-a&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;夺复&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-īs&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-īs&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-īs&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;呼复&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-a&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;-ī/-er&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;X&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>优士丁尼-法学阶梯（二）</title>
+   <link href="/2019/03/26/iustiniai-institutiones.html"/>
+   <updated>2019-03-26T00:00:00+08:00</updated>
+   <id>/2019/03/26/iustiniai-institutiones</id>
+   <content type="html">&lt;p&gt;I.1.1.1&lt;/p&gt;
+
+&lt;p&gt;Iuris prudentia est divinarum atque humanarum rerum notitia, iusti atque iniusti scientia.&lt;/p&gt;
+
+&lt;p&gt;句法分析：&lt;/p&gt;
+
+&lt;p&gt;主謂结构。&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+
+graph BT;
+
+A0[Iuris prudentia est divinarum atque humanarum rerum notitia, iusti atque iniusti scientia.] --&amp;gt; A;
+
+A[Iuris prudentia est notitia, scientia] --&amp;gt; B(Iuris prudentia);
+
+A --&amp;gt; C(divinarum atque humanarum rerum notitia, iusti atque iniusti scientia);
+
+B --属格--- D(iuris);
+
+C --&amp;gt; C00(divinarum atque humanarum rerum notitia);
+
+C00 --属格--- C0;
+
+C0(divinarum atque humanarum rerum) --复数属格---C1(divinarum);
+
+C0 --复数属格---C2(humanarum);
+
+C --&amp;gt; C01(iusti atque iniusti scientia);
+
+C01 --属格--- C011(iusti);
+
+C01 --属格--- C012(iniusti);
+
+&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>优士丁尼«法学阶梯»（一）</title>
+   <link href="/2019/03/25/iustiniai-institutiones.html"/>
+   <updated>2019-03-25T00:00:00+08:00</updated>
+   <id>/2019/03/25/iustiniai-institutiones</id>
+   <content type="html">&lt;p&gt;I&lt;/p&gt;
+
+&lt;p&gt;De iustitia et iure&lt;/p&gt;
+
+&lt;p&gt;1.1.1pr.&lt;/p&gt;
+
+&lt;p&gt;Iustitia est constans et perpetua voluntas ius suum cuique tribuens.&lt;/p&gt;
+
+&lt;p&gt;句法分析：&lt;/p&gt;
+
+&lt;p&gt;主謂结构： Iustitia est voluntas.正义是意志。&lt;/p&gt;
+
+&lt;p&gt;陰性主格形容詞作定語修飾voluntas: constans et perpetua voluntas 持續並永恆的意志&lt;/p&gt;
+
+&lt;p&gt;現在時主動態分詞短語作定語： ius &lt;em&gt;suum cuique&lt;/em&gt; tribuens分配给其各自该有的權利。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ius&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ius N 3 2 NOM S N&lt;/p&gt;
+
+  &lt;p&gt;ius N 3 2 VOC S N&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;ius N 3 2 ACC S N&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;jus, juris N N [XXXCX]&lt;/p&gt;
+
+  &lt;p&gt;gravy; broth; soup; sauce; 
+law (pl. only NOM, ACC), &lt;strong&gt;right&lt;/strong&gt;; duty; justice; that which is binding; oath;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;suum&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;su.um                N      2 1 ACC S M          &lt;br /&gt;
+suus, sui  N  M   [XXXCX]&lt;br /&gt;
+his men (pl.), his friends;
+su.um                N      2 2 NOM S N               &lt;br /&gt;
+su.um                N      2 2 VOC S N               &lt;br /&gt;
+su.um                N      2 2 ACC S N               &lt;br /&gt;
+suum, sui  N  N   [XXXCX]&lt;br /&gt;
+his property (pl.); [se suaque =&amp;gt; themselves and their possessions];
+su.um                ADJ    1 1 NOM S N POS           &lt;br /&gt;
+su.um                ADJ    1 1 VOC S N POS           &lt;br /&gt;
+su.um                ADJ    1 1 ACC S M POS           &lt;br /&gt;
+&lt;strong&gt;su.um                ADJ    1 1 ACC S N POS           &lt;br /&gt;
+suus, sua, suum  ADJ   [XXXCX]&lt;br /&gt;
+his/one’s (own), her (own), hers, its (own); (pl.) their (own), theirs;&lt;/strong&gt;
+su.um                N      3 1 GEN P C               &lt;br /&gt;
+sus, suis  N  C   [XXXCX]&lt;br /&gt;
+swine; hog, pig, sow;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;cuique&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;inflected form(DATIVE) of &lt;em&gt;quisque&lt;/em&gt;; 
+to each one/person/thing&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;suum cuique&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;(idiomatic) to each according to its own merits; to each his own&lt;/p&gt;
+  &lt;blockquote&gt;
+
+    &lt;p&gt;Cicero&lt;/p&gt;
+
+    &lt;p&gt;Suum cuique pulchrum est.&lt;/p&gt;
+
+    &lt;p&gt;To each its own is beautiful.&lt;/p&gt;
+
+    &lt;p&gt;Suum cuique tribuere.&lt;/p&gt;
+
+    &lt;p&gt;To give each its own.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;tribuens&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;tribu.ens            VPAR   3 1 NOM S X PRES ACTIVE  PPL&lt;/strong&gt;
+tribu.ens            VPAR   3 1 VOC S X PRES ACTIVE  PPL
+tribu.ens            VPAR   3 1 ACC S N PRES ACTIVE  PPL
+tribuo, tribuere, tribui, tributus  V   [XXXBX]&lt;br /&gt;
+divide, assign; present; grant, allot, bestow, attribute;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;现在时分词，带有直接宾语ius以及间接宾语(与格）suum cuique。作為形容詞，分詞要在性數格方面與所修飾的詞保持一致。這裡，是指要與voluntas一致。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;我譯&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;正義是分給每個人以其應當享有的權利的持續且恆久的意志。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;徐譯&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;正义是分给每个人以其权利的不懈的、永恒的意志。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>语言随想</title>
+   <link href="/2019/03/21/%E8%AF%AD%E8%A8%80.html"/>
+   <updated>2019-03-21T00:00:00+08:00</updated>
+   <id>/2019/03/21/语言</id>
+   <content type="html">&lt;p&gt;数学，与自然沟通的语言；&lt;/p&gt;
+
+&lt;p&gt;梵语、古汉语、拉丁语、古希腊语，与古人沟通的语言；&lt;/p&gt;
+
+&lt;p&gt;英法德意日、汉俄西葡韩，与当代人交流的语言；&lt;/p&gt;
+
+&lt;p&gt;算法，与计算机沟通的语言。&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>韦洛克拉丁语教程读书笔记1</title>
@@ -246,337 +800,6 @@ Z --韵尾鼻音--&amp;gt; m1d[&quot;ं  ṃ&quot;]
     &lt;p&gt;变化比较大的क्ष kṣa   श्र śra&lt;/p&gt;
   &lt;/blockquote&gt;
 &lt;/blockquote&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>梵文复元音发音与书写</title>
-   <link href="/2019/02/28/%E6%A2%B5%E6%96%87%E5%A4%8D%E5%85%83%E9%9F%B3.html"/>
-   <updated>2019-02-28T00:00:00+08:00</updated>
-   <id>/2019/02/28/梵文复元音</id>
-   <content type="html">&lt;p&gt;发音&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;舌面元音ए e ऐ ai&lt;/li&gt;
-  &lt;li&gt;双唇元音ओ o औ au&lt;/li&gt;
-  &lt;li&gt;复元音总是长音，没有相应的短音；&lt;/li&gt;
-  &lt;li&gt;ए e的发音：
-    &lt;blockquote&gt;
-      &lt;p&gt;舌尖抵下齿，舌前部抬高，上下齿全闭，双唇平扁，气流中出，声带振动，近似英/e/&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ऐ ai的发音
-    &lt;blockquote&gt;
-      &lt;p&gt;口腔张开，舌身后缩，舌后部向软腭抬起，从ā滑向i；口腔从开到合，舌位从第6到高；前音长而清，后音短而糊；声带振动。类似英/ai/&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;ओ o的发音
-    &lt;blockquote&gt;
-      &lt;p&gt;ā口型，唇收圆，气唇出，声带振。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;औ au的发音
-    &lt;blockquote&gt;
-      &lt;p&gt;आ ā口型，滑向उ u，口腔从开到合，舌位由低到高，前清且长，后糊而短，声带振动。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;书写&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;完整形式
-    &lt;blockquote&gt;
-      &lt;p&gt;在字首或居于一元音之后时&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;简记形式
-    &lt;blockquote&gt;
-      &lt;p&gt;与次前辅音结合时，简记。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;ए和ऐ分别简记为े和ै，写在辅音的上端。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;ओ和औ分别简记为ो和ौ，写在辅音的右边。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;一点感触：&lt;/p&gt;
-
-&lt;p&gt;课本还是罗世方先生的好懂，千万别拿季先生的书来入门，不然梵门未入，脑门堪忧。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>梵语四十九音</title>
-   <link href="/2019/02/25/%E6%A2%B5%E8%AF%AD49%E9%9F%B3.html"/>
-   <updated>2019-02-25T00:00:00+08:00</updated>
-   <id>/2019/02/25/梵语49音</id>
-   <content type="html">&lt;p&gt;元音&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;短元音&lt;/th&gt;
-      &lt;th&gt;长元音&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;अ a&lt;/td&gt;
-      &lt;td&gt;आ ā&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;इ i&lt;/td&gt;
-      &lt;td&gt;ई ī&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;उ u&lt;/td&gt;
-      &lt;td&gt;ऊ ū&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;ऋ ṛ&lt;/td&gt;
-      &lt;td&gt;ॠ ṝ&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;ऌ ḷ&lt;/td&gt;
-      &lt;td&gt;ॡ ḹ&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;ए e&lt;/td&gt;
-      &lt;td&gt;ऐ ai&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;ओ o&lt;/td&gt;
-      &lt;td&gt;औ au&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;辅音&lt;/p&gt;
-
-&lt;p&gt;喉音：    क ka    ख khā    ग ga    घ ghā    ङ ṅa&lt;/p&gt;
-
-&lt;p&gt;腭音：    च ca    छ cha    ज ja    झ jha    ञ ña&lt;/p&gt;
-
-&lt;p&gt;卷舌音：  ट ṭa    ठ ṭha    ड ḍa    ढ ḍha    ण ṇa&lt;/p&gt;
-
-&lt;p&gt;齿音：    त ta    थ tha    द da    ध dha    न na&lt;/p&gt;
-
-&lt;p&gt;唇音：    प pa    फ pha    ब ba    भ bha    म ma&lt;/p&gt;
-
-&lt;p&gt;半元音：  य ya    र ra    ल la    व va&lt;/p&gt;
-
-&lt;p&gt;咝音：    श śa    ष ṣa    स sa&lt;/p&gt;
-
-&lt;p&gt;气音：    ह ha&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>你能你上</title>
-   <link href="/2019/02/24/latina.html"/>
-   <updated>2019-02-24T00:00:00+08:00</updated>
-   <id>/2019/02/24/latina</id>
-   <content type="html">&lt;p&gt;昨日看到一位网友翻译的“你能你上，不能别BB”的拉丁文翻译，觉得挺好，抄录如下：&lt;/p&gt;
-
-&lt;p&gt;Si potes, face; si non, tace.&lt;/p&gt;
-
-&lt;p&gt;单词释义：&lt;/p&gt;
-
-&lt;h2 id=&quot;face&quot;&gt;face&lt;/h2&gt;
-
-&lt;p&gt;fac.e                V      3 1 PRES ACTIVE  IMP 2 S&lt;/p&gt;
-
-&lt;p&gt;facio, facere, feci, factus  V   [XXXAX]&lt;/p&gt;
-
-&lt;p&gt;do, make; create; acquire; cause, bring about, fashion; compose; accomplish;&lt;/p&gt;
-
-&lt;p&gt;fac.e                N      3 1 LOC S F&lt;/p&gt;
-
-&lt;p&gt;fac.e                N      3 1 DAT S F                   Early&lt;/p&gt;
-
-&lt;p&gt;fac.e                N      3 1 ABL S F&lt;/p&gt;
-
-&lt;p&gt;fax, facis  N  F   [XPXAX]&lt;/p&gt;
-
-&lt;p&gt;torch, firebrand, fire; flame of love; torment;&lt;/p&gt;
-
-&lt;p&gt;中文化英文：&lt;/p&gt;
-
-&lt;p&gt;You can you up, no can no BB.&lt;/p&gt;
-
-&lt;p&gt;挺搞笑的吧。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>梵文学习练习二</title>
-   <link href="/2019/02/16/%E6%A2%B5%E6%96%87%E4%B9%A0%E9%A2%98%E7%BB%83%E4%B9%A0%E4%BA%8C.html"/>
-   <updated>2019-02-16T00:00:00+08:00</updated>
-   <id>/2019/02/16/梵文习题练习二</id>
-   <content type="html">&lt;p&gt;单元音： इ i    ई  ī&lt;/p&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-
-graph TD
-
-id1[辅音]--&amp;gt; id2[腭闭塞音]
-
-id1 --&amp;gt; id6[&quot;半元音य् y&quot;]
-
-id2 --&amp;gt; id3[&quot;腭清塞音च्  c   छ् ch&quot;]
-
-id2 --&amp;gt; id4[&quot;腭浊塞音ज्  j   झ् jh&quot;]
-
-id2 --&amp;gt; id5[&quot;腭鼻音ञ् ñ&quot;]
-
-id3 --不送气--&amp;gt; id7[&quot;च्  c &quot;]
-
-id3 --送气--&amp;gt; id8[&quot;छ्  ch &quot;]
-
-id4 --不送气--&amp;gt; id9[&quot;ज्  j&quot;]
-
-id4 --送气--&amp;gt; id10[&quot;झ्  jh&quot;]
-
-id5 --不送气--&amp;gt; id11[&quot;浊鼻音&quot;]
-
-id7 -.-&amp;gt; id12[&quot;舌尖顶住下齿龈，发类ʈʃ&quot;的音]
-
-id9 -.-&amp;gt; id13[&quot;发类d͡ʒ的音，但舌尖顶住下齿龈&quot;]
-
-&lt;/div&gt;
-
-&lt;p&gt;书法规则&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;元音的写法&lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;完整形式：（1）字首；（2）另一元音之后。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;不完整形式：通常情况。与次前辅音结合时，&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;ul&gt;
-          &lt;li&gt;इ i 简记为次前辅音左侧的ि&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;ul&gt;
-          &lt;li&gt;ई ī 简记为次前辅音右侧的ी&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;复辅音写法中的特例&lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;ज् j + ञ् ñ 则写成一个特殊的复合体ज्ञ्&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;名句摘录&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;यं हि न व्यथयन्ल्येेते पुरुषं पुरुषर्षभ।&lt;/p&gt;
-
-  &lt;p&gt;समटुः खसुखं धीरं सो ऽमृतत्वाय कल्यते॥१५&lt;/p&gt;
-
-  &lt;p&gt;智者对痛苦和快乐&lt;/p&gt;
-
-  &lt;p&gt;一视同仁，通向永恒；&lt;/p&gt;
-
-  &lt;p&gt;人中雄牛啊，这些东西&lt;/p&gt;
-
-  &lt;p&gt;不会引起他们烦闷。&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>天地有正气 薪火永相续——“我们的节日∙春节”活动纪实</title>
-   <link href="/2019/02/15/%E5%A4%A9%E5%9C%B0%E6%9C%89%E6%AD%A3%E6%B0%94.html"/>
-   <updated>2019-02-15T00:00:00+08:00</updated>
-   <id>/2019/02/15/天地有正气</id>
-   <content type="html">&lt;p&gt;活动时间：２０１９年２月１５日上午&lt;/p&gt;
-
-&lt;p&gt;活动地点：清凉山公园&lt;/p&gt;
-
-&lt;p&gt;参加活动人员：游府西街小学 四（1）班 “正气之星雏鹰假日小队”全体成员&lt;/p&gt;
-
-&lt;p&gt;活动过程：&lt;/p&gt;
-
-&lt;p&gt;千门万户曈曈日，总把新桃换旧符。新桃旧符，远去的只是时光，沉淀下的却是值得铭记在心的传统。&lt;/p&gt;
-
-&lt;p&gt;春节是我国民间最重要的传统节日，是我国人民庆贺丰收、祈愿风调雨顺、家人团聚的日子。为认真贯彻落实“我们的节日”主题活动的精神，深入了解春节所凝结的优秀传统文化内涵，我们游府西街小学四（1）中队“正气之星雏鹰假日小队”的全体队员们在这个冬日的上午，来到文化底蕴浓厚的清凉山公园开展了“我们的节日∙春节”传统文化主题实践活动。&lt;/p&gt;
-
-&lt;p&gt;伴着细细小雨，队员们走进位于清凉山公园内的崇正书院，我们了解到这座书院是明嘉靖年间督学御史耿定向建立的，书院取名“崇正”是取自文天祥“天地有正气”之意，这恰好与我们“正气之星战队”队名相同。崇正书院是标榜以天下苍生为己任的耿定向自己办的一个学堂，因在万历年间学子焦竑中了状元，成为大明王朝第一位金陵状元，崇正书院的影响因此更大。而这位焦状元就是名闻天下的在历史上存在了四百多年的位于珠江路同仁街上的焦状元藏书楼的主人，而他的藏书楼正是传承着我们这个民族文化基因的一个象征。我们行走在崇正书院，一路细听着讲解，不时抓拍着最美的瞬间，队员们深刻感受到，我们不仅是行走在历史文化长河中，这也是在感受着天地间的浩然正气，更是对我们学业上不断追求进步的勉励与美好的祈愿！&lt;/p&gt;
-
-&lt;p&gt;走过腊梅飘香、幽静怡然的崇正书院后，我们来到了现今建立的清凉山文化大讲堂。在温暖如春的室内，队员们齐声诵读北宋王安石所作的古诗《元日》，在这首古诗中我们看到了古今年俗的差异：古代春节有放鞭炮、喝屠苏酒、贴春联的习俗，而今春节增添了吃年夜饭、发红包、看春晚等活动。在讲堂里我们还跟老师一起阅读了由语言大师老舍先生写下的经典名篇——《北京的春节》，同时老师也给我们介绍了南京地区相应的年俗，对比之下了解到春节南北习俗的异同。古今、南北、乃至中外华人社会对春节这一年俗的传承演变，让我们感受到了这传统节日的无限魅力，强烈的民族自豪感争油然而生。&lt;/p&gt;
-
-&lt;p&gt;了解了民俗知识后，我们开展了亲手做花灯的民俗活动。花灯又名灯笼，兼具生活功能和艺术特色，多在春节悬挂，为佳节增光添彩！亲手操作的过程中，我们不仅了解到花灯的起源和典故，感受团圆、祥和的亲情和欢乐、平安、文明的节日氛围。在互帮互助的制作过程中，队员们完成了年味十足的各色小花灯，红色的花灯上，装饰着“可爱小猪”的图案，可喜庆了。&lt;/p&gt;
-
-&lt;p&gt;活动最后，队员们相互交流各自活动感想，我们感受到了中国传统节日的独特魅力，立志要弘扬、传承中华优秀传统文化，——我们是新世纪的主人，传一脉燃燃薪火，守护历史，做一名优秀传统文化传承人！&lt;/p&gt;
-
-&lt;p&gt;我们“正气之星”雏鹰假日小队的全体队员在这郑重的宣誓声中结束了这场有意义的传统文化之旅。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>梵文习题练习一</title>
-   <link href="/2019/02/14/%E6%A2%B5%E6%96%87%E4%B9%A0%E9%A2%98%E7%BB%83%E4%B9%A0%E4%B8%80.html"/>
-   <updated>2019-02-14T00:00:00+08:00</updated>
-   <id>/2019/02/14/梵文习题练习一</id>
-   <content type="html">&lt;p&gt;元音：अ a     आ ā&lt;/p&gt;
-
-&lt;p&gt;闭塞音： क्  k    ख्  kh    ग्  g    घ्  gh     ङ्  ṅ&lt;/p&gt;
-
-&lt;p&gt;单词：&lt;/p&gt;
-
-&lt;p&gt;अङ्क anka [阳］ 衣边，号码&lt;/p&gt;
-
-&lt;p&gt;अङ्ग anga ［阳］肢体，成份&lt;/p&gt;
-
-&lt;p&gt;काक  kāka [阳］卑鄙的人&lt;/p&gt;
-
-&lt;p&gt;खग khaga [阳] 鸟&lt;/p&gt;
-
-&lt;p&gt;खखा khakhā  [阴] 水井，水源&lt;/p&gt;
-
-&lt;p&gt;गङ्आ gangā [阴] 恒河&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>妞妞说</title>
-   <link href="/2019/02/13/%E5%A6%9E%E5%A6%9E%E8%AF%B4.html"/>
-   <updated>2019-02-13T00:00:00+08:00</updated>
-   <id>/2019/02/13/妞妞说</id>
-   <content type="html">&lt;p&gt;二十三点，妞妈对妞妞说，小朋友不可以这么晚睡觉，应该九点钟就睡觉。&lt;/p&gt;
-
-&lt;p&gt;妞妞回答道：&lt;strong&gt;“都是被生活逼的！”&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;妞妈复述给我听，妞妞在旁插嘴道：“不要再剧透了！”&lt;/p&gt;
-
 </content>
  </entry>
  
