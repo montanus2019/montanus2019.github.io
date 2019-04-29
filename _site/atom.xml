@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-04-07T10:57:59+08:00</updated>
+ <updated>2019-04-29T16:59:47+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -12,14 +12,89 @@
 
  
  <entry>
-   <title>黑海书简</title>
-   <link href="/2019/04/05/zhushi.html"/>
-   <updated>2019-04-05T00:00:00+08:00</updated>
-   <id>/2019/04/05/zhushi</id>
+   <title>树莓派上建samba</title>
+   <link href="/2019/04/26/samba.html"/>
+   <updated>2019-04-26T00:00:00+08:00</updated>
+   <id>/2019/04/26/samba</id>
+   <content type="html">&lt;h2 id=&quot;安装samba-和-samba-common-bin&quot;&gt;安装samba 和 samba-common-bin&lt;/h2&gt;
+
+&lt;p&gt;启动树莓派以后，在命令行输入：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get install samba samba-common-bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;配置etcsambasmbconf文件&quot;&gt;配置/etc/samba/smb.conf文件&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install vim
+sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.back
+sudo vim /etc/samba/smb.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;shift-g 跳到最后一行，加入如下语句：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# 在末尾加入如下内容
+# 分享名称
+[MyNAS]
+    # 说明信息
+    comment = NAS Storage
+    # 可以访问的用户
+    valid users = pi,root
+    # 共享文件的路径,raspberry pi 会自动将连接到其上的外接存储设备挂载到/media/pi/目录下。
+    path = /media/pi/
+    # 可被其他人看到资源名称（非内容）
+    browseable = yes
+    # 可写
+    writable = yes
+    # 新建文件的权限为 664
+    create mask = 0664
+    # 新建目录的权限为 775
+    directory mask = 0775
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以把配置文件中你不需要的分享名称删除，例如 [homes], [printers] 等。&lt;/p&gt;
+
+&lt;h2 id=&quot;测试配置文件是否有错误根据提示做相应修改&quot;&gt;测试配置文件是否有错误，根据提示做相应修改&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;testparm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;添加登陆账户并创建密码必须是-linux-已存在的用户&quot;&gt;添加登陆账户并创建密码，必须是 linux 已存在的用户&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo smbpasswd -a pi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;重启-samba-服务&quot;&gt;重启 samba 服务&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo /etc/init.d/samba restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;测试&quot;&gt;测试&lt;/h2&gt;
+
+&lt;p&gt;回到windows，就可以在网络当中发现共享的文件夹了：&lt;/p&gt;
+
+&lt;h2 id=&quot;设置开机自启动编辑etcrclocal&quot;&gt;设置开机自启动，编辑/etc/rc.local&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo /etc/init.d/samba restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;参考链接：&lt;/p&gt;
+
+&lt;p&gt;树莓派搭建NAS服务&lt;a href=&quot;http://blog.csdn.net/founderznd/article/details/52325332&quot;&gt;http://blog.csdn.net/founderznd/article/details/52325332&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;树莓派开启samba服务&lt;a href=&quot;https://www.cnblogs.com/mnstar/p/8144943.html&quot;&gt;https://www.cnblogs.com/mnstar/p/8144943.html&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>贺拉斯诗全集</title>
+   <link href="/2019/04/15/latin-horactus.html"/>
+   <updated>2019-04-15T00:00:00+08:00</updated>
+   <id>/2019/04/15/latin-horactus</id>
    <content type="html">&lt;html&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot; /&gt;
-&lt;title&gt;黑海书简&lt;/title&gt;
+&lt;title&gt;贺拉斯诗全集摘录&lt;/title&gt;
 &lt;/head&gt;
 &lt;style&gt;
 .tooltip {
@@ -27,6 +102,7 @@
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+
 
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -55,7 +131,7 @@
 
     /* 定位 */
     position: absolute;
-    left:-100px;
+    left:-120px;
     top:30px;
     z-index: 1;
 }
@@ -71,7 +147,106 @@
 }
 
 &lt;/style&gt;
-&lt;body style=&quot;text-align:center;&quot;&gt;
+&lt;body&gt;
+&lt;div class=&quot;tooltip&quot;&gt;Me
+  &lt;span class=&quot;tooltiptext&quot;&gt;宾格，我&lt;/span&gt;
+&lt;/div&gt; 
+
+&lt;div class=&quot;tooltip&quot;&gt;doctārum&lt;span class=&quot;tooltiptext&quot;&gt;复数，阴性，属格，doctus, docta, doctum. learned, wise; skilled, experienced, expert; trained; clever, cunning, shrewd; 修饰me，博学的我。 &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; hederae&lt;span class=&quot;tooltiptext&quot;&gt; hedera, -ae, F. 常青藤。复数，主格。frontium作为属格修饰它，额前的。&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt; praemia&lt;span class=&quot;tooltiptext&quot;&gt; praemium, -iī. N. prize, reward. 第二变格法。复数主格，dis作为形容词修饰它。是hederae frontium的同位语&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;frontium&lt;span class=&quot;tooltiptext&quot;&gt;frons, -tis. F. forehead. pl. gen. 3rd.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;dis&lt;span class=&quot;tooltiptext&quot;&gt;dīs,dītis. adj. rich. 我认为是修饰praemia（奖励）的形容词，“丰厚的”。或 名词，deus的复数与格，复数夺格。&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;miscent &lt;span class=&quot;tooltiptext&quot;&gt; misceō, -scēre, -scuī, -xtum. to mix, mingle, blend; to join, combine; to confuse, embroil.第三人称复数，现在时主动态直陈式&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;superis &lt;span class=&quot;tooltiptext&quot;&gt;superum, superi。中性名词，第二变格法。 复数，与格。&lt;/span&gt;
+&lt;/div&gt;
+
+
+&lt;br /&gt;
+&lt;center&gt;
+&lt;div class=&quot;tooltip&quot;&gt;整句翻译&lt;span class=&quot;tooltiptextk&quot;&gt;额前的常青藤丰厚的奖赏让我跻身天界。&lt;/span&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+&lt;br /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>黑海书简</title>
+   <link href="/2019/04/05/zhushi.html"/>
+   <updated>2019-04-05T00:00:00+08:00</updated>
+   <id>/2019/04/05/zhushi</id>
+   <content type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;title&gt;黑海书简&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    left:-20px;
+    top:30px;
+    z-index: 1;
+}
+
+.tooltip .tooltiptextk {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    left:-120px;
+    top:30px;
+    z-index: 1;
+}
+
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip:hover .tooltiptextk {
+    visibility: visible;
+}
+
+&lt;/style&gt;
+&lt;body&gt;
 &lt;div class=&quot;tooltip&quot;&gt;Naso
   &lt;span class=&quot;tooltiptext&quot;&gt;主格，奥维德的姓&lt;/span&gt;
 &lt;/div&gt; 
@@ -112,10 +287,10 @@
 &lt;/div&gt;
 
 &lt;br /&gt;
-
+&lt;center&gt;
 &lt;div class=&quot;tooltip&quot;&gt;整句翻译&lt;span class=&quot;tooltiptextk&quot;&gt;托密斯的拿骚，已不是这个地方的新住民，从色雷斯城郊这儿寄送这本书给你&lt;/span&gt;
 &lt;/div&gt;
-
+&lt;/center&gt;
 &lt;br /&gt;
 
 Si &lt;div class=&quot;tooltip&quot;&gt;uacat,&lt;span class=&quot;tooltiptext&quot;&gt;vacō, vacāre, vacāvī, vacātum, be free from, be unoccupied.&lt;/span&gt;
@@ -152,10 +327,79 @@ Si &lt;div class=&quot;tooltip&quot;&gt;uacat,&lt;span class=&quot;tooltiptext&q
 
 &lt;div class=&quot;tooltip&quot;&gt;modo&lt;span class=&quot;tooltiptext&quot;&gt;adv. just, only; just now; presently&lt;/span&gt;
 &lt;/div&gt;
-
+&lt;br /&gt;
+&lt;center&gt;
 &lt;div class=&quot;tooltip&quot;&gt;整句翻译&lt;span class=&quot;tooltiptextk&quot;&gt;如果他淡漠友谊于异乡者，布鲁图，当（你）于别处收到这本小册子，请立刻将其放置一旁。 &lt;/span&gt;
 &lt;/div&gt;
+&lt;/center&gt;
+&lt;br /&gt;
 
+&lt;div class=&quot;tooltip&quot;&gt;Publica &lt;span class=&quot;tooltiptext&quot;&gt; accusative neuter plural of pūblicus, 公共的 &lt;/span&gt;
+&lt;/div&gt;
+non &lt;div class=&quot;tooltip&quot;&gt;audent &lt;span class=&quot;tooltiptext&quot;&gt;they dare&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;tooltip&quot;&gt;intra &lt;span class=&quot;tooltiptext&quot;&gt; intrā (+ accusative),1.within; inside; 2.during; 3.less than&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;tooltip&quot;&gt;monimenta &lt;span class=&quot;tooltiptext&quot;&gt; monimentum n (genitive monimentī); second declension. reminder, memorial; monument;tomb, burial place&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;tooltip&quot;&gt;uenire,&lt;span class=&quot;tooltiptext&quot;&gt; veniō, venīre, vēnī, ventum. to come&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;ne&lt;span class=&quot;tooltiptext&quot;&gt; nē, adv. no, not.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;suus &lt;span class=&quot;tooltiptext&quot;&gt; suus sua suum, pronoun.所有格，反身代词，his, her, its, their (own) &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tooltip&quot;&gt;hoc &lt;span class=&quot;tooltiptext&quot;&gt; hoc+dative, to this place &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;illis &lt;span class=&quot;tooltiptext&quot;&gt; ille, illa, illud. dative, that &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;clauserit &lt;span class=&quot;tooltiptext&quot;&gt; claudō, claudere, clausī, clausum. shut, close, lock; limit.第三人称单数完成时主动态虚拟式 &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;auctor&lt;span class=&quot;tooltiptext&quot;&gt;auctor, auctōris. 阳性，单数，主格，author &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;tooltip&quot;&gt;iter.&lt;span class=&quot;tooltiptext&quot;&gt;iter,itineris. a route, a journey, a path 第三变格法，主格，宾格，呼格，单数 &lt;/span&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;center&gt;
+&lt;div class=&quot;tooltip&quot;&gt;整句翻译&lt;span class=&quot;tooltiptextk&quot;&gt;他们不敢进入公共记忆，即使作者他自己并未锁住进入那个地方的通路。 &lt;/span&gt;&lt;/div&gt;
+&lt;/center&gt;
+A, &lt;div class=&quot;tooltip&quot;&gt;quotiens &lt;span class=&quot;tooltiptext&quot;&gt;adv. how often, as often as &lt;/span&gt;
+&lt;/div&gt;
+
+ &lt;div class=&quot;tooltip&quot;&gt;dixi:&lt;span class=&quot;tooltiptext&quot;&gt;dīcō, dīcēre, dīxī, dictum. to say, tell&lt;/span&gt;
+ &lt;/div&gt;
+ 
+ '&lt;div class=&quot;tooltip&quot;&gt;Certe &lt;span class=&quot;tooltiptext&quot;&gt;adv. assuredly, of course; at least&lt;/span&gt;
+ &lt;/div&gt;
+ nil &lt;div class=&quot;tooltip&quot;&gt;turpe &lt;span class=&quot;tooltiptext&quot;&gt;turpis, turpe. n.adj. ugly, unsightly; foul, filthy. Acc.&lt;/span&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;tooltip&quot;&gt;dicetis,&lt;span class=&quot;tooltiptext&quot;&gt;dīcō, dīcere, dīxī, dictum. you will say.&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;br /&gt;
+
+  &lt;div class=&quot;tooltip&quot;&gt;ite, &lt;span class=&quot;tooltiptext&quot;&gt;...&lt;/span&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;tooltip&quot;&gt;patet&lt;span class=&quot;tooltiptext&quot;&gt;...&lt;/span&gt;
+ &lt;/div&gt; 
+ 
+ &lt;div class=&quot;tooltip&quot;&gt;castis &lt;span class=&quot;tooltiptext&quot;&gt;...&lt;/span&gt;
+ &lt;/div&gt; 
+ 
+&lt;div class=&quot;tooltip&quot;&gt;uersibus &lt;span class=&quot;tooltiptext&quot;&gt;...&lt;/span&gt;
+ &lt;/div&gt; 
+ 
+&lt;div class=&quot;tooltip&quot;&gt;ille &lt;span class=&quot;tooltiptext&quot;&gt;...&lt;/span&gt;
+ &lt;/div&gt; 
+ 
+&lt;div class=&quot;tooltip&quot;&gt;locus.'&lt;span class=&quot;tooltiptext&quot;&gt;...&lt;/span&gt;
+ &lt;/div&gt; 
+ 
+&lt;br /&gt;
+&lt;center&gt;&lt;div class=&quot;tooltip&quot;&gt;整句翻译&lt;span class=&quot;tooltiptextk&quot;&gt;... &lt;/span&gt;&lt;/div&gt;&lt;/center&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;
@@ -679,127 +923,6 @@ divide, assign; present; grant, allot, bestow, attribute;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>49音图</title>
-   <link href="/2019/03/02/49%E9%9F%B3%E5%9B%BE.html"/>
-   <updated>2019-03-02T00:00:00+08:00</updated>
-   <id>/2019/03/02/49音图</id>
-   <content type="html">&lt;p&gt;换个方式记忆梵文49音，是否会更好呢？&lt;/p&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-
-graph LR
-
-A[49音] --按发音部位--&amp;gt; B[元音辅音]
-B --&amp;gt; H[喉音]
-B --&amp;gt; E[腭音]
-B --&amp;gt; S[舌音]
-B --&amp;gt; C[齿音]
-B --&amp;gt; D[唇音]
-B --&amp;gt; Q[气音]
-B --&amp;gt; Z[止音与韵尾鼻音]
-H --元--&amp;gt; aa[&quot;अ a  आ ā&quot;]
-H --闭塞音--&amp;gt; ka[&quot;क ka ख kha&quot;]
-H --闭塞音--&amp;gt; ga[&quot;ग ga घ gha&quot;]
-H --闭塞音--&amp;gt; n1[&quot;ङ ṅa&quot;]
-E --元--&amp;gt; ii[&quot;इ i ई ī&quot;]
-E --复元音--&amp;gt; eai[&quot;ए e ऐ ai&quot;]
-E --半元音--&amp;gt; ya[&quot;य ya&quot;]
-E --闭塞音--&amp;gt; ca[&quot;च ca छ cha&quot;]
-E --闭塞音--&amp;gt; ja[&quot;ज ja झ jha&quot;]
-E --闭塞音--&amp;gt; n2[&quot;ञ ña&quot;]
-E --咝音--&amp;gt; xi[&quot;श ś&quot;]
-S --元音--&amp;gt; ri[&quot;ऋ ṛ ॠṝ&quot;]
-S --闭塞音--&amp;gt; ta1s[&quot;ट ṭa ठ ṭha&quot;]
-S --闭塞音--&amp;gt; da1s[&quot;ड ḍa ढ ḍha&quot;]
-S --闭塞音--&amp;gt; n3[&quot;ण ṇa&quot;]
-S --咝音--&amp;gt; shi[&quot;ष ṣ&quot;]
-C --元音--&amp;gt; li[&quot;ऌ ḷ&quot;]
-C --闭塞音--&amp;gt; ta2c[&quot;त ta थ tha&quot;]
-C --闭塞音--&amp;gt; da2c[&quot;द da ध dha&quot;]
-C --闭塞音--&amp;gt; n4[&quot; न na&quot;]
-C --咝音--&amp;gt; si[&quot;स s&quot;]
-D --元音--&amp;gt; uu[&quot;उ u ऊ ū&quot;]
-D --复元音--&amp;gt; oau[&quot;ओ o औ au&quot;]
-D --半元音--&amp;gt; va[&quot;व va&quot;]
-D --闭塞音--&amp;gt; pa[&quot;प pa फ pha&quot;]
-D --闭塞音--&amp;gt; ba[&quot;ब ba भ bha&quot;]
-D --闭塞音--&amp;gt; ma[&quot;म ma&quot;]
-Q --喉门摩擦音--&amp;gt; he[&quot;ह ha&quot;]
-Z --止音--&amp;gt; h1d[&quot;ः  ḥ&quot;]
-Z --韵尾鼻音--&amp;gt; m1d[&quot;ं  ṃ&quot;]
-
-&lt;/div&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>咝音的发音与写法</title>
-   <link href="/2019/03/01/%E6%A2%B5%E6%96%87%E5%92%9D%E9%9F%B3.html"/>
-   <updated>2019-03-01T00:00:00+08:00</updated>
-   <id>/2019/03/01/梵文咝音</id>
-   <content type="html">&lt;p&gt;咝音 स्  s  श्  ś  ष्  ṣ&lt;/p&gt;
-
-&lt;h2 id=&quot;发音&quot;&gt;发音&lt;/h2&gt;
-
-&lt;p&gt;三个咝音，都是摩擦清辅音。&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;所谓摩擦音，是由于发这些音时，口腔通道不完全阻塞，留有窄小空隙，气流从中泄出，带有摩擦或振动。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;齿音组咝音 स्  s
-    &lt;blockquote&gt;
-      &lt;p&gt;舌尖触，上齿龈，不全堵，留小缝，气泄出，发咝音，不振动，细细思。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;腭音组咝音 श्  ś
-    &lt;blockquote&gt;
-      &lt;p&gt;舌身抬，触硬腭，在前部，不全堵，留小缝，气泄出，微摩擦，发希音，不振动，珍惜有。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-  &lt;li&gt;舌音组咝音 ष्  ṣ
-    &lt;blockquote&gt;
-      &lt;p&gt;舌尖上卷，接触硬腭，不全阻塞，留有缝隙，气流泄出，微有摩擦，作诗诗音，声带不振。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;写法&quot;&gt;写法&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;叠加字符
-    &lt;blockquote&gt;
-      &lt;p&gt;按照辅音叠加的基本原则，即：需要叠加的辅音中，如果第一个辅音的右侧有一垂直线，那么要舍去这道线而置于前。&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;三个咝音都符合这个原则，故通常按此原则处理。但也有例外：&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;स्न sna न作为叠加字符的第二个字符时，一般要丢掉上面的横线并写在下面。&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;श्च śca   श्न śna   श्ल śla    श्व śva&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;变化比较大的क्ष kṣa   श्र śra&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
 </content>
  </entry>
  

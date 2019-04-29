@@ -2,7 +2,7 @@
 
 layout: post
 
-title: 黑海书简
+title: 贺拉斯诗全集
 
 tags:
 - latin
@@ -12,7 +12,7 @@ tags:
 <html>
 <head>
 <meta charset="utf-8">
-<title>黑海书简</title>
+<title>贺拉斯诗全集摘录</title>
 </head>
 <style>
 .tooltip {
@@ -66,17 +66,18 @@ tags:
 
 </style>
 <body>
-<div class="tooltip">Naso
-  <span class="tooltiptext">主格，奥维德的姓</span>
+Me doctārum hederae praemia frontium dis miscent superis.
+<div class="tooltip">Me
+  <span class="tooltiptext">宾格，我</span>
 </div> 
 
-<div class="tooltip">Tomitanae<span class="tooltiptext">属格，地名Tomis</span>
+<div class="tooltip">doctārum<span class="tooltiptext">属格，doctus, docta, doctum</span>
 </div>
 
-<div class="tooltip"> iam<span class="tooltiptext"> 副词，now, already</span>
+<div class="tooltip"> hederae<span class="tooltiptext"> hedera, -ae, F. 常青藤。</span>
 </div>
 
-<div class="tooltip"> non<span class="tooltiptext"> iam non有no longer之意</span>
+<div class="tooltip"> praemia<span class="tooltiptext"> praemium, -iī. N. prize, reward. 第二变格法。</span>
 </div>
 
 <div class="tooltip">nouus<span class="tooltiptext">novus, 形容词，

@@ -44,16 +44,16 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/04/05/zhushi.html">黑海书简</a></h2>
+      <h2><a href="/2019/04/26/samba.html">树莓派上建samba</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-04-05">2019-04-05</time>
+      <time datetime="2019-04-26">2019-04-26</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#latin" title="latin">#latin</a>
+      <a href="/tags.html#电脑技术" title="电脑技术">#电脑技术</a>
       
     </span>
     
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = '黑海书简'
+      like-name       = '树莓派上建samba'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,149 +74,73 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <html>
-<head>
-<meta charset="utf-8" />
-<title>黑海书简</title>
-</head>
-<style>
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
+    <h2 id="安装samba-和-samba-common-bin">安装samba 和 samba-common-bin</h2>
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+<p>启动树莓派以后，在命令行输入：</p>
 
-    /* 定位 */
-    position: absolute;
-    left:-20px;
-    top:30px;
-    z-index: 1;
-}
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+sudo apt-get install samba samba-common-bin
+</code></pre></div></div>
 
-.tooltip .tooltiptextk {
-    visibility: hidden;
-    width: 300px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+<h2 id="配置etcsambasmbconf文件">配置/etc/samba/smb.conf文件</h2>
 
-    /* 定位 */
-    position: absolute;
-    left:-100px;
-    top:30px;
-    z-index: 1;
-}
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install vim
+sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.back
+sudo vim /etc/samba/smb.conf
+</code></pre></div></div>
 
+<p>shift-g 跳到最后一行，加入如下语句：</p>
 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 在末尾加入如下内容
+# 分享名称
+[MyNAS]
+    # 说明信息
+    comment = NAS Storage
+    # 可以访问的用户
+    valid users = pi,root
+    # 共享文件的路径,raspberry pi 会自动将连接到其上的外接存储设备挂载到/media/pi/目录下。
+    path = /media/pi/
+    # 可被其他人看到资源名称（非内容）
+    browseable = yes
+    # 可写
+    writable = yes
+    # 新建文件的权限为 664
+    create mask = 0664
+    # 新建目录的权限为 775
+    directory mask = 0775
+</code></pre></div></div>
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
+<p>可以把配置文件中你不需要的分享名称删除，例如 [homes], [printers] 等。</p>
 
-.tooltip:hover .tooltiptextk {
-    visibility: visible;
-}
+<h2 id="测试配置文件是否有错误根据提示做相应修改">测试配置文件是否有错误，根据提示做相应修改</h2>
 
-</style>
-<body style="text-align:center;">
-<div class="tooltip">Naso
-  <span class="tooltiptext">主格，奥维德的姓</span>
-</div> 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>testparm
+</code></pre></div></div>
+<h2 id="添加登陆账户并创建密码必须是-linux-已存在的用户">添加登陆账户并创建密码，必须是 linux 已存在的用户</h2>
 
-<div class="tooltip">Tomitanae<span class="tooltiptext">属格，地名Tomis</span>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo smbpasswd -a pi
+</code></pre></div></div>
 
-<div class="tooltip"> iam<span class="tooltiptext"> 副词，now, already</span>
-</div>
+<h2 id="重启-samba-服务">重启 samba 服务</h2>
 
-<div class="tooltip"> non<span class="tooltiptext"> iam non有no longer之意</span>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /etc/init.d/samba restart
+</code></pre></div></div>
 
-<div class="tooltip">nouus<span class="tooltiptext">novus, 形容词，
-        主格，阳性，单数，new</span>
-</div>
+<h2 id="测试">测试</h2>
 
-<div class="tooltip">incola<span class="tooltiptext">incola, -ae,inhabitant, resident </span>
-</div>
+<p>回到windows，就可以在网络当中发现共享的文件夹了：</p>
 
-<div class="tooltip">terrae<span class="tooltiptext"> terra,-ae 属格</span>
-</div>
+<h2 id="设置开机自启动编辑etcrclocal">设置开机自启动，编辑/etc/rc.local</h2>
 
-<br />
-<div class="tooltip">hoc <span class="tooltiptext">hic, hac, hoc, with dative,to this place </span>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /etc/init.d/samba restart
+</code></pre></div></div>
 
-<div class="tooltip">tibi <span class="tooltiptext"> Dat. of tū</span>
-</div>
+<p>参考链接：</p>
 
-<div class="tooltip"> de Getico litore <span class="tooltiptext"> 从色雷斯的郊外</span>
-</div>
+<p>树莓派搭建NAS服务<a href="http://blog.csdn.net/founderznd/article/details/52325332">http://blog.csdn.net/founderznd/article/details/52325332</a></p>
 
-<div class="tooltip"> mittit <span class="tooltiptext">mittiō, mittere, mīsī, missum, send, let go.</span>
-</div>
+<p>树莓派开启samba服务<a href="https://www.cnblogs.com/mnstar/p/8144943.html">https://www.cnblogs.com/mnstar/p/8144943.html</a></p>
 
-<div class="tooltip">opus<span class="tooltiptext">opus, operis, n. work, workmanship; work, building, book. 3rd declension. acc.</span>
-</div>
-
-<br />
-
-<div class="tooltip">整句翻译<span class="tooltiptextk">托密斯的拿骚，已不是这个地方的新住民，从色雷斯城郊这儿寄送这本书给你</span>
-</div>
-
-<br />
-
-Si <div class="tooltip">uacat,<span class="tooltiptext">vacō, vacāre, vacāvī, vacātum, be free from, be unoccupied.</span>
-</div>
-
-<div class="tooltip">hospitio<span class="tooltiptext">hospitium,-ī.  中性名词，夺格，单数.friendship; lodging, inn. &lt;款待，招待，留客； 旅馆，旅舍； 交际，友谊。</span>
-</div>
-
-<div class="tooltip">peregrinos,<span class="tooltiptext">peregrinus,-a,-um adj. foreign,strange; M. foreigner,alien. 行旅者，游客； 异乡，异地者，外籍，客籍者； 外行，门外汉。Acc. </span>
-</div>
-
-<div class="tooltip">Brute,<span class="tooltiptext"> 呼格</span>
-</div>
-
-<div class="tooltip">libellos<span class="tooltiptext">libellus, -ī; M. small book; diary, letter; notice, handbill...</span>
-</div>
-
-<br />
-
-<div class="tooltip">  excipe<span class="tooltiptext">excipiō, -ipere, -ēpī, -eptum 第三变位法，现在时、命令式、主动态，单数，to take out, remove; catch; receive</span>
-</div>
-
-<div class="tooltip">dumque<span class="tooltiptext">dum=while, until, que=and</span>
-</div>
-
-<div class="tooltip">aliquo<span class="tooltiptext">adv. to some place,somewhere else</span>,
-</div>
-
-<div class="tooltip">quolibet<span class="tooltiptext">adv. anywhere</span>
-</div>
-
-<div class="tooltip">abde<span class="tooltiptext">abdō, abdere, abdidī, abditum ; 第三变位法，现在时、主动态、命令式， hide, conceal, keep secret, cover; remove, put away.</span>
-</div>
-
-<div class="tooltip">modo<span class="tooltiptext">adv. just, only; just now; presently</span>
-</div>
-
-<div class="tooltip">整句翻译<span class="tooltiptextk">如果他淡漠友谊于异乡者，布鲁图，当（你）于别处收到这本小册子，请立刻将其放置一旁。 </span>
-</div>
-
-
-</body>
-</html>
 
     </section>
     </article>
@@ -226,6 +150,20 @@ Si <div class="tooltip">uacat,<span class="tooltiptext">vacō, vacāre, vacāvī
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-04-15">2019-04-15</time>
+      <a href="/2019/04/15/latin-horactus.html" title="贺拉斯诗全集">贺拉斯诗全集</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-04-05">2019-04-05</time>
+      <a href="/2019/04/05/zhushi.html" title="黑海书简">黑海书简</a>
+    </li>
   
     
     
