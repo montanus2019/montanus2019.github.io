@@ -4,12 +4,30 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-04-29T16:59:47+08:00</updated>
+ <updated>2019-04-29T17:13:23+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>空心三角阵与实心三角阵</title>
+   <link href="/2019/04/29/triangle.html"/>
+   <updated>2019-04-29T00:00:00+08:00</updated>
+   <id>/2019/04/29/triangle</id>
+   <content type="html">&lt;p&gt;被空心三角阵与实心三角阵虐了一下午，（1）（3）还好能解决，（2）的参考答案直接是断言式的，无法看出其每一步的推理依据。即使在承认其断言的合理性基础上，其后续的做法也得用到一元二次方程，超出了其所谓的三年级册的范围。
+终于，在刚刚想到了一个三年级同学能理解的解题方法–利用分解质因数、奇数项等差数列求和公式等知识点来解决本题，想来比一元二次方程好理解些。&lt;/p&gt;
+
+&lt;p&gt;一些棋子摆成的正三角形点阵，和“空心方阵”类似，也可以有“空心三角阵”．&lt;/p&gt;
+
+&lt;p&gt;（1）如果有一个5层的空心三角阵，最外层每边有20个棋子，那么一共有多少枚棋子？&lt;/p&gt;
+
+&lt;p&gt;（2）如果一个空心三角阵共有294枚棋子，那么它最多有多少层？&lt;/p&gt;
+
+&lt;p&gt;（3）如果一个空心三角阵共有294枚棋子，不止一层，那么它的最外层最多有多少枚棋子？&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>树莓派上建samba</title>
@@ -805,123 +823,6 @@ divide, assign; present; grant, allot, bestow, attribute;&lt;/p&gt;
 &lt;p&gt;英法德意日、汉俄西葡韩，与当代人交流的语言；&lt;/p&gt;
 
 &lt;p&gt;算法，与计算机沟通的语言。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>韦洛克拉丁语教程读书笔记1</title>
-   <link href="/2019/03/18/wheelock1.html"/>
-   <updated>2019-03-18T00:00:00+08:00</updated>
-   <id>/2019/03/18/wheelock1</id>
-   <content type="html">&lt;h2 id=&quot;发音&quot;&gt;发音&lt;/h2&gt;
-
-&lt;p&gt;双元音ui的发音：只见于huius, cuius, huic, cui, hui。在其他地方，这两个字母要分开发音，比如fu-it, frūctu-ī.&lt;/p&gt;
-
-&lt;p&gt;bs和bt发ps和pt的音，如：urbs, obtineō.&lt;/p&gt;
-
-&lt;p&gt;c总是像在can中那样发硬音。&lt;/p&gt;
-
-&lt;p&gt;g总是像在get中那样发硬音。&lt;/p&gt;
-
-&lt;p&gt;h是一个送气音。&lt;/p&gt;
-
-&lt;p&gt;i的发音：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;用在词首元音之前时，通常充当辅音，发音为y，就像在yes中那样；&lt;/li&gt;
-  &lt;li&gt;用在两个元音之间时起两个作用：既作为元音i与前一元音构成双元音，同时也作为辅音y；&lt;/li&gt;
-  &lt;li&gt;在其他情况下通常是一个元音。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;m和在英语中一样发闭口音。在某些情况下，元音之后的词尾m发音时双唇不闭合，从而造成它之前的元音的鼻音化。&lt;/p&gt;
-
-&lt;p&gt;q后面总是跟着辅音性的u，其组合发&lt;em&gt;kw&lt;/em&gt;的音。&lt;/p&gt;
-
-&lt;p&gt;r发舌尖颤音。&lt;/p&gt;
-
-&lt;p&gt;s总是像在see中那样发清音。&lt;/p&gt;
-
-&lt;p&gt;t的发音如同tired中的t。&lt;/p&gt;
-
-&lt;p&gt;v的发音如同w。&lt;/p&gt;
-
-&lt;p&gt;x的发音如同axle中的ks。&lt;/p&gt;
-
-&lt;p&gt;送气音&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;ch  相当于希腊语中的chi χ，发音如同blockhead中的ckh.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;ph 相当于希腊语中的phi φ ，发音如同uphill中的ph。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;th 相当于希腊语中的theta, θ，发音如同hothouse中的th。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;罗马人非常恰当地将双辅音按照两个分开的辅音来发音。&lt;/p&gt;
-
-&lt;h2 id=&quot;音节&quot;&gt;音节&lt;/h2&gt;
-&lt;p&gt;一个词的音节数等于它的元音和双元音的个数。&lt;/p&gt;
-
-&lt;h3 id=&quot;音节划分&quot;&gt;音节划分&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;两个临近的元音，或者一个元音和一个辅音，要分开。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;两个元音之间的单辅音附属于第二个元音。&lt;/li&gt;
-  &lt;li&gt;当两个元音之间有两个或多个辅音时，一般只有最后一个辅音从属于后面那个元音。&lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;但是，一个塞音（p, b, t, d, c, g)+一个流音（l，r）通常算作单辅音（诗歌一般除外），它们都从属于后面那个元音。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;此外，qu和送气音ch, ph, th也算作单辅音，它们在音节划分时不能分开。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;音节音量&quot;&gt;音节音量&lt;/h3&gt;
-&lt;p&gt;也就是音节音长。&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;天然长：如果一个音节中包含有长音节或双元音，则该音节为天然长。&lt;/li&gt;
-  &lt;li&gt;凭借位置长： 如果一个音节中包含有短元音，而且该元音后面跟着两个或多个辅音，或者跟着x（它是一个双辅音，=ks），则该音节为凭借位置长。&lt;/li&gt;
-  &lt;li&gt;在其他情况下，音节都是短的。&lt;/li&gt;
-  &lt;li&gt;一个塞音+一个流音，以及qu、送气音ch、ph和th通常都算作单辅音。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;音节音量决定着：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;拉丁语诗歌节奏&lt;/li&gt;
-  &lt;li&gt;有两三个音节的词的加重重音的位置。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;变位时，长元音通常会变短：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;如果该元音之后紧跟着另一个元音；&lt;/li&gt;
-  &lt;li&gt;或者位于词末的-m，-r, -t的前面，&lt;/li&gt;
-  &lt;li&gt;或者处于任何位置的nt或nd的前面。&lt;/li&gt;
-  &lt;li&gt;对于第一变位法或-a变位法动词(与第二变位法或-变位法动词不同),词干元音不仅会变短，而且还会与词末的缩约，在第一人称单数中完全消失。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;重音&quot;&gt;重音&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;双音节词的重音总是落在第一个音节上；&lt;/li&gt;
-  &lt;li&gt;对于三音节或多音节词：&lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;1.如果它的倒数第二个音节是长的，那么重音落在倒数第二个音节上(penult)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;2.否则，重音落在倒数第三个音节上。（antepenult)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
 
 </content>
  </entry>
