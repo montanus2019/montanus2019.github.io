@@ -44,16 +44,16 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/04/29/triangle.html">空心三角阵与实心三角阵</a></h2>
+      <h2><a href="/2019/05/04/rss-newsboat.html">重归rss</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-04-29">2019-04-29</time>
+      <time datetime="2019-05-04">2019-05-04</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#奥数" title="奥数">#奥数</a>
+      <a href="/tags.html#电脑技术" title="电脑技术">#电脑技术</a>
       
     </span>
     
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = '空心三角阵与实心三角阵'
+      like-name       = '重归rss'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,16 +74,23 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <p>被空心三角阵与实心三角阵虐了一下午，（1）（3）还好能解决，（2）的参考答案直接是断言式的，无法看出其每一步的推理依据。即使在承认其断言的合理性基础上，其后续的做法也得用到一元二次方程，超出了其所谓的三年级册的范围。
-终于，在刚刚想到了一个三年级同学能理解的解题方法–利用分解质因数、奇数项等差数列求和公式等知识点来解决本题，想来比一元二次方程好理解些。</p>
+    <p>字符界面下，termux中内置可安装的rss的阅读器，只有newsboat可用。</p>
 
-<p>一些棋子摆成的正三角形点阵，和“空心方阵”类似，也可以有“空心三角阵”．</p>
+<h2 id="newsboat的安装">newsboat的安装</h2>
 
-<p>（1）如果有一个5层的空心三角阵，最外层每边有20个棋子，那么一共有多少枚棋子？</p>
+<p>termux下只需要输入</p>
 
-<p>（2）如果一个空心三角阵共有294枚棋子，那么它最多有多少层？</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg install newsboat
+</code></pre></div></div>
 
-<p>（3）如果一个空心三角阵共有294枚棋子，不止一层，那么它的最外层最多有多少枚棋子？</p>
+<p>配置newsboat，在~/.newsboat目录下创建并编辑urls文件，将rss网址逐行输入即可。</p>
+
+<p>如有rss源文件的话，也可以用命令行<code class="highlighter-rouge">newsboat -i *.opml</code>的形式导入opml文件</p>
+
+<h2 id="一个好用的查找rss源的网址">一个好用的查找rss源的网址</h2>
+
+<p>https://rsshub.app</p>
+
 
     </section>
     </article>
@@ -93,6 +100,13 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-04-29">2019-04-29</time>
+      <a href="/2019/04/29/triangle.html" title="空心三角阵与实心三角阵">空心三角阵与实心三角阵</a>
+    </li>
   
     
     

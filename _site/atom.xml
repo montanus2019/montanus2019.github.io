@@ -4,12 +4,37 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-04-29T17:19:01+08:00</updated>
+ <updated>2019-05-04T18:41:54+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>重归rss</title>
+   <link href="/2019/05/04/rss-newsboat.html"/>
+   <updated>2019-05-04T00:00:00+08:00</updated>
+   <id>/2019/05/04/rss-newsboat</id>
+   <content type="html">&lt;p&gt;字符界面下，termux中内置可安装的rss的阅读器，只有newsboat可用。&lt;/p&gt;
+
+&lt;h2 id=&quot;newsboat的安装&quot;&gt;newsboat的安装&lt;/h2&gt;
+
+&lt;p&gt;termux下只需要输入&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pkg install newsboat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;配置newsboat，在~/.newsboat目录下创建并编辑urls文件，将rss网址逐行输入即可。&lt;/p&gt;
+
+&lt;p&gt;如有rss源文件的话，也可以用命令行&lt;code class=&quot;highlighter-rouge&quot;&gt;newsboat -i *.opml&lt;/code&gt;的形式导入opml文件&lt;/p&gt;
+
+&lt;h2 id=&quot;一个好用的查找rss源的网址&quot;&gt;一个好用的查找rss源的网址&lt;/h2&gt;
+
+&lt;p&gt;https://rsshub.app&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>空心三角阵与实心三角阵</title>
@@ -807,22 +832,6 @@ divide, assign; present; grant, allot, bestow, attribute;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;徐譯&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;正义是分给每个人以其权利的不懈的、永恒的意志。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>语言随想</title>
-   <link href="/2019/03/21/%E8%AF%AD%E8%A8%80.html"/>
-   <updated>2019-03-21T00:00:00+08:00</updated>
-   <id>/2019/03/21/语言</id>
-   <content type="html">&lt;p&gt;数学，与自然沟通的语言；&lt;/p&gt;
-
-&lt;p&gt;梵语、古汉语、拉丁语、古希腊语，与古人沟通的语言；&lt;/p&gt;
-
-&lt;p&gt;英法德意日、汉俄西葡韩，与当代人交流的语言；&lt;/p&gt;
-
-&lt;p&gt;算法，与计算机沟通的语言。&lt;/p&gt;
 
 </content>
  </entry>
