@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-05-05T18:46:37+08:00</updated>
+ <updated>2019-05-05T19:59:07+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -16,7 +16,13 @@
    <link href="/2019/05/05/vim%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF.html"/>
    <updated>2019-05-05T00:00:00+08:00</updated>
    <id>/2019/05/05/vim设置文件模板</id>
-   <content type="html">&lt;p&gt;由于总有一段相同的内容，所以考虑用vim编辑md后缀的文件时，自动添加这段内容。经查询网络，结合系统实际，终于成功。&lt;/p&gt;
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;好记性不如烂笔头。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;因而，应该适时将头脑中闪现的，心中所思所想的，记录下来。集腋成裘，总不会辜负自己。而我想来，微信公号与朋友圈都不是这种用途的好工具。在自己的手机上建立一个blog并同步到github上，不失为一个不错的办法。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;由于总有一段相同的内容，所以考虑用vim编辑md后缀的文件时，自动添加这段内容。经查询网络，结合系统实际，终于成功。&lt;/p&gt;
 
 &lt;p&gt;现将过程记录如下：&lt;/p&gt;
 
@@ -46,6 +52,32 @@
 &lt;p&gt;3.然后你使用vim新建一个*.md的文件就会自动加载/usr/share/vim/vimfiles目录下的template.md里的内容&lt;/p&gt;
 
 &lt;p&gt;如此，即可实现建带指定后缀的空文件时，就自动添加模板内容。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>linux下设置短命令</title>
+   <link href="/2019/05/05/linux-alias.html"/>
+   <updated>2019-05-05T00:00:00+08:00</updated>
+   <id>/2019/05/05/linux-alias</id>
+   <content type="html">&lt;p&gt;　　在LINUX中，有很多常用的命令，常用的命令我们可以熟练的记忆，但是对于不经常使用的命令恐怕是需要翻阅手册了，但是我们可以简化这些命令的输入来达到简便记忆的效果。 &lt;/p&gt;
+
+&lt;p&gt;　　这里以termux下的BASH为例： &lt;/p&gt;
+
+&lt;p&gt;　　编辑&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/etc/bash.bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;这个文件（所有使用这个SHELL的用户都可以享受到便利,如果没有ROOT权限，则编辑你自己目录下的.bashrc文件，区别在于只有你自己可以使用下面定义的别名） &lt;/p&gt;
+
+&lt;p&gt;　　在最后加入这一段： &lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;　　alias l=&quot;ls --color -l&quot; 
+　　alias lm=&quot;ls --color -l | more&quot; 
+　　alias la=&quot;ls --color -l -a&quot; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;　　这样，我们就可以单独使用“l”来列出长目录了。而使用“lm”则可以分屏列出目录，至于“la”则同时列出隐含文件。 &lt;/p&gt;
 
 </content>
  </entry>
@@ -725,50 +757,6 @@ A, &lt;div class=&quot;tooltip&quot;&gt;quotiens &lt;span class=&quot;tooltiptex
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>优士丁尼-法学阶梯（二）</title>
-   <link href="/2019/03/26/iustiniai-institutiones.html"/>
-   <updated>2019-03-26T00:00:00+08:00</updated>
-   <id>/2019/03/26/iustiniai-institutiones</id>
-   <content type="html">&lt;p&gt;I.1.1.1&lt;/p&gt;
-
-&lt;p&gt;Iuris prudentia est divinarum atque humanarum rerum notitia, iusti atque iniusti scientia.&lt;/p&gt;
-
-&lt;p&gt;句法分析：&lt;/p&gt;
-
-&lt;p&gt;主謂结构。&lt;/p&gt;
-
-&lt;div class=&quot;mermaid&quot;&gt;
-
-graph BT;
-
-A0[Iuris prudentia est divinarum atque humanarum rerum notitia, iusti atque iniusti scientia.] --&amp;gt; A;
-
-A[Iuris prudentia est notitia, scientia] --&amp;gt; B(Iuris prudentia);
-
-A --&amp;gt; C(divinarum atque humanarum rerum notitia, iusti atque iniusti scientia);
-
-B --属格--- D(iuris);
-
-C --&amp;gt; C00(divinarum atque humanarum rerum notitia);
-
-C00 --属格--- C0;
-
-C0(divinarum atque humanarum rerum) --复数属格---C1(divinarum);
-
-C0 --复数属格---C2(humanarum);
-
-C --&amp;gt; C01(iusti atque iniusti scientia);
-
-C01 --属格--- C011(iusti);
-
-C01 --属格--- C012(iniusti);
-
-&lt;/div&gt;
 
 </content>
  </entry>

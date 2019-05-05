@@ -74,7 +74,13 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <p>由于总有一段相同的内容，所以考虑用vim编辑md后缀的文件时，自动添加这段内容。经查询网络，结合系统实际，终于成功。</p>
+    <blockquote>
+  <p>好记性不如烂笔头。</p>
+</blockquote>
+
+<p><em>因而，应该适时将头脑中闪现的，心中所思所想的，记录下来。集腋成裘，总不会辜负自己。而我想来，微信公号与朋友圈都不是这种用途的好工具。在自己的手机上建立一个blog并同步到github上，不失为一个不错的办法。</em></p>
+
+<p>由于总有一段相同的内容，所以考虑用vim编辑md后缀的文件时，自动添加这段内容。经查询网络，结合系统实际，终于成功。</p>
 
 <p>现将过程记录如下：</p>
 
@@ -114,6 +120,13 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-05-05">2019-05-05</time>
+      <a href="/2019/05/05/linux-alias.html" title="linux下设置短命令">linux下设置短命令</a>
+    </li>
   
     
     
