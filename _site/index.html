@@ -44,11 +44,11 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/05/04/rss-newsboat.html">重归rss</a></h2>
+      <h2><a href="/2019/05/05/vim%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF.html">Vim文件模板设置</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-05-04">2019-05-04</time>
+      <time datetime="2019-05-05">2019-05-05</time>
     </span>
     
     <span class="tags">
@@ -59,22 +59,36 @@
     
     </section>
     <section class="post">
-    <p>字符界面下，termux中内置可安装的rss的阅读器，只有newsboat可用。</p>
+    <p>由于总有一段相同的内容，所以考虑用vim编辑md后缀的文件时，自动添加这段内容。经查询网络，结合系统实际，终于成功。</p>
 
-<h2 id="newsboat的安装">newsboat的安装</h2>
+<p>现将过程记录如下：</p>
 
-<p>termux下只需要输入</p>
+<p>1.在</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/data/data/com.termux/files/usr/share/vim/
+</code></pre></div></div>
+<p>目录下新建vimfiles目录。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg install newsboat
+<p>2.在</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/data/data/com.termux/files/usr/share/vim/vimfiles
+</code></pre></div></div>
+<p>目录下建一个自定义后缀的模板文件，比如template.md,在里面输入你自己想要的内容。</p>
+
+<p>3.编辑</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/data/data/com.termux/files/usr/share/vim/vimrc
+</code></pre></div></div>
+<p>文件，找到如下一行：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set autoread
 </code></pre></div></div>
 
-<p>配置newsboat，在~/.newsboat目录下创建并编辑urls文件，将rss网址逐行输入即可。</p>
+<p>在下面加入类似一行，把相应的后缀改成md就可以了，修改完成后如下：</p>
 
-<p>如有rss源文件的话，也可以用命令行<code class="highlighter-rouge">newsboat -i *.opml</code>的形式导入opml文件</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autocmd BufNewFile \*.md 0r /usr/share/vim/vimfiles/template.md
+</code></pre></div></div>
 
-<h2 id="一个好用的查找rss源的网址">一个好用的查找rss源的网址</h2>
+<p>3.然后你使用vim新建一个*.md的文件就会自动加载/usr/share/vim/vimfiles目录下的template.md里的内容</p>
 
-<p>https://rsshub.app</p>
+<p>如此，即可实现建带指定后缀的空文件时，就自动添加模板内容。</p>
 
 
     </section>
@@ -85,6 +99,13 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-05-04">2019-05-04</time>
+      <a href="/2019/05/04/rss-newsboat.html" title="重归rss">重归rss</a>
+    </li>
   
     
     

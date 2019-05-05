@@ -4,12 +4,51 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-05-04T18:41:54+08:00</updated>
+ <updated>2019-05-05T18:46:37+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>Vim文件模板设置</title>
+   <link href="/2019/05/05/vim%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF.html"/>
+   <updated>2019-05-05T00:00:00+08:00</updated>
+   <id>/2019/05/05/vim设置文件模板</id>
+   <content type="html">&lt;p&gt;由于总有一段相同的内容，所以考虑用vim编辑md后缀的文件时，自动添加这段内容。经查询网络，结合系统实际，终于成功。&lt;/p&gt;
+
+&lt;p&gt;现将过程记录如下：&lt;/p&gt;
+
+&lt;p&gt;1.在&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/share/vim/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;目录下新建vimfiles目录。&lt;/p&gt;
+
+&lt;p&gt;2.在&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/share/vim/vimfiles
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;目录下建一个自定义后缀的模板文件，比如template.md,在里面输入你自己想要的内容。&lt;/p&gt;
+
+&lt;p&gt;3.编辑&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/share/vim/vimrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;文件，找到如下一行：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;set autoread
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在下面加入类似一行，把相应的后缀改成md就可以了，修改完成后如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autocmd BufNewFile \*.md 0r /usr/share/vim/vimfiles/template.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3.然后你使用vim新建一个*.md的文件就会自动加载/usr/share/vim/vimfiles目录下的template.md里的内容&lt;/p&gt;
+
+&lt;p&gt;如此，即可实现建带指定后缀的空文件时，就自动添加模板内容。&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>重归rss</title>
@@ -730,108 +769,6 @@ C01 --属格--- C011(iusti);
 C01 --属格--- C012(iniusti);
 
 &lt;/div&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>优士丁尼«法学阶梯»（一）</title>
-   <link href="/2019/03/25/iustiniai-institutiones.html"/>
-   <updated>2019-03-25T00:00:00+08:00</updated>
-   <id>/2019/03/25/iustiniai-institutiones</id>
-   <content type="html">&lt;p&gt;I&lt;/p&gt;
-
-&lt;p&gt;De iustitia et iure&lt;/p&gt;
-
-&lt;p&gt;1.1.1pr.&lt;/p&gt;
-
-&lt;p&gt;Iustitia est constans et perpetua voluntas ius suum cuique tribuens.&lt;/p&gt;
-
-&lt;p&gt;句法分析：&lt;/p&gt;
-
-&lt;p&gt;主謂结构： Iustitia est voluntas.正义是意志。&lt;/p&gt;
-
-&lt;p&gt;陰性主格形容詞作定語修飾voluntas: constans et perpetua voluntas 持續並永恆的意志&lt;/p&gt;
-
-&lt;p&gt;現在時主動態分詞短語作定語： ius &lt;em&gt;suum cuique&lt;/em&gt; tribuens分配给其各自该有的權利。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ius&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ius N 3 2 NOM S N&lt;/p&gt;
-
-  &lt;p&gt;ius N 3 2 VOC S N&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;ius N 3 2 ACC S N&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;jus, juris N N [XXXCX]&lt;/p&gt;
-
-  &lt;p&gt;gravy; broth; soup; sauce; 
-law (pl. only NOM, ACC), &lt;strong&gt;right&lt;/strong&gt;; duty; justice; that which is binding; oath;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;suum&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;su.um                N      2 1 ACC S M          &lt;br /&gt;
-suus, sui  N  M   [XXXCX]&lt;br /&gt;
-his men (pl.), his friends;
-su.um                N      2 2 NOM S N               &lt;br /&gt;
-su.um                N      2 2 VOC S N               &lt;br /&gt;
-su.um                N      2 2 ACC S N               &lt;br /&gt;
-suum, sui  N  N   [XXXCX]&lt;br /&gt;
-his property (pl.); [se suaque =&amp;gt; themselves and their possessions];
-su.um                ADJ    1 1 NOM S N POS           &lt;br /&gt;
-su.um                ADJ    1 1 VOC S N POS           &lt;br /&gt;
-su.um                ADJ    1 1 ACC S M POS           &lt;br /&gt;
-&lt;strong&gt;su.um                ADJ    1 1 ACC S N POS           &lt;br /&gt;
-suus, sua, suum  ADJ   [XXXCX]&lt;br /&gt;
-his/one’s (own), her (own), hers, its (own); (pl.) their (own), theirs;&lt;/strong&gt;
-su.um                N      3 1 GEN P C               &lt;br /&gt;
-sus, suis  N  C   [XXXCX]&lt;br /&gt;
-swine; hog, pig, sow;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;cuique&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;inflected form(DATIVE) of &lt;em&gt;quisque&lt;/em&gt;; 
-to each one/person/thing&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;suum cuique&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;(idiomatic) to each according to its own merits; to each his own&lt;/p&gt;
-  &lt;blockquote&gt;
-
-    &lt;p&gt;Cicero&lt;/p&gt;
-
-    &lt;p&gt;Suum cuique pulchrum est.&lt;/p&gt;
-
-    &lt;p&gt;To each its own is beautiful.&lt;/p&gt;
-
-    &lt;p&gt;Suum cuique tribuere.&lt;/p&gt;
-
-    &lt;p&gt;To give each its own.&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;tribuens&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;tribu.ens            VPAR   3 1 NOM S X PRES ACTIVE  PPL&lt;/strong&gt;
-tribu.ens            VPAR   3 1 VOC S X PRES ACTIVE  PPL
-tribu.ens            VPAR   3 1 ACC S N PRES ACTIVE  PPL
-tribuo, tribuere, tribui, tributus  V   [XXXBX]&lt;br /&gt;
-divide, assign; present; grant, allot, bestow, attribute;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;现在时分词，带有直接宾语ius以及间接宾语(与格）suum cuique。作為形容詞，分詞要在性數格方面與所修飾的詞保持一致。這裡，是指要與voluntas一致。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;我譯&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;正義是分給每個人以其應當享有的權利的持續且恆久的意志。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;徐譯&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;正义是分给每个人以其权利的不懈的、永恒的意志。&lt;/p&gt;
 
 </content>
  </entry>
