@@ -44,16 +44,16 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/05/05/vim%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF.html">Vim文件模板设置</a></h2>
+      <h2><a href="/2019/05/09/latinawords.html">latin words</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-05-05">2019-05-05</time>
+      <time datetime="2019-05-09">2019-05-09</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#电脑技术" title="电脑技术">#电脑技术</a>
+      <a href="/tags.html#latina" title="latina">#latina</a>
       
     </span>
     
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = 'Vim文件模板设置'
+      like-name       = 'latin words'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -75,41 +75,35 @@
     </section>
     <section class="post">
     <blockquote>
-  <p>好记性不如烂笔头。</p>
+  <p>Multa petentibus desunt multa; bene est cui Deus obtulit parva quod satis est manu. (p.0225-0226)</p>
 </blockquote>
 
-<p><em>因而，应该适时将头脑中闪现的，心中所思所想的，记录下来。集腋成裘，总不会辜负自己。而我想来，微信公号与朋友圈都不是这种用途的好工具。在自己的手机上建立一个blog并同步到github上，不失为一个不错的办法。</em></p>
+<blockquote>
+  <p>Plerumque gratae divitibus vices,
+mundaeque parvo sub lare pauperum
+cenae sine aulaeis et ostro 
+sollicitam explicuere frontem.(P0025-0026)</p>
+</blockquote>
 
-<p>由于总有一段相同的内容，所以考虑用vim编辑md后缀的文件时，自动添加这段内容。经查询网络，结合系统实际，终于成功。</p>
+<blockquote>
+  <p>Ille potens sui laetusque deget, cui licet diem dixisse ‘Vixi; cras vel atra nube polum Pater occupato, vel sole puro: non tamen inritum quodcumque retro est efficiet, neque diffinget infectumque reddet quod fugiens semel hora vexit.’</p>
+</blockquote>
 
-<p>现将过程记录如下：</p>
+<blockquote>
+  <p>doctrina sed vim promovet insitam rectique cultus pectora roborant.(p.0284)</p>
+</blockquote>
 
-<p>1.在</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/data/data/com.termux/files/usr/share/vim/
-</code></pre></div></div>
-<p>目录下新建vimfiles目录。</p>
+<blockquote>
+  <p>tu pudica, tu proba perambulabis astra sidus aureum. (p.0394-0395)</p>
+</blockquote>
 
-<p>2.在</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/data/data/com.termux/files/usr/share/vim/vimfiles
-</code></pre></div></div>
-<p>目录下建一个自定义后缀的模板文件，比如template.md,在里面输入你自己想要的内容。</p>
+<blockquote>
+  <p>‘Nil satis est,’ inquit, ‘quia tanti quantum habeas sis.’(p.0404-0405)</p>
+</blockquote>
 
-<p>3.编辑</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/data/data/com.termux/files/usr/share/vim/vimrc
-</code></pre></div></div>
-<p>文件，找到如下一行：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set autoread
-</code></pre></div></div>
-
-<p>在下面加入类似一行，把相应的后缀改成md就可以了，修改完成后如下：</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autocmd BufNewFile \*.md 0r /usr/share/vim/vimfiles/template.md
-</code></pre></div></div>
-
-<p>3.然后你使用vim新建一个*.md的文件就会自动加载/usr/share/vim/vimfiles目录下的template.md里的内容</p>
-
-<p>如此，即可实现建带指定后缀的空文件时，就自动添加模板内容。</p>
+<blockquote>
+  <p>Est modus in rebus, sunt certi denique fines, quos ultra citraque nequit consistere rectum.</p>
+</blockquote>
 
 
     </section>
@@ -120,6 +114,48 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-05-09">2019-05-09</time>
+      <a href="/2019/05/09/dream.html" title="梦">梦</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-05-09">2019-05-09</time>
+      <a href="/2019/05/09/digest.html" title="讀書筆記--頌詩集－第十首－致里奇紐">讀書筆記--頌詩集－第十首－致里奇紐</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-05-07">2019-05-07</time>
+      <a href="/2019/05/07/logitech-keyboard.html" title="罗技K380使用记录">罗技K380使用记录</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-05-07">2019-05-07</time>
+      <a href="/2019/05/07/digest1.html" title="摘录">摘录</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-05-06">2019-05-06</time>
+      <a href="/2019/05/06/gcyys.html" title="工程院院士杂感">工程院院士杂感</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-05-05">2019-05-05</time>
+      <a href="/2019/05/05/vim%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF.html" title="Vim文件模板设置">Vim文件模板设置</a>
+    </li>
   
     
     
