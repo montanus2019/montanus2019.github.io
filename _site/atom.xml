@@ -4,12 +4,73 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-05-09T15:27:42+08:00</updated>
+ <updated>2019-05-19T17:18:56+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>新安江有关古诗文</title>
+   <link href="/2019/05/19/qiandaohu.html"/>
+   <updated>2019-05-19T00:00:00+08:00</updated>
+   <id>/2019/05/19/qiandaohu</id>
+   <content type="html">&lt;h2 id=&quot;见京兆韦参军量移东阳二首&quot;&gt;见京兆韦参军量移东阳二首&lt;/h2&gt;
+
+&lt;p&gt;唐代：李白&lt;/p&gt;
+
+&lt;p&gt;潮水还归海，流人却到吴。&lt;/p&gt;
+
+&lt;p&gt;相逢问愁苦，泪尽日南珠。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;闻说金华渡，东连五百滩。&lt;/p&gt;
+
+&lt;p&gt;全胜若耶 :point_up: 好，莫道此行难。&lt;/p&gt;
+
+&lt;p&gt;猿啸千溪合，松风五月寒。&lt;/p&gt;
+
+&lt;p&gt;他年一携手，摇艇入新安。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;若耶
+[ ruò yē ] 
+亦作“若邪”。山名。在 浙江省 绍兴市 南。又溪名。出 若耶山，北流入 运河。溪旁旧有浣纱石古迹，相传 西施 浣纱于此，故一名 浣纱溪。《史记·东越列传》：“越侯 为戈船、下瀨将军，出 若邪、白沙。”唐 李白《子夜吴歌·夏歌》：“五月 西施 採，人看隘 若耶。”宋 陆游《斋中杂兴》诗：“道逢 若耶 叟，握手开苍颜。”清 秋瑾《剑歌》：“若耶 之水赤厪铁，铸出霜锋凛冰雪。”&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>贺拉斯«书信集»第二首摘录</title>
+   <link href="/2019/05/12/revenge.html"/>
+   <updated>2019-05-12T00:00:00+08:00</updated>
+   <id>/2019/05/12/revenge</id>
+   <content type="html">&lt;p&gt;Qui non moderabitur irae,&lt;/p&gt;
+
+&lt;p&gt;infectum volet esse dolor quod suaserit et mens,&lt;/p&gt;
+
+&lt;p&gt;dum poenas odio per vim festinat inulto.&lt;/p&gt;
+
+&lt;p&gt;Ira furor brevis est: animum rege, qui nisi paret,&lt;/p&gt;
+
+&lt;p&gt;imperat; hunc frenis, hunc tu compesce catena.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>辛劳与收获</title>
+   <link href="/2019/05/11/horace.html"/>
+   <updated>2019-05-11T00:00:00+08:00</updated>
+   <id>/2019/05/11/horace</id>
+   <content type="html">&lt;p&gt;Nil sine magno vita labore dedit mortalibus. -Horace&lt;/p&gt;
+
+&lt;p&gt;Life has given nothing to mortals without great labor.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>latin words</title>
@@ -271,75 +332,14 @@ sollicitam explicuere frontem.(P0025-0026)&lt;/p&gt;
 
 &lt;p&gt;如此，即可实现建带指定后缀的空文件时，就自动添加模板内容。&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>linux下设置短命令</title>
-   <link href="/2019/05/05/linux-alias.html"/>
-   <updated>2019-05-05T00:00:00+08:00</updated>
-   <id>/2019/05/05/linux-alias</id>
-   <content type="html">&lt;p&gt;　　在LINUX中，有很多常用的命令，常用的命令我们可以熟练的记忆，但是对于不经常使用的命令恐怕是需要翻阅手册了，但是我们可以简化这些命令的输入来达到简便记忆的效果。 &lt;/p&gt;
+&lt;blockquote&gt;
 
-&lt;p&gt;　　这里以termux下的BASH为例： &lt;/p&gt;
+  &lt;p&gt;小窍门：&lt;/p&gt;
 
-&lt;p&gt;　　编辑&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/etc/bash.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;这个文件（所有使用这个SHELL的用户都可以享受到便利,如果没有ROOT权限，则编辑你自己目录下的.bashrc文件，区别在于只有你自己可以使用下面定义的别名） &lt;/p&gt;
-
-&lt;p&gt;　　在最后加入这一段： &lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;　　alias l=&quot;ls --color -l&quot; 
-　　alias lm=&quot;ls --color -l | more&quot; 
-　　alias la=&quot;ls --color -l -a&quot; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;　　这样，我们就可以单独使用“l”来列出长目录了。而使用“lm”则可以分屏列出目录，至于“la”则同时列出隐含文件。 &lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>重归rss</title>
-   <link href="/2019/05/04/rss-newsboat.html"/>
-   <updated>2019-05-04T00:00:00+08:00</updated>
-   <id>/2019/05/04/rss-newsboat</id>
-   <content type="html">&lt;p&gt;字符界面下，termux中内置可安装的rss的阅读器，只有newsboat可用。&lt;/p&gt;
-
-&lt;h2 id=&quot;newsboat的安装&quot;&gt;newsboat的安装&lt;/h2&gt;
-
-&lt;p&gt;termux下只需要输入&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pkg install newsboat
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;配置newsboat，在~/.newsboat目录下创建并编辑urls文件，将rss网址逐行输入即可。&lt;/p&gt;
-
-&lt;p&gt;如有rss源文件的话，也可以用命令行&lt;code class=&quot;highlighter-rouge&quot;&gt;newsboat -i *.opml&lt;/code&gt;的形式导入opml文件&lt;/p&gt;
-
-&lt;h2 id=&quot;一个好用的查找rss源的网址&quot;&gt;一个好用的查找rss源的网址&lt;/h2&gt;
-
-&lt;p&gt;https://rsshub.app&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>空心三角阵与实心三角阵</title>
-   <link href="/2019/04/29/triangle.html"/>
-   <updated>2019-04-29T00:00:00+08:00</updated>
-   <id>/2019/04/29/triangle</id>
-   <content type="html">&lt;p&gt;被空心三角阵与实心三角阵虐了一下午，（1）（3）还好能解决，（2）的参考答案直接是断言式的，无法看出其每一步的推理依据。即使在承认其断言的合理性基础上，其后续的做法也得用到一元二次方程，超出了其所谓的三年级册的范围。
-终于，在刚刚想到了一个三年级同学能理解的解题方法–利用分解质因数、奇数项等差数列求和公式等知识点来解决本题，想来比一元二次方程好理解些。&lt;/p&gt;
-
-&lt;p&gt;一些棋子摆成的正三角形点阵，和“空心方阵”类似，也可以有“空心三角阵”．&lt;/p&gt;
-
-&lt;p&gt;（1）如果有一个5层的空心三角阵，最外层每边有20个棋子，那么一共有多少枚棋子？&lt;/p&gt;
-
-&lt;p&gt;（2）如果一个空心三角阵共有294枚棋子，那么它最多有多少层？&lt;/p&gt;
-
-&lt;p&gt;（3）如果一个空心三角阵共有294枚棋子，不止一层，那么它的最外层最多有多少枚棋子？&lt;/p&gt;
+  &lt;p&gt;如果需要删除文章中的空行，可以使用一下语句：&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:g/^s*$/d
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
 </content>
  </entry>
  
