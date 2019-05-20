@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-05-19T17:18:56+08:00</updated>
+ <updated>2019-05-20T13:14:02+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -12,11 +12,68 @@
 
  
  <entry>
-   <title>新安江有关古诗文</title>
+   <title>一个喜庆的日子</title>
+   <link href="/2019/05/20/nanda520.html"/>
+   <updated>2019-05-20T00:00:00+08:00</updated>
+   <id>/2019/05/20/nanda520</id>
+   <content type="html">&lt;p&gt;又是一年，无言以对。愧。&lt;/p&gt;
+
+&lt;p&gt;本文共82字。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>jekyll 小窍门</title>
+   <link href="/2019/05/20/jekyllskill.html"/>
+   <updated>2019-05-20T00:00:00+08:00</updated>
+   <id>/2019/05/20/jekyllskill</id>
+   <content type="html">&lt;p&gt;转自&lt;/p&gt;
+
+&lt;p&gt;https://blog.csdn.net/ds19991999/article/details/81293467&lt;/p&gt;
+
+&lt;p&gt;为博客添加各种功能&lt;/p&gt;
+
+&lt;p&gt;效果见：ds19991999的博客&lt;/p&gt;
+
+&lt;p&gt;1.关于Jekyll本身插件的安装&lt;/p&gt;
+
+&lt;p&gt;一共三种方式: &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;在根目录下新建_plugins文件夹, 然后把对应的*.rb插件文件放进去就行了; &lt;/li&gt;
+  &lt;li&gt;在_config.yml文件中增加一个gems关键字, 然后把要引用的插件用数组形式存储其中即可; &lt;/li&gt;
+  &lt;li&gt;在Gemfile中添加相关的插件;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;三种方法都可以, 甚至完全可以同时使用~&lt;/p&gt;
+
+&lt;p&gt;2.用kramdown自动生成目录树&lt;/p&gt;
+
+&lt;p&gt;启用kramdown，即在_config.yml中添加&lt;code class=&quot;highlighter-rouge&quot;&gt;markdown: kramdown&lt;/code&gt;这一行&lt;/p&gt;
+
+&lt;p&gt;在md文章中需要插入目录的地方添加：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* 目录 
+{:toc}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;第一行必须加！&lt;/p&gt;
+
+&lt;p&gt;本文共461字。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>跟着李白游浙江</title>
    <link href="/2019/05/19/qiandaohu.html"/>
    <updated>2019-05-19T00:00:00+08:00</updated>
    <id>/2019/05/19/qiandaohu</id>
-   <content type="html">&lt;h2 id=&quot;见京兆韦参军量移东阳二首&quot;&gt;见京兆韦参军量移东阳二首&lt;/h2&gt;
+   <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#见京兆韦参军量移东阳二首&quot; id=&quot;markdown-toc-见京兆韦参军量移东阳二首&quot;&gt;见京兆韦参军量移东阳二首&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#采莲曲&quot; id=&quot;markdown-toc-采莲曲&quot;&gt;采莲曲&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;见京兆韦参军量移东阳二首&quot;&gt;见京兆韦参军量移东阳二首&lt;/h2&gt;
 
 &lt;p&gt;唐代：李白&lt;/p&gt;
 
@@ -28,17 +85,33 @@
 
 &lt;p&gt;闻说金华渡，东连五百滩。&lt;/p&gt;
 
-&lt;p&gt;全胜若耶 :point_up: 好，莫道此行难。&lt;/p&gt;
+&lt;p&gt;全胜&lt;strong&gt;若耶&lt;/strong&gt;好，莫道此行难。&lt;/p&gt;
 
 &lt;p&gt;猿啸千溪合，松风五月寒。&lt;/p&gt;
 
 &lt;p&gt;他年一携手，摇艇入新安。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;采莲曲&quot;&gt;采莲曲&lt;/h2&gt;
+
+&lt;p&gt;唐代：李白&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;若耶&lt;/strong&gt;溪傍采莲女，笑隔荷花共人语。&lt;/p&gt;
+
+&lt;p&gt;日照新妆水底明，风飘香袂空中举。&lt;/p&gt;
+
+&lt;p&gt;岸上谁家游冶郎，三三五五映垂杨。&lt;/p&gt;
+
+&lt;p&gt;紫骝嘶入落花去，见此踟蹰空断肠。&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;若耶
 [ ruò yē ] 
 亦作“若邪”。山名。在 浙江省 绍兴市 南。又溪名。出 若耶山，北流入 运河。溪旁旧有浣纱石古迹，相传 西施 浣纱于此，故一名 浣纱溪。《史记·东越列传》：“越侯 为戈船、下瀨将军，出 若邪、白沙。”唐 李白《子夜吴歌·夏歌》：“五月 西施 採，人看隘 若耶。”宋 陆游《斋中杂兴》诗：“道逢 若耶 叟，握手开苍颜。”清 秋瑾《剑歌》：“若耶 之水赤厪铁，铸出霜锋凛冰雪。”&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;本文共476字。&lt;/p&gt;
 </content>
  </entry>
  
@@ -270,76 +343,6 @@ sollicitam explicuere frontem.(P0025-0026)&lt;/p&gt;
   &lt;p&gt;有福的塞提乌，我们不可有遥远的憧憬，生命太短促。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>工程院院士杂感</title>
-   <link href="/2019/05/06/gcyys.html"/>
-   <updated>2019-05-06T00:00:00+08:00</updated>
-   <id>/2019/05/06/gcyys</id>
-   <content type="html">&lt;p&gt;只怕今后又将出现一句新的骂人的话：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;你才是工程院院士，&lt;/p&gt;
-
-  &lt;p&gt;你们全家都是工程院院士！&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;你要说微信之父评院士，咱们还能服气；莆田系，呵呵。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Vim文件模板设置</title>
-   <link href="/2019/05/05/vim%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E6%A8%A1%E6%9D%BF.html"/>
-   <updated>2019-05-05T00:00:00+08:00</updated>
-   <id>/2019/05/05/vim设置文件模板</id>
-   <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;好记性不如烂笔头。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;因而，应该适时将头脑中闪现的，心中所思所想的，记录下来。集腋成裘，总不会辜负自己。而我想来，微信公号与朋友圈都不是这种用途的好工具。在自己的手机上建立一个blog并同步到github上，不失为一个不错的办法。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;由于总有一段相同的内容，所以考虑用vim编辑md后缀的文件时，自动添加这段内容。经查询网络，结合系统实际，终于成功。&lt;/p&gt;
-
-&lt;p&gt;现将过程记录如下：&lt;/p&gt;
-
-&lt;p&gt;1.在&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/share/vim/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;目录下新建vimfiles目录。&lt;/p&gt;
-
-&lt;p&gt;2.在&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/share/vim/vimfiles
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;目录下建一个自定义后缀的模板文件，比如template.md,在里面输入你自己想要的内容。&lt;/p&gt;
-
-&lt;p&gt;3.编辑&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/data/data/com.termux/files/usr/share/vim/vimrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;文件，找到如下一行：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;set autoread
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;在下面加入类似一行，把相应的后缀改成md就可以了，修改完成后如下：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autocmd BufNewFile \*.md 0r /usr/share/vim/vimfiles/template.md
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;3.然后你使用vim新建一个*.md的文件就会自动加载/usr/share/vim/vimfiles目录下的template.md里的内容&lt;/p&gt;
-
-&lt;p&gt;如此，即可实现建带指定后缀的空文件时，就自动添加模板内容。&lt;/p&gt;
-
-&lt;blockquote&gt;
-
-  &lt;p&gt;小窍门：&lt;/p&gt;
-
-  &lt;p&gt;如果需要删除文章中的空行，可以使用一下语句：&lt;/p&gt;
-  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:g/^s*$/d
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
-&lt;/blockquote&gt;
 </content>
  </entry>
  
