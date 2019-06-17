@@ -14,6 +14,7 @@ Extract
 
 I bounce off the walls. I screech and bellow. I beat and beat and beat my chest. Bob hides under Not-Tag, his paws over his ears. I'm angry, at last. I have some one to protect.
 
+
 本文共{{ page.content | number_of_words }}单词
 
 
