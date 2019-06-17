@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="montanus2019" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>Termux里sshd的配置</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="montanus2019" type="application/atom+xml" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/media/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script type="text/javascript"> hljs.initHighlightingOnLoad(); </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/media/js/mermaid.js"></script>
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="montanus2019" class="" href="/">montanus2019</a></h1>
+          </div>
+          <nav>
+            
+            <span><a title="Archive" href="/archive.html"><i class="fa fa-list-ul"></i></a></span>
+            
+            <span><a title="Tags" href="/tags.html"><i class="fa fa-tags"></i></a></span>
+            
+            <span><a title="About" href="/about.html"><i class="fa fa-user"></i></a></span>
+            
+            <span><a title="Gallery" href=""><i class="fa fa-film"></i></a></span>
+            
+            <span><a title="Subscribe" href="/atom.xml"><i class="fa fa-rss"></i></a></span>
+            
+          </nav>
+        </header>
+        <div id="content">
+        <article>
+  <section class="title">
+    <h2>Termux里sshd的配置 </h2>
+  </section>
+  <section class="meta">
+  <span class="time">
+    <time datetime="2019-06-06">2019-06-06</time>
+  </span>
+  
+  <span class="tags">
+    
+    <a href="/tags.html#电脑技术" title="电脑技术">#电脑技术</a>
+    
+  </span>
+  
+  </section>
+  <section class="post">
+  <h2 id="电脑ssh连接termux">电脑ssh连接Termux</h2>
+
+<p>安装openssh</p>
+
+<p>同样也需要openssh才可以</p>
+
+<p><code class="highlighter-rouge">pkg install openssh</code></p>
+
+<p>启动sshd</p>
+
+<p>安装完成后,sshd服务默认没有启动,所以得手动启动下:</p>
+
+<p><code class="highlighter-rouge">sshd</code></p>
+
+<p>因为手机上面低的端口有安全限制,所以这里的openssh默认的sshd默认的服务是8022端口上的.ssh的用户名用whoami命令看下.</p>
+
+<p>可以看到sshd启动后,端口才可以看到.</p>
+
+<p>PC端生成公钥</p>
+
+<p>ssh登录是key公钥模式登录,首先在PC端生成秘钥:</p>
+
+<p><code class="highlighter-rouge">ssh-keygen -t rsa</code></p>
+
+<p>执行完成后，会在家目录下创建3个文件</p>
+
+<p><code class="highlighter-rouge">id_rsa, id_rsa.pub , known_hosts</code></p>
+
+<p>拷贝公钥到手机</p>
+
+<p>然后把公钥id_rsa.pub拷贝到手机的data\data\com.termux\files\home.ssh文件夹中.</p>
+
+<p>将公钥拷贝到验证文件中</p>
+
+<p>在Termux下操作</p>
+
+<p><code class="highlighter-rouge">cat id_rsa.pub &gt; authorized_keys</code></p>
+
+<p>PC端连接手机termux</p>
+
+<p><code class="highlighter-rouge">ssh -p8022 u0_a119@192.168.1.3</code></p>
+
+<p>以上内容转自网络，网址为http://www.sohu.com/a/230807930_354899</p>
+
+<p>印象中以前曾经配置成功过，然后今天准备使用时，不知为何总是无法连接。后来考虑，可能是我在电脑上换了客户端，导致秘钥发生了变化所致。一气之下，干脆把原来的秘钥清空，重新生成在git bash客户端下的秘钥，然后就配置成功并成功登陆了。</p>
+
+<p>本文共739字。</p>
+
+
+  </section>
+  
+</article>
+
+        </div>
+        <footer>
+          <div>
+            
+            &copy; 2018 ~ 2019 montanus2019 | 
+powered by jekyll | themed 
+by <a 
+href="https://montanus2019.github.io" 
+title="montanus2019">montanus</a> 
+| fork <a 
+href="https://github.com/montanus2019" title="fork me">me</a>
+          </div>
+        </footer>
+      </div> <!-- main -->
+  </body>
+</html>
