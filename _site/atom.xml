@@ -4,12 +4,43 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-06-17T22:27:15+08:00</updated>
+ <updated>2019-06-23T09:58:16+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>折腾</title>
+   <link href="/2019/06/20/sshd.html"/>
+   <updated>2019-06-20T00:00:00+08:00</updated>
+   <id>/2019/06/20/sshd</id>
+   <content type="html">&lt;p&gt;在米9上折腾termux，多数都能成功，就是jekyll安装失败，权限不足。&lt;/p&gt;
+
+&lt;p&gt;然后想通过ssh到mi4c上运行jekyll，竟然把ssh的方向搞反了，密钥pub应该是放在作为服务器端的，并写入authorized_keys文件下，我却写入了客户端中，怎么折腾也不能成功。静下心来，仔细翻阅手册后，才发现自己搞反了，悲催。&lt;/p&gt;
+
+&lt;p&gt;做事情真的是不能毛躁，一定要从基础做起，打牢基础。&lt;/p&gt;
+
+&lt;p&gt;本文共20单词&lt;/p&gt;
+
+&lt;p&gt;本文共297字。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ssh 的使用</title>
+   <link href="/2019/06/18/ssh.html"/>
+   <updated>2019-06-18T00:00:00+08:00</updated>
+   <id>/2019/06/18/ssh</id>
+   <content type="html">&lt;p&gt;折腾了半天，termux在米9上运行不成功。把我sh的密钥也搞丢了，重新生成一次。
+本文共18单词&lt;/p&gt;
+
+&lt;p&gt;本文共154字。&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>The wind in the willows, homework</title>
@@ -265,58 +296,6 @@ strfile -c % &amp;lt;datafile&amp;gt; &amp;lt;datafile.dat&amp;gt;
 &lt;p&gt;Jun.4,2019&lt;/p&gt;
 
 &lt;p&gt;本文共213单词;共1187字符。&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>sports</title>
-   <link href="/2019/06/04/article.html"/>
-   <updated>2019-06-04T00:00:00+08:00</updated>
-   <id>/2019/06/04/article</id>
-   <content type="html">&lt;p&gt;Some people believe that famous sports people are paid too much money, wheras others think famous sports people are not paid too much money. I personally believe famous people are not paid too much money.&lt;/p&gt;
-
-&lt;p&gt;Firstly, famous sports people provide us with huge entertainment. We will always cheer them on in front of the TV screen, and we will hoot and hollar. All of this are their doing to make us excited.&lt;/p&gt;
-
-&lt;p&gt;Secondly, famous sports people work very hard. They will train for years and years just for a prize at a competition. We can use a frase to describe them. “For one minute on stage, for ten years to train under stage.” So they are living a hard life.&lt;/p&gt;
-
-&lt;p&gt;And moreover, the famous sports people can teach us things we need to know in our lifetime, such as “No pains no gains”.&lt;/p&gt;
-
-&lt;p&gt;To sum up, famous sports people are not paid to much money.&lt;/p&gt;
-
-&lt;p&gt;本文共172单词&lt;/p&gt;
-
-&lt;p&gt;本文共943字。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>A letter of applying</title>
-   <link href="/2019/06/04/applying.html"/>
-   <updated>2019-06-04T00:00:00+08:00</updated>
-   <id>/2019/06/04/applying</id>
-   <content type="html">&lt;p&gt;Dear Sir,&lt;/p&gt;
-
-&lt;p&gt;I notice this advertisement in the online magazine Global Food yesterday, and I think I might be suitable for the job as a Restaurant reviewer.&lt;/p&gt;
-
-&lt;p&gt;I have a tood taste with the restaurant’s view, so my pictures are the best. My photos are excellent in the light and I have learnt from a famous photographer how to beautify the photographs that I have taken.&lt;/p&gt;
-
-&lt;p&gt;And also I am really interested in and memorize the different types of food qround the globe. Recently, I have been training to be a brilliant gastrologist. And I already love tasting food and estimate them. The evaluation I make is the most real.&lt;/p&gt;
-
-&lt;p&gt;Moreover, the level of English I have is great. I can use English to speak to foreigners and I am very familiar with the dollars they use. My English is perfect.&lt;/p&gt;
-
-&lt;p&gt;I hope you can give this job to me, thank you.&lt;/p&gt;
-
-&lt;p&gt;Yours sincerely,&lt;/p&gt;
-
-&lt;p&gt;X-woman&lt;/p&gt;
-
-&lt;p&gt;Jun. 4, 2019&lt;/p&gt;
-
-&lt;p&gt;本文共175单词&lt;/p&gt;
-
-&lt;p&gt;本文共964字符。&lt;/p&gt;
-
 </content>
  </entry>
  
