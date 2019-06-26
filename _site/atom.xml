@@ -4,12 +4,44 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-06-23T09:58:16+08:00</updated>
+ <updated>2019-06-26T22:23:11+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
  </author>
 
+ 
+ <entry>
+   <title>mi9上termux下jekyll serve运行出错的解决办法</title>
+   <link href="/2019/06/26/jekyll.html"/>
+   <updated>2019-06-26T00:00:00+08:00</updated>
+   <id>/2019/06/26/jekyll</id>
+   <content type="html">&lt;p&gt;米9手机上安装了termux后，在其中安装了jekyll，运行jekyll serve时出错：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@rb_sysopen /proc/version Permission denied.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;在网上找了一圈之后，终于在github的termux项目下找到了解决办法，现抄录如下：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;You can edit your local copy of jekyll-3.8.2 and patch it if you want..
+From the root of your jekyll site's source-directory, find the path to your jekyll gem installation by running bundle show jekyll. 
+Open the resulting path in your explorer if the directory doesn't open automatically. 
+Edit jekyll-3.8.2/lib/jekyll/utils/platform.rb by replacing the proc_version method with the following: 
+def proc_version 
+   @proc_version ||= begin 
+     Pathutil.new( 
+       &quot;/proc/version&quot; 
+     ).read 
+   rescue Errno::ENOENT, Errno::EACCES
+     nil 
+   end 
+ end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;修改后，运行时一切正常。&lt;/p&gt;
+
+&lt;p&gt;本文共104单词&lt;/p&gt;
+
+&lt;p&gt;本文共829字。&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>折腾</title>
@@ -269,33 +301,6 @@ strfile -c % &amp;lt;datafile&amp;gt; &amp;lt;datafile.dat&amp;gt;
 
 &lt;p&gt;本文共971字符。&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>A letter</title>
-   <link href="/2019/06/04/letter.html"/>
-   <updated>2019-06-04T00:00:00+08:00</updated>
-   <id>/2019/06/04/letter</id>
-   <content type="html">&lt;p&gt;Dear sir,&lt;/p&gt;
-
-&lt;p&gt;I noticed this advertisement about working in a holiday club for English speaking children in our yesterday’s local newspaper and I think I might be qualified for this job as a volunteer.&lt;/p&gt;
-
-&lt;p&gt;I have a wonderful experience of working with children because in the present, I am constantly helping out at our local kindergarten. The children and teachers all like me because I tell wonderful stories and I am a great teacher.&lt;/p&gt;
-
-&lt;p&gt;My knowledge of English I cannot say is the best, but is better than most people of my age.{I dare not to say that my knowledge of English is the best, but it must be better than most people in my age.} I have attended many competitions about the English language and have always won prizes.&lt;/p&gt;
-
-&lt;p&gt;And also, I would be suitable for the job because I am patient and fun, I can teach the children enjoyable English games and word puzzles to get their attentions. I can always tell them a joke or two to cheer them up when they are under the weather.&lt;/p&gt;
-
-&lt;p&gt;I hope you can give me this job,if so, I will be very geateful.&lt;/p&gt;
-
-&lt;p&gt;Yours sincerely,&lt;/p&gt;
-
-&lt;p&gt;X-woman&lt;/p&gt;
-
-&lt;p&gt;Jun.4,2019&lt;/p&gt;
-
-&lt;p&gt;本文共213单词;共1187字符。&lt;/p&gt;
 </content>
  </entry>
  

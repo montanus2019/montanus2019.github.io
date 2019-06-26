@@ -44,11 +44,11 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/06/20/sshd.html">折腾</a></h2>
+      <h2><a href="/2019/06/26/jekyll.html">mi9上termux下jekyll serve运行出错的解决办法</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-06-20">2019-06-20</time>
+      <time datetime="2019-06-26">2019-06-26</time>
     </span>
     
     <span class="tags">
@@ -59,15 +59,29 @@
     
     </section>
     <section class="post">
-    <p>在米9上折腾termux，多数都能成功，就是jekyll安装失败，权限不足。</p>
+    <p>米9手机上安装了termux后，在其中安装了jekyll，运行jekyll serve时出错：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@rb_sysopen /proc/version Permission denied.
+</code></pre></div></div>
+<p>在网上找了一圈之后，终于在github的termux项目下找到了解决办法，现抄录如下：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You can edit your local copy of jekyll-3.8.2 and patch it if you want..
+From the root of your jekyll site's source-directory, find the path to your jekyll gem installation by running bundle show jekyll. 
+Open the resulting path in your explorer if the directory doesn't open automatically. 
+Edit jekyll-3.8.2/lib/jekyll/utils/platform.rb by replacing the proc_version method with the following: 
+def proc_version 
+   @proc_version ||= begin 
+     Pathutil.new( 
+       "/proc/version" 
+     ).read 
+   rescue Errno::ENOENT, Errno::EACCES
+     nil 
+   end 
+ end
+</code></pre></div></div>
+<p>修改后，运行时一切正常。</p>
 
-<p>然后想通过ssh到mi4c上运行jekyll，竟然把ssh的方向搞反了，密钥pub应该是放在作为服务器端的，并写入authorized_keys文件下，我却写入了客户端中，怎么折腾也不能成功。静下心来，仔细翻阅手册后，才发现自己搞反了，悲催。</p>
+<p>本文共104单词</p>
 
-<p>做事情真的是不能毛躁，一定要从基础做起，打牢基础。</p>
-
-<p>本文共20单词</p>
-
-<p>本文共297字。</p>
+<p>本文共829字。</p>
 
 
     </section>
@@ -78,6 +92,13 @@
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-06-20">2019-06-20</time>
+      <a href="/2019/06/20/sshd.html" title="折腾">折腾</a>
+    </li>
   
     
     
