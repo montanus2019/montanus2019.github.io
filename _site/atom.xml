@@ -4,7 +4,7 @@
  <title>montanus2019</title>
  <link href="/atom.xml" rel="self"/>
  <link href=""/>
- <updated>2019-06-26T22:23:11+08:00</updated>
+ <updated>2019-10-26T14:12:07+08:00</updated>
  <id>/</id>
  <author>
    <name>montanus2019</name>
@@ -12,294 +12,901 @@
 
  
  <entry>
-   <title>mi9上termux下jekyll serve运行出错的解决办法</title>
-   <link href="/2019/06/26/jekyll.html"/>
-   <updated>2019-06-26T00:00:00+08:00</updated>
-   <id>/2019/06/26/jekyll</id>
-   <content type="html">&lt;p&gt;米9手机上安装了termux后，在其中安装了jekyll，运行jekyll serve时出错：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@rb_sysopen /proc/version Permission denied.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;在网上找了一圈之后，终于在github的termux项目下找到了解决办法，现抄录如下：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;You can edit your local copy of jekyll-3.8.2 and patch it if you want..
-From the root of your jekyll site's source-directory, find the path to your jekyll gem installation by running bundle show jekyll. 
-Open the resulting path in your explorer if the directory doesn't open automatically. 
-Edit jekyll-3.8.2/lib/jekyll/utils/platform.rb by replacing the proc_version method with the following: 
-def proc_version 
-   @proc_version ||= begin 
-     Pathutil.new( 
-       &quot;/proc/version&quot; 
-     ).read 
-   rescue Errno::ENOENT, Errno::EACCES
-     nil 
-   end 
- end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;修改后，运行时一切正常。&lt;/p&gt;
+   <title>资治通鉴卷一</title>
+   <link href="/2019/10/25/zztj1.html"/>
+   <updated>2019-10-25T00:00:00+08:00</updated>
+   <id>/2019/10/25/zztj1</id>
+   <content type="html">
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20190201_212037.jpg&quot; alt=&quot;钢筋森林&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;本文共104单词&lt;/p&gt;
+&lt;p&gt;卷一中的故事&lt;/p&gt;
 
-&lt;p&gt;本文共829字。&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR;
+A[说了哪些故事]--&amp;gt;B[晋];
+B--&amp;gt;B0(智氏);
+B0--&amp;gt;B1(智果论贤);
+B0--&amp;gt;B2(智国谏难);
+B0--&amp;gt;B3(智伯请地);
+B0--&amp;gt;B4(豫让刺赵襄子);
+B--&amp;gt;C[魏];
+B--&amp;gt;D[赵];
+D--&amp;gt;D0(赵简子);
+D0--&amp;gt;D1(授简立后);
+D1--&amp;gt;D11(赵襄子);
+D11-.漆智伯首为饮器.-D110(唇亡齿寒);
+D0--&amp;gt;D2(尹铎治晋阳);
+D0--&amp;gt;D3{三家分晋};
+C--&amp;gt;C0(魏文侯);
+C0--&amp;gt;C1(田子方);
+C1--&amp;gt;C10(论仁君);
+C1--&amp;gt;C11(谏乐);
+C1--&amp;gt;C12(辩骄);
+C0--&amp;gt;D3;
+C0--&amp;gt;C3(不弃虞人之期);
+C0--&amp;gt;C4(拒韩赵借兵);
+C0--&amp;gt;C5(吴起);
+C5--&amp;gt;C50[在鲁杀妻求将];
+C5--&amp;gt;C51[吮痈购命];
+C5--&amp;gt;C52[与武侯论险];
+C5--&amp;gt;C53[与田文争相];
+C5--&amp;gt;C54[见疑奔楚];
+C54-.在楚改革.-C55[被坐夷宗];
+B--&amp;gt;E[韩];
+E--&amp;gt;e1(刺客聂政姐姐聂瑩);
+E--&amp;gt;E1(伐魏);
+D--&amp;gt;E1;
+E--&amp;gt;D3;
+A--&amp;gt;F[卫];
+F--&amp;gt;f1(子思);
+f1--&amp;gt;f2(举才);
+f1--&amp;gt;f3(示警);
+A--&amp;gt;G(齐);
+G--&amp;gt;g0(即墨大夫与阿大夫);
+&lt;/div&gt;
+
+&lt;p&gt;时序图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    participant 晋
+    participant 智
+    participant 赵
+    participant 魏
+    participant 韩
+    晋-&amp;gt;智:孩儿们，别打了
+    智-&amp;gt;韩:给块地
+    韩--&amp;gt;智:给
+    智-&amp;gt;赵:给块地
+    赵--&amp;gt;智:不给
+    智-&amp;gt;韩:跟我一起揍他
+    韩--&amp;gt;智:来了
+    智-&amp;gt;魏:跟我一起揍他
+    魏--&amp;gt;智:来了
+    loop 思考
+        赵-&amp;gt;赵: 打不过，跑吧
+    end
+    Note left of 魏:反了吧？ &lt;br /&gt;
+    Note left of 韩:轻点声！&lt;br /&gt;
+    赵-&amp;gt;魏:唇亡齿寒
+    赵-&amp;gt;韩:唇亡齿寒
+    赵--&amp;gt;智:揍你！
+    魏--&amp;gt;智:揍你！
+    韩--&amp;gt;智:揍你！
+    Note left of 智:完了
+    赵--&amp;gt;晋:分了你
+    魏--&amp;gt;晋:分了你
+    韩--&amp;gt;晋:分了你
+    Note right of 晋:Game over.
+&lt;/div&gt;
+
+&lt;p&gt;甘特图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+gantt
+        dateFormat YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task :done, des1, 2014-01-06,2014-01-08
+        Active task :active, des2, 2014-01-09, 3d
+        Future task : des3, after des2, 5d
+        Future task2 : des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison :crit, done, after des1, 2d
+        Create tests for parser :crit, active, 3d
+        Future task in critical line :crit, 5d
+        Create tests for renderer :2d
+        Add to mermaid :1d
+&lt;/div&gt;
+
+&lt;p&gt;本文共208单词&lt;/p&gt;
+
+&lt;p&gt;本文共1824字。&lt;/p&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>折腾</title>
-   <link href="/2019/06/20/sshd.html"/>
-   <updated>2019-06-20T00:00:00+08:00</updated>
-   <id>/2019/06/20/sshd</id>
-   <content type="html">&lt;p&gt;在米9上折腾termux，多数都能成功，就是jekyll安装失败，权限不足。&lt;/p&gt;
-
-&lt;p&gt;然后想通过ssh到mi4c上运行jekyll，竟然把ssh的方向搞反了，密钥pub应该是放在作为服务器端的，并写入authorized_keys文件下，我却写入了客户端中，怎么折腾也不能成功。静下心来，仔细翻阅手册后，才发现自己搞反了，悲催。&lt;/p&gt;
-
-&lt;p&gt;做事情真的是不能毛躁，一定要从基础做起，打牢基础。&lt;/p&gt;
-
-&lt;p&gt;本文共20单词&lt;/p&gt;
-
-&lt;p&gt;本文共297字。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>ssh 的使用</title>
-   <link href="/2019/06/18/ssh.html"/>
-   <updated>2019-06-18T00:00:00+08:00</updated>
-   <id>/2019/06/18/ssh</id>
-   <content type="html">&lt;p&gt;折腾了半天，termux在米9上运行不成功。把我sh的密钥也搞丢了，重新生成一次。
-本文共18单词&lt;/p&gt;
-
-&lt;p&gt;本文共154字。&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>The wind in the willows, homework</title>
-   <link href="/2019/06/17/the-wind-in-the-willows.html"/>
-   <updated>2019-06-17T00:00:00+08:00</updated>
-   <id>/2019/06/17/the-wind-in-the-willows</id>
-   <content type="html">&lt;p&gt;In the One and only Ivan, there is a grilla named Ivan. All the people in the mall thinks he is a calm, cute and smart grilla. But actually, Ivan gets mad and angry and fustrayted in one of the moments in the story. I found this quite unexpected, I myself, when reading this part of the book, is awstuck by this temper Ivan was having.&lt;/p&gt;
-
-&lt;p&gt;Extract&lt;/p&gt;
-
-&lt;p&gt;I bounce off the walls. I screech and bellow. I beat and beat and beat my chest. Bob hides under Not-Tag, his paws over his ears. I’m angry, at last. I have some one to protect.&lt;/p&gt;
-
-&lt;p&gt;本文共108单词&lt;/p&gt;
-
-</content>
- </entry>
- 
- <entry>
-   <title>安装vim-plug插件管理器</title>
-   <link href="/2019/06/11/%E5%AE%89%E8%A3%85vim-plug%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8.html"/>
-   <updated>2019-06-11T00:00:00+08:00</updated>
-   <id>/2019/06/11/安装vim-plug插件管理器</id>
+   <title>数论导引读书笔记20191011</title>
+   <link href="/2019/10/11/slmath.html"/>
+   <updated>2019-10-11T00:00:00+08:00</updated>
+   <id>/2019/10/11/slmath</id>
    <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#安装&quot; id=&quot;markdown-toc-安装&quot;&gt;安装&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#安装插件&quot; id=&quot;markdown-toc-安装插件&quot;&gt;安装插件&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#更新插件&quot; id=&quot;markdown-toc-更新插件&quot;&gt;更新插件&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#审查插件&quot; id=&quot;markdown-toc-审查插件&quot;&gt;审查插件&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#删除插件&quot; id=&quot;markdown-toc-删除插件&quot;&gt;删除插件&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#升级-vim-plug&quot; id=&quot;markdown-toc-升级-vim-plug&quot;&gt;升级 Vim-plug&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#一次不定方程之解&quot; id=&quot;markdown-toc-一次不定方程之解&quot;&gt;一次不定方程之解&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;安装&quot;&gt;安装&lt;/h2&gt;
-&lt;p&gt;一个名为 “Vim-plug” 的 Vim 插件管理器。&lt;/p&gt;
+&lt;h2 id=&quot;一次不定方程之解&quot;&gt;一次不定方程之解&lt;/h2&gt;
 
-&lt;p&gt;Vim-plug 是一个自由、开源、速度非常快的、极简的 vim 插件管理器。它可以并行地安装或更新插件。你还可以回滚更新。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理8.1&lt;/strong&gt;
+方程&lt;script type=&quot;math/tex&quot;&gt;ax+by=n&lt;/script&gt;有整数解&lt;script type=&quot;math/tex&quot;&gt;x,y&lt;/script&gt;的必要且充分之条件为
+&lt;script type=&quot;math/tex&quot;&gt;(a,b)\mid n&lt;/script&gt;。&lt;/p&gt;
 
-&lt;p&gt;安装只需打开终端并运行以下命令：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir ~/.vim
-mkdir ~/.vim/autoload
-mkdir ~/.vim/plugged
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;學公式
+&lt;script type=&quot;math/tex&quot;&gt;a+b=c&lt;/script&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;安装插件&quot;&gt;安装插件&lt;/h2&gt;
-&lt;p&gt;要安装插件，你必须如下所示首先在 Vim 配置文件中声明它们。一般 Vim 的配置文件是 ~/.vimrc，在配置文件中声明插件时，列表应该以&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;call plug#begin(PLUGIN_DIRECTORY) 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;开始，并以&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plug#end()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;结束。&lt;/p&gt;
+&lt;p&gt;图片&lt;/p&gt;
 
-&lt;p&gt;例如，安装 “lightline.vim” 插件。为此，需在 ~/.vimrc 的顶部添加以下行。&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;call plug#begin('~/.vim/plugged')
-Plug 'itchyny/lightline.vim'
-call plug#end()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;在 vim 配置文件中添加上面的行后，通过输入以下命令重新加载：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:source ~/.vimrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;或者，只需重新加载 Vim 编辑器。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20190201_212037.jpg&quot; alt=&quot;钢筋森林&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;打开 vim 编辑器，使用以下命令检查状态：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:PlugStatus
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;然后输入下面的命令，然后按回车键安装之前在配置文件中声明的插件。&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:PlugInstall
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;更新插件&quot;&gt;更新插件&lt;/h2&gt;
-&lt;p&gt;要更新插件，请运行：&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;:PlugUpdate
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;更新插件后，按下 d 查看更改。或者，你可以之后输入 &lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugDiff&lt;/code&gt;。&lt;/p&gt;
-&lt;h2 id=&quot;审查插件&quot;&gt;审查插件&lt;/h2&gt;
-&lt;p&gt;有时，更新的插件可能有新的 bug 或无法正常工作。要解决这个问题，可以简单地回滚有问题的插件。输入 &lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugDiff&lt;/code&gt; 命令，然后按回车键查看上次&lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugUpdate&lt;/code&gt;的更改，并在每个段落上按 X 将每个插件回滚到更新前的前一个状态。&lt;/p&gt;
-&lt;h2 id=&quot;删除插件&quot;&gt;删除插件&lt;/h2&gt;
-&lt;p&gt;删除一个插件删除或注释掉你以前在你的 vim 配置文件中添加的 plug 命令。然后，运行&lt;code class=&quot;highlighter-rouge&quot;&gt;:source ~/.vimrc&lt;/code&gt;或重启 Vim 编辑器。最后，运行以下命令卸载插件：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugClean&lt;/code&gt;
-该命令将删除 vim 配置文件中所有未声明的插件。&lt;/p&gt;
-&lt;h2 id=&quot;升级-vim-plug&quot;&gt;升级 Vim-plug&lt;/h2&gt;
-&lt;p&gt;要升级vim-plug本身，请输入：
-&lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugUpgrade&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;流程图&lt;/p&gt;
 
-&lt;p&gt;以上文章摘自链接：https://www.jianshu.com/p/0c83e6aed270&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
 
-&lt;p&gt;本文共138单词&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p&gt;本文共1301字。&lt;/p&gt;
+&lt;p&gt;时序图&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>晨思</title>
-   <link href="/2019/06/08/chengsi.html"/>
-   <updated>2019-06-08T00:00:00+08:00</updated>
-   <id>/2019/06/08/chengsi</id>
-   <content type="html">&lt;p&gt;被缚的普罗米修斯&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&amp;gt;John: Hello John,how are you?
+    loop Healthcheck
+        John-&amp;gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br /&gt;prevail...
+    John--&amp;gt;Alice: Great!
+    John-&amp;gt;Bob: How about you?
+    Bob--&amp;gt;John: Jolly good!
+&lt;/div&gt;
 
-&lt;p&gt;红布蒙眼的崔健&lt;/p&gt;
+&lt;p&gt;甘特图&lt;/p&gt;
 
-&lt;p&gt;锁上的嘴&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+gantt
+        dateFormat YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task :done, des1, 2014-01-06,2014-01-08
+        Active task :active, des2, 2014-01-09, 3d
+        Future task : des3, after des2, 5d
+        Future task2 : des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison :crit, done, after des1, 2d
+        Create tests for parser :crit, active, 3d
+        Future task in critical line :crit, 5d
+        Create tests for renderer :2d
+        Add to mermaid :1d
+&lt;/div&gt;
 
-&lt;p&gt;GreatWall&lt;/p&gt;
+&lt;p&gt;本文共163单词&lt;/p&gt;
 
-&lt;p&gt;本文共100字。&lt;/p&gt;
+&lt;p&gt;本文共1237字。&lt;/p&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>fortune的设置</title>
-   <link href="/2019/06/07/fortune.html"/>
-   <updated>2019-06-07T00:00:00+08:00</updated>
-   <id>/2019/06/07/fortune</id>
-   <content type="html">&lt;p&gt;在网上看到&lt;a href=&quot;https://github.com/ruanyf/fortunes&quot;&gt;中文格言库&lt;/a&gt;，觉得不错，于是就在树莓派上学习了fortune的安装与使用，发现并改正了一个小问题。&lt;/p&gt;
+   <title>通原算法</title>
+   <link href="/2019/10/10/slmath1.html"/>
+   <updated>2019-10-10T00:00:00+08:00</updated>
+   <id>/2019/10/10/slmath1</id>
+   <content type="html">
+&lt;p&gt;今有散钱不知其数，作七十七陌穿之，欠五十凑穿，若作七十八陌穿之，不多不少。问钱数若干？&lt;/p&gt;
 
-&lt;h2 id=&quot;安装&quot;&gt;安装&lt;/h2&gt;
+&lt;p&gt;解：&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install fortune&lt;/code&gt;&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\because x\equiv27(mod77), x\equiv0(mod78),\\ \therefore x\equiv27\times78(mod77\times78)&lt;/script&gt;
 
-&lt;h2 id=&quot;设置&quot;&gt;设置&lt;/h2&gt;
-&lt;p&gt;使用方法可以通过 man fortune查看。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_2019.jpg&quot; alt=&quot;图片&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;使用过程中，发现从别处git clone来的数据文件有问题，无法显示，需要重新生成索引文件。命令是：&lt;/p&gt;
+&lt;p&gt;流程图&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /usr/share/games/fortunes/
-strfile -c % &amp;lt;datafile&amp;gt; &amp;lt;datafile.dat&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
 
-&lt;p&gt;如果要添加新的fortune文件，可以编辑新文本文件，段与段之间用单独一行的%分割，然后用上面的strfile语句生成索引文件即可。&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p&gt;下一步准备做一个拉丁语格言库，并把它添加到motd中。&lt;/p&gt;
+&lt;p&gt;时序图&lt;/p&gt;
 
-&lt;p&gt;本文共426字。&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&amp;gt;John: Hello John,how are you?
+    loop Healthcheck
+        John-&amp;gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br /&gt;prevail...
+    John--&amp;gt;Alice: Great!
+    John-&amp;gt;Bob: How about you?
+    Bob--&amp;gt;John: Jolly good!
+&lt;/div&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>Termux里sshd的配置</title>
-   <link href="/2019/06/06/sshd.html"/>
-   <updated>2019-06-06T00:00:00+08:00</updated>
-   <id>/2019/06/06/sshd</id>
-   <content type="html">&lt;h2 id=&quot;电脑ssh连接termux&quot;&gt;电脑ssh连接Termux&lt;/h2&gt;
+&lt;p&gt;甘特图&lt;/p&gt;
 
-&lt;p&gt;安装openssh&lt;/p&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+gantt
+        dateFormat YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task :done, des1, 2014-01-06,2014-01-08
+        Active task :active, des2, 2014-01-09, 3d
+        Future task : des3, after des2, 5d
+        Future task2 : des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison :crit, done, after des1, 2d
+        Create tests for parser :crit, active, 3d
+        Future task in critical line :crit, 5d
+        Create tests for renderer :2d
+        Add to mermaid :1d
+&lt;/div&gt;
 
-&lt;p&gt;同样也需要openssh才可以&lt;/p&gt;
+&lt;p&gt;本文共161单词&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pkg install openssh&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;启动sshd&lt;/p&gt;
-
-&lt;p&gt;安装完成后,sshd服务默认没有启动,所以得手动启动下:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sshd&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;因为手机上面低的端口有安全限制,所以这里的openssh默认的sshd默认的服务是8022端口上的.ssh的用户名用whoami命令看下.&lt;/p&gt;
-
-&lt;p&gt;可以看到sshd启动后,端口才可以看到.&lt;/p&gt;
-
-&lt;p&gt;PC端生成公钥&lt;/p&gt;
-
-&lt;p&gt;ssh登录是key公钥模式登录,首先在PC端生成秘钥:&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-keygen -t rsa&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;执行完成后，会在家目录下创建3个文件&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;id_rsa, id_rsa.pub , known_hosts&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;拷贝公钥到手机&lt;/p&gt;
-
-&lt;p&gt;然后把公钥id_rsa.pub拷贝到手机的data\data\com.termux\files\home.ssh文件夹中.&lt;/p&gt;
-
-&lt;p&gt;将公钥拷贝到验证文件中&lt;/p&gt;
-
-&lt;p&gt;在Termux下操作&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cat id_rsa.pub &amp;gt; authorized_keys&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;PC端连接手机termux&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh -p8022 u0_a119@192.168.1.3&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;以上内容转自网络，网址为http://www.sohu.com/a/230807930_354899&lt;/p&gt;
-
-&lt;p&gt;印象中以前曾经配置成功过，然后今天准备使用时，不知为何总是无法连接。后来考虑，可能是我在电脑上换了客户端，导致秘钥发生了变化所致。一气之下，干脆把原来的秘钥清空，重新生成在git bash客户端下的秘钥，然后就配置成功并成功登陆了。&lt;/p&gt;
-
-&lt;p&gt;本文共739字。&lt;/p&gt;
+&lt;p&gt;本文共1278字。&lt;/p&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>俳句</title>
-   <link href="/2019/06/04/yougan.html"/>
-   <updated>2019-06-04T00:00:00+08:00</updated>
-   <id>/2019/06/04/yougan</id>
-   <content type="html">&lt;p&gt;七點五十八，&lt;/p&gt;
+   <title>数论导引之读书笔记20191010</title>
+   <link href="/2019/10/10/slmath.html"/>
+   <updated>2019-10-10T00:00:00+08:00</updated>
+   <id>/2019/10/10/slmath</id>
+   <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#逐步淘汰原则&quot; id=&quot;markdown-toc-逐步淘汰原则&quot;&gt;逐步淘汰原则&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;商量－－&lt;/p&gt;
+&lt;h2 id=&quot;逐步淘汰原则&quot;&gt;逐步淘汰原则&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;定理7.1&lt;/strong&gt;
+设有N件事物，其中&lt;script type=&quot;math/tex&quot;&gt;N_{\alpha}&lt;/script&gt;件有性质&lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;N_{\beta}&lt;/script&gt;件有性质&lt;script type=&quot;math/tex&quot;&gt;\beta,\cdots,N_{\alpha\beta}&lt;/script&gt;件兼有性质&lt;script type=&quot;math/tex&quot;&gt;\alpha\mbox{及}\beta,\cdots,N_{\alpha\beta\gamma}&lt;/script&gt;件兼有性质&lt;script type=&quot;math/tex&quot;&gt;\alpha,\beta\mbox{及}\gamma,\cdots&lt;/script&gt;，则此事物中之既无性质&lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt;，又无性质&lt;script type=&quot;math/tex&quot;&gt;\beta&lt;/script&gt;，又无性质&lt;script type=&quot;math/tex&quot;&gt;\gamma,\cdots&lt;/script&gt;者之件数为&lt;/p&gt;
 
-&lt;p&gt;八點二十發。&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align}N-N_{\alpha}-N_{\beta}-\cdots\\
++N_{\alpha\beta}+\cdots\\
+-N_{\alpha\beta\gamma}-\cdots\\
++\cdots-\cdots\end{align}&lt;/script&gt;
 
-&lt;p&gt;本文共88字。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定理7.2&lt;/strong&gt;
+若&lt;script type=&quot;math/tex&quot;&gt;a,b,\cdots,k,l&lt;/script&gt;为任意非负之数，则&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;max(a,b,\cdots,k,l)=a+b+\cdots+k+l\\
+-min(a,b)\cdots-min(k,l)\\
++min(a,b,c)+\cdots\\
+-\cdots+\cdots\\
+\pm min(a,b,\cdots,k,l)&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;定理7.3&lt;/strong&gt;
+&lt;script type=&quot;math/tex&quot;&gt;[a_1,\cdots,a_n]=a_1\cdots a_n(a_1,a_2)^{-1}\cdots(a_{n-1},a_n)^{-1}(a_1,a_2,a_3)\cdots(a_1,\cdots,a_n)^{(-1)^{n+1}}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;定理7.4&lt;/strong&gt;
+&lt;script type=&quot;math/tex&quot;&gt;(a_1,a_2,\cdots,a_n)=a_1\cdots a_n[a_1,a_2]^{-1}\cdots[a_{n-1}a_n]^{-1}[a_1,a_2,a_3]\cdots[a_1,\cdots,a_n]^{(-1)^{n+1}}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;图片&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20190201_212037.jpg&quot; alt=&quot;钢筋森林&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;流程图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
+
+&lt;/div&gt;
+
+&lt;p&gt;时序图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&amp;gt;John: Hello John,how are you?
+    loop Healthcheck
+        John-&amp;gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br /&gt;prevail...
+    John--&amp;gt;Alice: Great!
+    John-&amp;gt;Bob: How about you?
+    Bob--&amp;gt;John: Jolly good!
+&lt;/div&gt;
+
+&lt;p&gt;甘特图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+gantt
+        dateFormat YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task :done, des1, 2014-01-06,2014-01-08
+        Active task :active, des2, 2014-01-09, 3d
+        Future task : des3, after des2, 5d
+        Future task2 : des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison :crit, done, after des1, 2d
+        Create tests for parser :crit, active, 3d
+        Future task in critical line :crit, 5d
+        Create tests for renderer :2d
+        Add to mermaid :1d
+&lt;/div&gt;
+
+&lt;p&gt;本文共177单词&lt;/p&gt;
+
+&lt;p&gt;本文共1973字。&lt;/p&gt;
 
 </content>
  </entry>
  
  <entry>
-   <title>Public</title>
-   <link href="/2019/06/04/public.html"/>
-   <updated>2019-06-04T00:00:00+08:00</updated>
-   <id>/2019/06/04/public</id>
-   <content type="html">&lt;p&gt;Many people say that the private lives of famous people should be made public, however others say the private lives of famous people should not be made public and I personally agree with this opinion.&lt;/p&gt;
+   <title>错题讲解</title>
+   <link href="/2019/10/09/xxao.html"/>
+   <updated>2019-10-09T00:00:00+08:00</updated>
+   <id>/2019/10/09/xxao</id>
+   <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#2017年湖北省数学思维能力等级测试5年级&quot; id=&quot;markdown-toc-2017年湖北省数学思维能力等级测试5年级&quot;&gt;2017年湖北省数学思维能力等级测试5年级&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#一选择题&quot; id=&quot;markdown-toc-一选择题&quot;&gt;一、选择题&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#二填空题&quot; id=&quot;markdown-toc-二填空题&quot;&gt;二、填空题&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;2017年湖北省数学思维能力等级测试5年级&quot;&gt;2017年湖北省数学思维能力等级测试5年级&lt;/h2&gt;
+&lt;h3 id=&quot;一选择题&quot;&gt;一、选择题&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;3. 三个质数的倒数和为&lt;script type=&quot;math/tex&quot;&gt;\frac{311}{1001}&lt;/script&gt;，那么这三个质数的和为（）。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Firstly, I couldn’t hide the fact that the public have great interest in famous people. They are always asking for an autograph or wanting to take a photo of the famous people they meet. Normal people would think this a honor, but the people who are famous don’t think so, they fell uneasy under this circumstance. The same with their private lives.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A. 311 B.35 C.31 D.29&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Secondly, famous people are role models for us. Any one would want to be like them, and they want to learn from the famous people. They are like, heros, to us normal people. So they don’t always want to say their real identity.&lt;/p&gt;
+&lt;p&gt;解答：&lt;/p&gt;
 
-&lt;p&gt;To sum up, the private lives of famous people should not be made public, I think.&lt;/p&gt;
+&lt;p&gt;1，首先搞清&lt;strong&gt;倒数&lt;/strong&gt;的概念：假设本数是&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;的话，倒数就是1除以本数，记作&lt;script type=&quot;math/tex&quot;&gt;\frac{1}{x}&lt;/script&gt;，也就是分子为1、分母为本数的分数。&lt;/p&gt;
 
-&lt;p&gt;本文共173单词&lt;/p&gt;
+&lt;p&gt;2，本题既然是三个质数的倒数的和，那么这三个倒数都是分子为1的最简真分数，分母之间互质。这样的分数相加，分母要通分。也就是要找这三个质数的最小公倍数$$[a,b,c]。换言之，就是要找题中给出的分母1001的所有质因数。&lt;/p&gt;
 
-&lt;p&gt;本文共971字符。&lt;/p&gt;
+&lt;p&gt;3， 快速寻找1001的质因数的方法，除了记忆以外，就是从2，3，5，7，11，13，17…，从小往大试。根据整除性质判断，2，3，5肯定不是其质因数，那么由于&lt;script type=&quot;math/tex&quot;&gt;7\mid1001=143&lt;/script&gt;，所以7是；&lt;script type=&quot;math/tex&quot;&gt;11\mid143=13&lt;/script&gt;，所以11和13也都是。&lt;/p&gt;
+
+&lt;p&gt;4，所以就得出了这三个质数。三者相加等于31，选C。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. 天安门广场是世界上最大的广场，面积约为44万平方米。已知&lt;script type=&quot;math/tex&quot;&gt;1\mbox{亩}=\frac{2000}{3}&lt;/script&gt;平方米，则天安门广场的面积约为（）。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A. 600亩  B. 630亩  C. 660亩 D. 690亩&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;解答：&lt;/p&gt;
+
+&lt;p&gt;本题的关键是单位换算，已告知。然后考查的是整数除以分数的计算问题：除以一个分数，等于乘以一个分数的倒数，然后变换成分数的乘法问题。&lt;/p&gt;
+
+&lt;p&gt;答案显然是C。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7. 一辆长度为10米的车穿过一个隧道时的速度为v,用时14秒；另一辆长度为15米的车也以速度v穿过该隧道，用时18秒。则隧道长度、车的速度v分别为（）。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A. 7.5米，4.5千米/时。 B. 7米，1.25千米/时&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C. 6.5米，3千米/时。 D.6米，2千米/时。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;解答：&lt;/p&gt;
+
+&lt;p&gt;这就是典型的“火车上桥”、“车过隧道”的题，解题关键就是车头进隧道始，车尾出隧道止。两车长之差，就是两车行驶的路程差，除以时间差就是他们的速度，然後将速度单位从米/秒乘以3.6转换为千米/时。速度乘以某车过隧道时间再减车长即为隧道长。&lt;/p&gt;
+
+&lt;p&gt;答案为：A。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8. 五个数，两两相加，再把所得的和相加，总和为2064，原来五个数的和为（）。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A. 2064 B.2068 C.7099 D.516&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;解答：&lt;/p&gt;
+
+&lt;p&gt;方法一：五个数两两相加，每个数和其他另外四个数都加了一次，这五个数各自共重复用了四次；再把所得的和相加，就是这五个数之和的4倍，所以&lt;script type=&quot;math/tex&quot;&gt;2064\div4=516&lt;/script&gt;。答案为D。&lt;/p&gt;
+
+&lt;p&gt;方法二：&lt;/p&gt;
+
+&lt;p&gt;设五个数为&lt;script type=&quot;math/tex&quot;&gt;a,b,c,d,e&lt;/script&gt;，两两相加共10种组合，分别为：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+a+b=x_1\\
+a+c=x_2\\
+a+d=x_3\\
+a+e=x_4\\
+b+c=x_5\\
+b+d=x_6\\
+b+e=x_7\\
+c+d=x_8\\
+c+e=x_9\\
+d+e=x_{10}
+\end{cases}&lt;/script&gt;
+
+&lt;p&gt;再把所得的和相加，得：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\displaystyle\sum_{i=1}^{10}x_i=4(a+b+c+d+e)=2064&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\therefore a+b+c+d+e=2064\div4=516&lt;/script&gt;
+
+&lt;h3 id=&quot;二填空题&quot;&gt;二、填空题&lt;/h3&gt;
+
+&lt;p&gt;13.如图，正方形客厅边长为12米，若&lt;strong&gt;正中&lt;/strong&gt;铺一张正方形纯毛地毯，周边铺化纤地毯，共用44910元。已知纯毛地毯每平方米500元，化纤地毯每平方米70元，则铺在正中的纯毛地毯的正方形边长是_____米。&lt;/p&gt;
+
+&lt;p&gt;解答：关键点：列出方程。总价=两种地毯各自总价=各自面积乘以单价。
+直接设中间正方形边长为&lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt;，则纯毛地毯面积为&lt;script type=&quot;math/tex&quot;&gt;x^2&lt;/script&gt;，化纤地毯面积为&lt;script type=&quot;math/tex&quot;&gt;12^2-x^2&lt;/script&gt;，则：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;500x^2+70(12^2-x^2)=44910&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;430x^2=34830, x^2=81,x=9&lt;/script&gt;
+
+&lt;p&gt;答案为9米。&lt;/p&gt;
+
+&lt;p&gt;14.如图，正方形ABCD的面积为32平方厘米，其他的点都是它所在边的中点，则阴影三角形的面积是_____平方厘米。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20191009_141301.jpg&quot; alt=&quot;第14题图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;解答：&lt;/p&gt;
+
+&lt;p&gt;本题的关键在于找出比例关系，从外向内分别是&lt;script type=&quot;math/tex&quot;&gt;\frac{1}{2},\frac{1}{2}, \frac{3}{8}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;所以，答案为大正方形面积的&lt;script type=&quot;math/tex&quot;&gt;\frac{3}{32}&lt;/script&gt;，即3平方厘米。&lt;/p&gt;
+
+&lt;p&gt;15.把111222个棋子排成一个长方形，每一横行的棋子数比每一竖行的棋子数多一个，则长方形每一横行的棋子数是&lt;script type=&quot;math/tex&quot;&gt;(\quad\quad)&lt;/script&gt;。&lt;/p&gt;
+
+&lt;p&gt;解答：去掉一竖行，即为平方数。
+111222数很大，平方数不好找。先观察，&lt;script type=&quot;math/tex&quot;&gt;9|111222=12358&lt;/script&gt;，&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;12358=12321+37=111\times111+37&lt;/script&gt;由此，&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}111222&amp;=9\times12358\\
+&amp;=9\times(111\times111+37)\\
+&amp;=333\times333+9\times37\\
+&amp;=333\times333+333\\&amp;=334\times333\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;答案是334个。&lt;/p&gt;
+
+&lt;p&gt;本文共2219字。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>数论导引读书笔记20191008</title>
+   <link href="/2019/10/08/slmath.html"/>
+   <updated>2019-10-08T00:00:00+08:00</updated>
+   <id>/2019/10/08/slmath</id>
+   <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#整数之模&quot; id=&quot;markdown-toc-整数之模&quot;&gt;整数之模&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#定理41&quot; id=&quot;markdown-toc-定理41&quot;&gt;定理4.1.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#定理42&quot; id=&quot;markdown-toc-定理42&quot;&gt;定理4.2.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#定理43&quot; id=&quot;markdown-toc-定理43&quot;&gt;定理4.3.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#定义最大公因数&quot; id=&quot;markdown-toc-定义最大公因数&quot;&gt;定义.(最大公因数)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#定理44&quot; id=&quot;markdown-toc-定理44&quot;&gt;定理4.4.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#定义互素&quot; id=&quot;markdown-toc-定义互素&quot;&gt;定义.（互素）&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#附言&quot; id=&quot;markdown-toc-附言&quot;&gt;附言&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#唯一分解定理&quot; id=&quot;markdown-toc-唯一分解定理&quot;&gt;唯一分解定理&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#定理51&quot; id=&quot;markdown-toc-定理51&quot;&gt;定理5.1.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#定理52&quot; id=&quot;markdown-toc-定理52&quot;&gt;定理5.2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#定理53&quot; id=&quot;markdown-toc-定理53&quot;&gt;定理5.3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#习题1-证明以下各数非有理数&quot; id=&quot;markdown-toc-习题1-证明以下各数非有理数&quot;&gt;习题1. 证明以下各数非有理数&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#习题2&quot; id=&quot;markdown-toc-习题2&quot;&gt;习题2.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;整数之模&quot;&gt;整数之模&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;模&lt;/strong&gt;乃对加减自封之一数集。若m及n皆在一模中，则&lt;script type=&quot;math/tex&quot;&gt;m\pm n&lt;/script&gt;亦属此模。只有0之模谓之&lt;strong&gt;零模&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;定理41&quot;&gt;定理4.1.&lt;/h3&gt;
+&lt;p&gt;1）任何模中必含有0；&lt;/p&gt;
+
+&lt;p&gt;2） 若&lt;script type=&quot;math/tex&quot;&gt;a,b&lt;/script&gt;在模中，则&lt;script type=&quot;math/tex&quot;&gt;am+bn&lt;/script&gt;亦然，&lt;script type=&quot;math/tex&quot;&gt;m,n&lt;/script&gt;为任何整数。&lt;/p&gt;
+
+&lt;h3 id=&quot;定理42&quot;&gt;定理4.2.&lt;/h3&gt;
+&lt;p&gt;任与二整数&lt;script type=&quot;math/tex&quot;&gt;a\mbox{及}b&lt;/script&gt;，则所有形如&lt;script type=&quot;math/tex&quot;&gt;am+bn&lt;/script&gt;之整数成一模。&lt;/p&gt;
+
+&lt;h3 id=&quot;定理43&quot;&gt;定理4.3.&lt;/h3&gt;
+&lt;p&gt;任一非零之模，必为一正整数之倍数所成之集合。
+（证明用反证法）&lt;/p&gt;
+
+&lt;h3 id=&quot;定义最大公因数&quot;&gt;定义.(最大公因数)&lt;/h3&gt;
+&lt;p&gt;命&lt;script type=&quot;math/tex&quot;&gt;a,b&lt;/script&gt;为二整数。于定理3中形如&lt;script type=&quot;math/tex&quot;&gt;am+bn&lt;/script&gt;所成之模，则此定理证明中所得之d名为a,b之i&lt;strong&gt;最大公因数&lt;/strong&gt;，以(a,b)表之。&lt;/p&gt;
+
+&lt;h3 id=&quot;定理44&quot;&gt;定理4.4.&lt;/h3&gt;
+&lt;p&gt;(a,b)有如下性质：&lt;/p&gt;
+
+&lt;p&gt;(1) 有整数&lt;script type=&quot;math/tex&quot;&gt;x,y&lt;/script&gt;，使&lt;script type=&quot;math/tex&quot;&gt;( a+b)=ax+by&lt;/script&gt; ；&lt;/p&gt;
+
+&lt;p&gt;(2) 对任二整数&lt;script type=&quot;math/tex&quot;&gt;x,y&lt;/script&gt;，必有&lt;script type=&quot;math/tex&quot;&gt;(a+b)\mid{ax+by}&lt;/script&gt;；&lt;/p&gt;
+
+&lt;p&gt;(3) 若&lt;script type=&quot;math/tex&quot;&gt;e\mid{a},e\mid{b},\mbox{则}e\mid{(a,b)}&lt;/script&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;定义互素&quot;&gt;定义.（互素）&lt;/h3&gt;
+&lt;p&gt;若&lt;script type=&quot;math/tex&quot;&gt;(a,b)=1,\mbox{则}a,b&lt;/script&gt;谓之互素。&lt;/p&gt;
+
+&lt;h3 id=&quot;附言&quot;&gt;附言&lt;/h3&gt;
+&lt;p&gt;求最大公因数的方法：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;辗转韶相除法&lt;/li&gt;
+  &lt;li&gt;euclid计算&lt;/li&gt;
+  &lt;li&gt;秦九转韶于数学九章（1247年）中亦论及。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;例：&lt;/strong&gt; 求取&lt;script type=&quot;math/tex&quot;&gt;a=323, b=221&lt;/script&gt;之最大公因数。&lt;/p&gt;
+
+&lt;p&gt;由Euclid算法可得
+&lt;script type=&quot;math/tex&quot;&gt;323=221\times1+102&lt;/script&gt;。&lt;/p&gt;
+
+&lt;p&gt;故&lt;script type=&quot;math/tex&quot;&gt;102&lt;/script&gt;在形如&lt;script type=&quot;math/tex&quot;&gt;ax+by&lt;/script&gt;之整数模中。&lt;/p&gt;
+
+&lt;p&gt;又
+&lt;script type=&quot;math/tex&quot;&gt;221=102\times2+17&lt;/script&gt;，故17亦在模中。&lt;/p&gt;
+
+&lt;p&gt;因
+&lt;script type=&quot;math/tex&quot;&gt;102=17\times6&lt;/script&gt;，故17为该模之最小正整数，即&lt;script type=&quot;math/tex&quot;&gt;17=(323,221)&lt;/script&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;唯一分解定理&quot;&gt;唯一分解定理&lt;/h2&gt;
+&lt;h3 id=&quot;定理51&quot;&gt;定理5.1.&lt;/h3&gt;
+&lt;p&gt;若p为素数且&lt;script type=&quot;math/tex&quot;&gt;p\mid{ab},\mbox{则}p\mid a,\mbox{或}p\mid b&lt;/script&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;定理52&quot;&gt;定理5.2&lt;/h3&gt;
+&lt;p&gt;若&lt;script type=&quot;math/tex&quot;&gt;c\gt 0,\mbox{及}(a,b)=d,\mbox{则}(ac,bc)=dc&lt;/script&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;定理53&quot;&gt;定理5.3&lt;/h3&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;之标准分解式是唯一的。换言之，若不计次序，则&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;仅能由唯一之方式表为素数之积。&lt;/p&gt;
+
+&lt;h3 id=&quot;习题1-证明以下各数非有理数&quot;&gt;习题1. 证明以下各数非有理数&lt;/h3&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;log_{10}{2},\quad \sqrt{2}&lt;/script&gt;。&lt;/p&gt;
+
+&lt;p&gt;证明：反证法。&lt;/p&gt;
+
+&lt;p&gt;（1）
+若&lt;script type=&quot;math/tex&quot;&gt;log_{10}{2}&lt;/script&gt;为有理数，则可设&lt;script type=&quot;math/tex&quot;&gt;log_{10}{2}=\frac{p}{q},p\gt0,q\gt0&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;10^{log_{10}{2}}=10^{\frac{p}{q}}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;2=10^{\frac{p}{q}}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;2^q=10^p,\mbox{即：}2^{q-p}=5^p&lt;/script&gt;
+
+&lt;p&gt;显然，&lt;script type=&quot;math/tex&quot;&gt;p=q=0&lt;/script&gt;与&lt;script type=&quot;math/tex&quot;&gt;p,q\gt 0&lt;/script&gt;矛盾。假设不成立。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\therefore log_{10}{2}&lt;/script&gt;为无理数。
+证毕。&lt;/p&gt;
+
+&lt;p&gt;（2）
+若&lt;script type=&quot;math/tex&quot;&gt;\sqrt{2}&lt;/script&gt;为有理数，则可设&lt;script type=&quot;math/tex&quot;&gt;\sqrt{2}=\frac{p}{q},(p,q)=1&lt;/script&gt;，由此&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;2q^2=p^2, \mbox{则}\quad 2\mid p, \mbox{令}p=2k&lt;/script&gt;，&lt;/p&gt;
+
+&lt;p&gt;则&lt;script type=&quot;math/tex&quot;&gt;q^2=2k^2,\mbox{即}2\mid q&lt;/script&gt;，由此&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;(p,q)=2,\mbox{与原设}(p,q)=1&lt;/script&gt;矛盾，假设不成立。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\therefore \sqrt{2}&lt;/script&gt;为无理数。
+证毕。&lt;/p&gt;
+
+&lt;h3 id=&quot;习题2&quot;&gt;习题2.&lt;/h3&gt;
+&lt;p&gt;若已知&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;log_{10}{\frac{1025}{1024}}=a, \quad log_{10}{\frac{1024^2}{1023\cdot1025}}=b,&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;log_{10}{\frac{81^2}{80\cdot82}}=c,\quad log_10{\frac{125^2}{124\cdot126}}=d,&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;log_{10}{\frac{99^2}{98\cdot100}}=e,&lt;/script&gt;
+
+&lt;p&gt;则&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;196log_{10}{2}=59+5a+8b-3c-8d+4e&lt;/script&gt;
+
+&lt;p&gt;并试用&lt;script type=&quot;math/tex&quot;&gt;a,b,c,d,e&lt;/script&gt;表出&lt;script type=&quot;math/tex&quot;&gt;log_{10}{3}\mbox{及}log_{10}{41}&lt;/script&gt;；再用此法以求&lt;script type=&quot;math/tex&quot;&gt;log_{10}{2}&lt;/script&gt;至小数第10位，以说明此法在实际计算上有用处。&lt;/p&gt;
+
+&lt;p&gt;证明：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;10^{196log_{10}{2}}=2^{196}&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{align}&amp;10^{59+5a+8b-3c-8d+4e}\\
+&amp;=10^{59}\times10^{5a}\times10^{8b}\div10^{3c}\div10^{8d}\times10^{4e}\\
+&amp;=10^{59}\times{\Big(\frac{1025}{1024}\Big)}^5\times{\Big(\frac{1024^2}{1023\cdot1025}\Big)}^8\\
+&amp;\div{\Big(\frac{81^2}{80\cdot82}\Big)}^3\div{\Big(\frac{125^2}{124\cdot126}\Big)}^8\times{\Big(\frac{99^2}{98\cdot100}\Big)}^4\\
+&amp;=\frac{10^{59}\times1025^5\times1024^{16}\times80^3\times82^3\times124^8\times126^8\times99^8}{1024^5\times1023^8\times1025^8\times81^6\times125^{16}\times98^4\times100^4}\\
+&amp;=\frac{2^{59}\cdot5^{59}\cdot5^{10}\cdot41^5\cdot2^{160}\cdot2^{12}\cdot5^3\cdot2^3\cdot41^3\cdot2^{16}\cdot31^8\cdot3^{16}\cdot2^8\cdot7^8\cdot3^{16}\cdot11^8}{2^{50}\cdot3^8\cdot31^8\cdot11^8\cdot5^{16}\cdot41^8\cdot3^{24}\cdot5^{48}\cdot2^4\cdot7^8\cdot2^8\cdot5^8}\\
+&amp;=2^{196}
+\end{align} %]]&gt;&lt;/script&gt;
+证毕。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>数论导引读书笔记20191007</title>
+   <link href="/2019/10/07/slmath.html"/>
+   <updated>2019-10-07T00:00:00+08:00</updated>
+   <id>/2019/10/07/slmath</id>
+   <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#素数及复合数&quot; id=&quot;markdown-toc-素数及复合数&quot;&gt;素数及复合数&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#定理1-非1之自然数皆可分解为素数之积&quot; id=&quot;markdown-toc-定理1-非1之自然数皆可分解为素数之积&quot;&gt;定理1. 非1之自然数皆可分解为素数之积。&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#素数&quot; id=&quot;markdown-toc-素数&quot;&gt;素数&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;素数及复合数&quot;&gt;素数及复合数&lt;/h2&gt;
+&lt;p&gt;华先生书中，称之为素数与复合数，也就是我们现在称的“质数与合数”。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;今将自然数分为三类：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;（1） 1，只有自然数1为其因数；&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;（2） p，恰有二自然数1及p为其因数。换言之，p乃大于1且无真因数之自然数；&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;（3） n，有真因数之自然数。（此类数，有两个以上的因数。）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;第二类数名为素数（&lt;strong&gt;质数&lt;/strong&gt;，prime），第三类数名为复合数（&lt;strong&gt;合数&lt;/strong&gt;，composite number)。吾人常以p表素数。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph LR;
+A[自然数]--&amp;gt;B[1];
+A--&amp;gt;C[素数p];
+A--&amp;gt;D[复合数];
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;定理1-非1之自然数皆可分解为素数之积&quot;&gt;定理1. 非1之自然数皆可分解为素数之积。&lt;/h3&gt;
+&lt;p&gt;证明：略。P.3页&lt;/p&gt;
+
+&lt;h2 id=&quot;素数&quot;&gt;素数&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Eratosthenes筛法：若&lt;script type=&quot;math/tex&quot;&gt;n\leq N&lt;/script&gt;，而&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;非素数，则&lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt;必为一不大于&lt;script type=&quot;math/tex&quot;&gt;\sqrt{N}&lt;/script&gt;之素数整除。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;本文共455字。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>测试</title>
+   <link href="/2019/10/06/test.html"/>
+   <updated>2019-10-06T00:00:00+08:00</updated>
+   <id>/2019/10/06/test</id>
+   <content type="html">
+&lt;p&gt;數學公式
+&lt;script type=&quot;math/tex&quot;&gt;a+b=c&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;图片&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/media/IMG_20190201_212037.jpg&quot; alt=&quot;钢筋森林&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ceshi&lt;/p&gt;
+
+&lt;p&gt;流程图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
+
+&lt;/div&gt;
+
+&lt;p&gt;时序图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&amp;gt;John: Hello John,how are you?
+    loop Healthcheck
+        John-&amp;gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br /&gt;prevail...
+    John--&amp;gt;Alice: Great!
+    John-&amp;gt;Bob: How about you?
+    Bob--&amp;gt;John: Jolly good!
+&lt;/div&gt;
+
+&lt;p&gt;甘特图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+gantt
+        dateFormat YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task :done, des1, 2014-01-06,2014-01-08
+        Active task :active, des2, 2014-01-09, 3d
+        Future task : des3, after des2, 5d
+        Future task2 : des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison :crit, done, after des1, 2d
+        Create tests for parser :crit, active, 3d
+        Future task in critical line :crit, 5d
+        Create tests for renderer :2d
+        Add to mermaid :1d
+&lt;/div&gt;
+
+&lt;p&gt;本文共158单词&lt;/p&gt;
+
+&lt;p&gt;本文共1173字。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>test</title>
+   <link href="/2019/10/05/mathlatex.html"/>
+   <updated>2019-10-05T00:00:00+08:00</updated>
+   <id>/2019/10/05/mathlatex</id>
+   <content type="html">
+&lt;p&gt;數學公式&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+h(x) =&amp; \frac{1}{\int_xt(x)\mathrm{d}x} \tag{1}\\
+f(x) =&amp; \frac{1}{\int_x\eta(x)\mathrm{d}x}g(x)\tag{2}
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+a &amp;= b + c \tag{3}\\
+  &amp;= d + e + f\tag{4}
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;E=mc^2&lt;/script&gt;
+\[ \boxed{E=mc^2} \]
+\begin{equation}
+    E=mc^2
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;\newtheorem{definition }{定义}[section]
+\newtheorem{theorem}{定理}[section]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{proof} [命题物质无限可分的证明]
+    一尺之棰，日取其半，万世不竭。
+\end{proof}&lt;/script&gt;
+
+&lt;p&gt;流程图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+graph TD;
+A--&amp;gt;B;
+A--&amp;gt;C;
+B--&amp;gt;D;
+C--&amp;gt;D;
+
+&lt;/div&gt;
+
+&lt;p&gt;时序图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&amp;gt;John: Hello John,how are you?
+    loop Healthcheck
+        John-&amp;gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br /&gt;prevail...
+    John--&amp;gt;Alice: Great!
+    John-&amp;gt;Bob: How about you?
+    Bob--&amp;gt;John: Jolly good!
+&lt;/div&gt;
+
+&lt;p&gt;甘特图&lt;/p&gt;
+
+&lt;div class=&quot;mermaid&quot;&gt;
+gantt
+        dateFormat YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task :done, des1, 2014-01-06,2014-01-08
+        Active task :active, des2, 2014-01-09, 3d
+        Future task : des3, after des2, 5d
+        Future task2 : des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison :crit, done, after des1, 2d
+        Create tests for parser :crit, active, 3d
+        Future task in critical line :crit, 5d
+        Create tests for renderer :2d
+        Add to mermaid :1d
+&lt;/div&gt;
+
+&lt;p&gt;本文共199单词&lt;/p&gt;
+
+&lt;p&gt;本文共1567字。&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>组合数学之三色七珠手链</title>
+   <link href="/2019/10/04/chainmath.html"/>
+   <updated>2019-10-04T00:00:00+08:00</updated>
+   <id>/2019/10/04/chainmath</id>
+   <content type="html">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#题目&quot; id=&quot;markdown-toc-题目&quot;&gt;题目&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#群论解法&quot; id=&quot;markdown-toc-群论解法&quot;&gt;群论解法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;题目&quot;&gt;题目&lt;/h2&gt;
+&lt;p&gt;某珠宝商准备将蓝、绿、紫三种不同颜色的珠子串成由七颗珠子组成的手链进行出售。请问有多少种不同排列顺序的手链产生？&lt;/p&gt;
+
+&lt;h2 id=&quot;群论解法&quot;&gt;群论解法&lt;/h2&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;N_7=\{1,2,3,4,5,6,7\},m=3&lt;/script&gt;,&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;G=\{P_1=I,P_2,P_3,P_4,P_5,\cdots,P_{14}\}\mbox{是}N_7\mbox{上的一个置换群}&lt;/script&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;I=P_1=(1)(2)(3)(4)(5)(6)(7)\mbox{不动}&lt;/script&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_2=(1,2,3,4,5,6,7)&lt;/script&gt;1阶轮换。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_3=(1,3,5,7,2,4,6)&lt;/script&gt;1阶轮换。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_4=(1,4,7,3,6,2,5)&lt;/script&gt;1阶轮换。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_5=(1,5,2,6,3,7,4)&lt;/script&gt;1阶轮换。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_6=(1,6,4,2,7,5,3)&lt;/script&gt;1阶轮换。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_7=(1,7,6,5,4,3,2)&lt;/script&gt;1阶轮换。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_8=(1)(2,7)(3,6)(4,5)&lt;/script&gt;对点1与圆心连线成轴对称。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_9=(2)(1,3)(4,7)(5,6)&lt;/script&gt;对点2与圆心连线成轴对称。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_{10}=(3)(2,4)(1,5)(6,7)&lt;/script&gt;对点3与圆心连线成轴对称。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_{11}=(4)(1,7)(2,6)(3,5)&lt;/script&gt;对点4与圆心连线成轴对称。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_{12}=(5)(1,2)(3,7)(4,6)&lt;/script&gt;对点5与圆心连线成轴对称。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_{13}=(6)(2,3)(1,4)(5,7)&lt;/script&gt;对点6与圆心连线成轴对称。&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;P_{14}=(7)(1,6)(2,5)(3,4)&lt;/script&gt;对点7与圆心连线成轴对称。&lt;/p&gt;
+
+&lt;p&gt;得：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}M&amp;=\frac{1}{|G|}\times\displaystyle\sum^{14}_{i=1}m^{C(P_i)}\\
+&amp;=\frac{1}{14}\times(3^7+6\times3+7\times3^4)\\
+&amp;=198\mbox{（种）}\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;本文共902字。&lt;/p&gt;
 
 </content>
  </entry>

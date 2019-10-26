@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="montanus2019" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>数论导引读书笔记20191008</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="montanus2019" type="application/atom+xml" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/media/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script type="text/javascript"> hljs.initHighlightingOnLoad(); </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/media/js/mermaid.js"></script>
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="montanus2019" class="" href="/">montanus2019</a></h1>
+          </div>
+          <nav>
+            
+            <span><a title="Archive" href="/archive.html"><i class="fa fa-list-ul"></i></a></span>
+            
+            <span><a title="Tags" href="/tags.html"><i class="fa fa-tags"></i></a></span>
+            
+            <span><a title="About" href="/about.html"><i class="fa fa-user"></i></a></span>
+            
+            <span><a title="Gallery" href=""><i class="fa fa-film"></i></a></span>
+            
+            <span><a title="Subscribe" href="/atom.xml"><i class="fa fa-rss"></i></a></span>
+            
+          </nav>
+        </header>
+        <div id="content">
+        <article>
+  <section class="title">
+    <h2>数论导引读书笔记20191008 </h2>
+  </section>
+  <section class="meta">
+  <span class="time">
+    <time datetime="2019-10-08">2019-10-08</time>
+  </span>
+  
+  <span class="tags">
+    
+    <a href="/tags.html#math" title="math">#math</a>
+    
+  </span>
+  
+  </section>
+  <section class="post">
+  <ul id="markdown-toc">
+  <li><a href="#整数之模" id="markdown-toc-整数之模">整数之模</a>    <ul>
+      <li><a href="#定理41" id="markdown-toc-定理41">定理4.1.</a></li>
+      <li><a href="#定理42" id="markdown-toc-定理42">定理4.2.</a></li>
+      <li><a href="#定理43" id="markdown-toc-定理43">定理4.3.</a></li>
+      <li><a href="#定义最大公因数" id="markdown-toc-定义最大公因数">定义.(最大公因数)</a></li>
+      <li><a href="#定理44" id="markdown-toc-定理44">定理4.4.</a></li>
+      <li><a href="#定义互素" id="markdown-toc-定义互素">定义.（互素）</a></li>
+      <li><a href="#附言" id="markdown-toc-附言">附言</a></li>
+    </ul>
+  </li>
+  <li><a href="#唯一分解定理" id="markdown-toc-唯一分解定理">唯一分解定理</a>    <ul>
+      <li><a href="#定理51" id="markdown-toc-定理51">定理5.1.</a></li>
+      <li><a href="#定理52" id="markdown-toc-定理52">定理5.2</a></li>
+      <li><a href="#定理53" id="markdown-toc-定理53">定理5.3</a></li>
+      <li><a href="#习题1-证明以下各数非有理数" id="markdown-toc-习题1-证明以下各数非有理数">习题1. 证明以下各数非有理数</a></li>
+      <li><a href="#习题2" id="markdown-toc-习题2">习题2.</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="整数之模">整数之模</h2>
+<p><strong>模</strong>乃对加减自封之一数集。若m及n皆在一模中，则<script type="math/tex">m\pm n</script>亦属此模。只有0之模谓之<strong>零模</strong>。</p>
+
+<h3 id="定理41">定理4.1.</h3>
+<p>1）任何模中必含有0；</p>
+
+<p>2） 若<script type="math/tex">a,b</script>在模中，则<script type="math/tex">am+bn</script>亦然，<script type="math/tex">m,n</script>为任何整数。</p>
+
+<h3 id="定理42">定理4.2.</h3>
+<p>任与二整数<script type="math/tex">a\mbox{及}b</script>，则所有形如<script type="math/tex">am+bn</script>之整数成一模。</p>
+
+<h3 id="定理43">定理4.3.</h3>
+<p>任一非零之模，必为一正整数之倍数所成之集合。
+（证明用反证法）</p>
+
+<h3 id="定义最大公因数">定义.(最大公因数)</h3>
+<p>命<script type="math/tex">a,b</script>为二整数。于定理3中形如<script type="math/tex">am+bn</script>所成之模，则此定理证明中所得之d名为a,b之i<strong>最大公因数</strong>，以(a,b)表之。</p>
+
+<h3 id="定理44">定理4.4.</h3>
+<p>(a,b)有如下性质：</p>
+
+<p>(1) 有整数<script type="math/tex">x,y</script>，使<script type="math/tex">( a+b)=ax+by</script> ；</p>
+
+<p>(2) 对任二整数<script type="math/tex">x,y</script>，必有<script type="math/tex">(a+b)\mid{ax+by}</script>；</p>
+
+<p>(3) 若<script type="math/tex">e\mid{a},e\mid{b},\mbox{则}e\mid{(a,b)}</script>。</p>
+
+<h3 id="定义互素">定义.（互素）</h3>
+<p>若<script type="math/tex">(a,b)=1,\mbox{则}a,b</script>谓之互素。</p>
+
+<h3 id="附言">附言</h3>
+<p>求最大公因数的方法：</p>
+
+<ul>
+  <li>辗转韶相除法</li>
+  <li>euclid计算</li>
+  <li>秦九转韶于数学九章（1247年）中亦论及。</li>
+</ul>
+
+<p><strong>例：</strong> 求取<script type="math/tex">a=323, b=221</script>之最大公因数。</p>
+
+<p>由Euclid算法可得
+<script type="math/tex">323=221\times1+102</script>。</p>
+
+<p>故<script type="math/tex">102</script>在形如<script type="math/tex">ax+by</script>之整数模中。</p>
+
+<p>又
+<script type="math/tex">221=102\times2+17</script>，故17亦在模中。</p>
+
+<p>因
+<script type="math/tex">102=17\times6</script>，故17为该模之最小正整数，即<script type="math/tex">17=(323,221)</script>。</p>
+
+<h2 id="唯一分解定理">唯一分解定理</h2>
+<h3 id="定理51">定理5.1.</h3>
+<p>若p为素数且<script type="math/tex">p\mid{ab},\mbox{则}p\mid a,\mbox{或}p\mid b</script>。</p>
+<h3 id="定理52">定理5.2</h3>
+<p>若<script type="math/tex">c\gt 0,\mbox{及}(a,b)=d,\mbox{则}(ac,bc)=dc</script>。</p>
+
+<h3 id="定理53">定理5.3</h3>
+<p><script type="math/tex">n</script>之标准分解式是唯一的。换言之，若不计次序，则<script type="math/tex">n</script>仅能由唯一之方式表为素数之积。</p>
+
+<h3 id="习题1-证明以下各数非有理数">习题1. 证明以下各数非有理数</h3>
+<p><script type="math/tex">log_{10}{2},\quad \sqrt{2}</script>。</p>
+
+<p>证明：反证法。</p>
+
+<p>（1）
+若<script type="math/tex">log_{10}{2}</script>为有理数，则可设<script type="math/tex">log_{10}{2}=\frac{p}{q},p\gt0,q\gt0</script></p>
+
+<script type="math/tex; mode=display">10^{log_{10}{2}}=10^{\frac{p}{q}}</script>
+
+<script type="math/tex; mode=display">2=10^{\frac{p}{q}}</script>
+
+<script type="math/tex; mode=display">2^q=10^p,\mbox{即：}2^{q-p}=5^p</script>
+
+<p>显然，<script type="math/tex">p=q=0</script>与<script type="math/tex">p,q\gt 0</script>矛盾。假设不成立。</p>
+
+<p><script type="math/tex">\therefore log_{10}{2}</script>为无理数。
+证毕。</p>
+
+<p>（2）
+若<script type="math/tex">\sqrt{2}</script>为有理数，则可设<script type="math/tex">\sqrt{2}=\frac{p}{q},(p,q)=1</script>，由此</p>
+
+<p><script type="math/tex">2q^2=p^2, \mbox{则}\quad 2\mid p, \mbox{令}p=2k</script>，</p>
+
+<p>则<script type="math/tex">q^2=2k^2,\mbox{即}2\mid q</script>，由此</p>
+
+<p><script type="math/tex">(p,q)=2,\mbox{与原设}(p,q)=1</script>矛盾，假设不成立。</p>
+
+<p><script type="math/tex">\therefore \sqrt{2}</script>为无理数。
+证毕。</p>
+
+<h3 id="习题2">习题2.</h3>
+<p>若已知</p>
+
+<script type="math/tex; mode=display">log_{10}{\frac{1025}{1024}}=a, \quad log_{10}{\frac{1024^2}{1023\cdot1025}}=b,</script>
+
+<script type="math/tex; mode=display">log_{10}{\frac{81^2}{80\cdot82}}=c,\quad log_10{\frac{125^2}{124\cdot126}}=d,</script>
+
+<script type="math/tex; mode=display">log_{10}{\frac{99^2}{98\cdot100}}=e,</script>
+
+<p>则</p>
+
+<script type="math/tex; mode=display">196log_{10}{2}=59+5a+8b-3c-8d+4e</script>
+
+<p>并试用<script type="math/tex">a,b,c,d,e</script>表出<script type="math/tex">log_{10}{3}\mbox{及}log_{10}{41}</script>；再用此法以求<script type="math/tex">log_{10}{2}</script>至小数第10位，以说明此法在实际计算上有用处。</p>
+
+<p>证明：</p>
+
+<script type="math/tex; mode=display">10^{196log_{10}{2}}=2^{196}</script>
+
+<p><script type="math/tex">% <![CDATA[
+\begin{align}&10^{59+5a+8b-3c-8d+4e}\\
+&=10^{59}\times10^{5a}\times10^{8b}\div10^{3c}\div10^{8d}\times10^{4e}\\
+&=10^{59}\times{\Big(\frac{1025}{1024}\Big)}^5\times{\Big(\frac{1024^2}{1023\cdot1025}\Big)}^8\\
+&\div{\Big(\frac{81^2}{80\cdot82}\Big)}^3\div{\Big(\frac{125^2}{124\cdot126}\Big)}^8\times{\Big(\frac{99^2}{98\cdot100}\Big)}^4\\
+&=\frac{10^{59}\times1025^5\times1024^{16}\times80^3\times82^3\times124^8\times126^8\times99^8}{1024^5\times1023^8\times1025^8\times81^6\times125^{16}\times98^4\times100^4}\\
+&=\frac{2^{59}\cdot5^{59}\cdot5^{10}\cdot41^5\cdot2^{160}\cdot2^{12}\cdot5^3\cdot2^3\cdot41^3\cdot2^{16}\cdot31^8\cdot3^{16}\cdot2^8\cdot7^8\cdot3^{16}\cdot11^8}{2^{50}\cdot3^8\cdot31^8\cdot11^8\cdot5^{16}\cdot41^8\cdot3^{24}\cdot5^{48}\cdot2^4\cdot7^8\cdot2^8\cdot5^8}\\
+&=2^{196}
+\end{align} %]]></script>
+证毕。</p>
+
+  </section>
+  
+</article>
+
+        </div>
+        <footer>
+          <div>
+            
+            &copy; 2018 ~ 2019 montanus2019 | 
+powered by jekyll | themed 
+by <a 
+href="https://montanus2019.github.io" 
+title="montanus2019">montanus</a> 
+| fork <a 
+href="https://github.com/montanus2019" title="fork me">me</a>
+          </div>
+        </footer>
+      </div> <!-- main -->
+  </body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="montanus2019" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>Markdown 数学公式语法</title>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/atom.xml" rel="alternate" title="montanus2019" type="application/atom+xml" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/media/css/style.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script type="text/javascript"> hljs.initHighlightingOnLoad(); </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="/media/js/mermaid.js"></script>
+  </head>
+  <body>
+      <div id="main" role="main">
+        <header>
+          <div id="header">
+            <h1><a title="montanus2019" class="" href="/">montanus2019</a></h1>
+          </div>
+          <nav>
+            
+            <span><a title="Archive" href="/archive.html"><i class="fa fa-list-ul"></i></a></span>
+            
+            <span><a title="Tags" href="/tags.html"><i class="fa fa-tags"></i></a></span>
+            
+            <span><a title="About" href="/about.html"><i class="fa fa-user"></i></a></span>
+            
+            <span><a title="Gallery" href=""><i class="fa fa-film"></i></a></span>
+            
+            <span><a title="Subscribe" href="/atom.xml"><i class="fa fa-rss"></i></a></span>
+            
+          </nav>
+        </header>
+        <div id="content">
+        <article>
+  <section class="title">
+    <h2>Markdown 数学公式语法 </h2>
+  </section>
+  <section class="meta">
+  <span class="time">
+    <time datetime="2019-09-20">2019-09-20</time>
+  </span>
+  
+  <span class="tags">
+    
+    <a href="/tags.html#数学" title="数学">#数学</a>
+    
+  </span>
+  
+  </section>
+  <section class="post">
+  <ul id="markdown-toc">
+  <li><a href="#行内与独行" id="markdown-toc-行内与独行">行内与独行</a></li>
+  <li><a href="#上标下标与组合" id="markdown-toc-上标下标与组合">上标、下标与组合</a></li>
+  <li><a href="#汉字字体与格式" id="markdown-toc-汉字字体与格式">汉字、字体与格式</a></li>
+  <li><a href="#占位符" id="markdown-toc-占位符">占位符</a></li>
+  <li><a href="#定界符与组合" id="markdown-toc-定界符与组合">定界符与组合</a></li>
+  <li><a href="#四则运算" id="markdown-toc-四则运算">四则运算</a></li>
+  <li><a href="#高级运算" id="markdown-toc-高级运算">高级运算</a></li>
+  <li><a href="#逻辑运算" id="markdown-toc-逻辑运算">逻辑运算</a></li>
+  <li><a href="#集合运算" id="markdown-toc-集合运算">集合运算</a></li>
+  <li><a href="#数学符号" id="markdown-toc-数学符号">数学符号</a></li>
+  <li><a href="#希腊字母" id="markdown-toc-希腊字母">希腊字母</a></li>
+  <li><a href="#符号检索" id="markdown-toc-符号检索">符号检索</a></li>
+  <li><a href="#方程组" id="markdown-toc-方程组">方程组</a></li>
+  <li><a href="#韩信点兵" id="markdown-toc-韩信点兵">韩信点兵</a>    <ul>
+      <li><a href="#第一题" id="markdown-toc-第一题">第一题</a></li>
+    </ul>
+  </li>
+  <li><a href="#第三题" id="markdown-toc-第三题">第三题</a></li>
+</ul>
+
+<p>數學公式
+<script type="math/tex">a+b=c</script></p>
+
+<p>Markdown数学公式语法</p>
+
+<h2 id="行内与独行">行内与独行</h2>
+
+<p>行内公式：将公式插入到本行内，符号：$公式内容$，如： <script type="math/tex">xyz</script></p>
+
+<h2 id="上标下标与组合">上标、下标与组合</h2>
+
+<p>上标符号，符号：^，如：<script type="math/tex">x^4</script></p>
+
+<p>下标符号，符号：_，如：<script type="math/tex">x_1</script></p>
+
+<p>组合符号，符号：{}，如：<script type="math/tex">{16}_{8}O{2+}_{2}</script></p>
+
+<h2 id="汉字字体与格式">汉字、字体与格式</h2>
+
+<p>汉字形式，符号：\mbox{}，如：<script type="math/tex">V_{\mbox{初始}}</script></p>
+
+<p>字体控制，符号：\displaystyle，如：<script type="math/tex">\displaystyle \frac{x+y}{y+z}</script></p>
+
+<p>下划线符号，符号：\underline，如：<script type="math/tex">\underline{x+y}</script></p>
+
+<p>标签，符号\tag{数字}，如：<script type="math/tex">\tag{11}</script></p>
+
+<p>上大括号，符号：\overbrace{算式}，如：<script type="math/tex">\overbrace{a+b+c+d}^{2.0}</script></p>
+
+<p>下大括号，符号：\underbrace{算式}，如：<script type="math/tex">a+\underbrace{b+c}_{1.0}+d</script></p>
+
+<p>上位符号，符号：\stacrel{上位符号}{基位符号}，如：<script type="math/tex">\vec{x}\stackrel{\mathrm{def}}{=}{x_1,\dots,x_n}</script></p>
+
+<h2 id="占位符">占位符</h2>
+
+<p>两个quad空格，符号：\qquad，如：<script type="math/tex">x \qquad y</script></p>
+
+<p>quad空格，符号：\quad，如：<script type="math/tex">x \quad y</script>
+大空格，符号\，如：<script type="math/tex">x \ y</script>
+中空格，符号:，如：<script type="math/tex">x : y</script>
+小空格，符号\,，如：<script type="math/tex">x , y</script>
+没有空格，符号``，如：<script type="math/tex">xy</script>
+紧贴，符号!，如：<script type="math/tex">x ! y</script></p>
+
+<h2 id="定界符与组合">定界符与组合</h2>
+
+<p>括号，符号：（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)，如：<script type="math/tex">（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)</script></p>
+
+<p>中括号，符号：[]，如：<script type="math/tex">[x+y]</script></p>
+
+<p>大括号，符号：{ }，如：<script type="math/tex">\{x+y\}</script></p>
+
+<p>自适应括号，符号：\left \right，如：<script type="math/tex">\left(x\right)</script>，<script type="math/tex">\left(x{yz}\right)</script></p>
+
+<p>组合公式，符号：{上位公式 \choose 下位公式}，如：<script type="math/tex">{n+1 \choose k}={n \choose k}+{n \choose k-1}</script></p>
+
+<p>组合公式，符号：{上位公式 \atop 下位公式}，如：<script type="math/tex">\sum{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots</script></p>
+
+<h2 id="四则运算">四则运算</h2>
+
+<p>加法运算，符号：+，如：<script type="math/tex">x+y=z</script></p>
+
+<p>减法运算，符号：-，如：<script type="math/tex">x-y=z</script></p>
+
+<p>加减运算，符号：\pm，如：<script type="math/tex">x \pm y=z</script></p>
+
+<p>减甲运算，符号：\mp，如：<script type="math/tex">x \mp y=z</script></p>
+
+<p>乘法运算，符号：\times，如：<script type="math/tex">x \times y=z</script></p>
+
+<p>点乘运算，符号：\cdot，如：<script type="math/tex">x \cdot y=z</script></p>
+
+<p>星乘运算，符号：\ast，如：<script type="math/tex">x \ast y=z</script></p>
+
+<p>除法运算，符号：\div，如：<script type="math/tex">x \div y=z</script></p>
+
+<p>斜法运算，符号：/，如：<script type="math/tex">x/y=z</script></p>
+
+<p>分式表示，符号：\frac{分子}{分母}，如：<script type="math/tex">\frac{x+y}{y+z}</script></p>
+
+<p>分式表示，符号：{分子} \voer {分母}，如：<script type="math/tex">{x+y} \over {y+z}</script></p>
+
+<p>绝对值表示，符号：||，如：<script type="math/tex">\|x+y\|</script></p>
+
+<h2 id="高级运算">高级运算</h2>
+
+<p>平均数运算，符号：\overline{算式}，如：<script type="math/tex">\overline{xyz}</script></p>
+
+<p>开二次方运算，符号：\sqrt，如：<script type="math/tex">\sqrt x</script></p>
+
+<p>开方运算，符号：\sqrt[开方数]{被开方数}，如：<script type="math/tex">\sqrt[3]{x+y}</script></p>
+
+<p>对数运算，符号：\log，如：<script type="math/tex">\log(x)</script></p>
+
+<p>极限运算，符号：\lim，如：<script type="math/tex">\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}</script></p>
+
+<p>极限运算，符号：\displaystyle \lim，如：<script type="math/tex">\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}</script></p>
+
+<p>求和运算，符号：\sum，如：<script type="math/tex">\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}</script></p>
+
+<p>求和运算，符号：\displaystyle \sum，如：<script type="math/tex">\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}</script></p>
+
+<p>积分运算，符号：\int，如：<script type="math/tex">\int^{\infty}_{0}{xdx}</script></p>
+
+<p>积分运算，符号：\displaystyle \int，如：<script type="math/tex">\displaystyle \int^{\infty}_{0}{xdx}</script></p>
+
+<p>微分运算，符号：\partial，如：<script type="math/tex">\frac{\partial x}{\partial y}</script></p>
+
+<p>矩阵表示，符号：\begin{matrix} \end{matrix}，如：<script type="math/tex">% <![CDATA[
+\left[ \begin{matrix} 1 &2 &\cdots &4\\ 5 &6 &\cdots &8\\ \vdots &\vdots &\ddots &\vdots\\ 13 &14 &\cdots &16\end{matrix} \right] %]]></script></p>
+
+<h2 id="逻辑运算">逻辑运算</h2>
+
+<p>等于运算，符号：=，如：<script type="math/tex">x+y=z</script></p>
+
+<p>大于运算，符号：&gt;，如：<script type="math/tex">x+y>z</script></p>
+
+<p>小于运算，符号：&lt;，如：<script type="math/tex">% <![CDATA[
+x+y<z %]]></script></p>
+
+<p>大于等于运算，符号：\geq，如：<script type="math/tex">x+y \geq z</script></p>
+
+<p>小于等于运算，符号：\leq，如：<script type="math/tex">x+y \leq z</script></p>
+
+<p>不等于运算，符号：\neq，如：<script type="math/tex">x+y \neq z</script></p>
+
+<p>不大于等于运算，符号：\ngeq，如：<script type="math/tex">x+y \ngeq z</script></p>
+
+<p>不大于等于运算，符号：\not\geq，如：<script type="math/tex">x+y \not\geq z</script></p>
+
+<p>不小于等于运算，符号：\nleq，如：<script type="math/tex">x+y \nleq z</script></p>
+
+<p>不小于等于运算，符号：\not\leq，如：<script type="math/tex">x+y \not\leq z</script></p>
+
+<p>约等于运算，符号：\approx，如：<script type="math/tex">x+y \approx z</script></p>
+
+<p>恒定等于运算，符号：\equiv，如：<script type="math/tex">x+y \equiv z</script></p>
+
+<h2 id="集合运算">集合运算</h2>
+
+<p>属于运算，符号：\in，如：<script type="math/tex">x \in y</script></p>
+
+<p>不属于运算，符号：\notin，如：<script type="math/tex">x \notin y</script></p>
+
+<p>不属于运算，符号：\not\in，如：<script type="math/tex">x \not\in y</script></p>
+
+<p>子集运算，符号：\subset，如：<script type="math/tex">x \subset y</script></p>
+
+<p>子集运算，符号：\supset，如：<script type="math/tex">x \supset y</script></p>
+
+<p>真子集运算，符号：\subseteq，如：<script type="math/tex">x \subseteq y</script></p>
+
+<p>非真子集运算，符号：\subsetneq，如：<script type="math/tex">x \subsetneq y</script></p>
+
+<p>真子集运算，符号：\supseteq，如：<script type="math/tex">x \supseteq y</script></p>
+
+<p>非真子集运算，符号：\supsetneq，如：<script type="math/tex">x \supsetneq y</script></p>
+
+<p>非子集运算，符号：\not\subset，如：<script type="math/tex">x \not\subset y</script></p>
+
+<p>非子集运算，符号：\not\supset，如：<script type="math/tex">x \not\supset y</script></p>
+
+<p>并集运算，符号：\cup，如：<script type="math/tex">x \cup y</script></p>
+
+<p>交集运算，符号：\cap，如：<script type="math/tex">x \cap y</script></p>
+
+<p>差集运算，符号：\setminus，如：<script type="math/tex">x \setminus y</script></p>
+
+<p>同或运算，符号：\bigodot，如：<script type="math/tex">x \bigodot y</script></p>
+
+<p>同与运算，符号：\bigotimes，如：<script type="math/tex">x \bigotimes y</script></p>
+
+<p>实数集合，符号：\mathbb{R}，如：<script type="math/tex">\mathbb{R}</script></p>
+
+<p>整数集合，符号：\mathbb{Z}，如：<script type="math/tex">\mathbb{Z}</script></p>
+
+<p>自然数集合，符号：\mathbb{N}，如：<script type="math/tex">\mathbb{N}</script></p>
+
+<p>空集，符号：\emptyset，如：<script type="math/tex">\emptyset</script></p>
+
+<h2 id="数学符号">数学符号</h2>
+
+<p>无穷，符号：\infty，如：<script type="math/tex">\infty</script></p>
+
+<p>虚数，符号：\imath，如：<script type="math/tex">\imath</script></p>
+
+<p>虚数，符号：\jmath，如：<script type="math/tex">\jmath</script></p>
+
+<p>数学符号，符号\hat{a}，如：<script type="math/tex">\hat{a}</script></p>
+
+<p>数学符号，符号\check{a}，如：<script type="math/tex">\check{a}</script></p>
+
+<p>数学符号，符号\breve{a}，如：<script type="math/tex">\breve{a}</script></p>
+
+<p>数学符号，符号\tilde{a}，如：<script type="math/tex">\tilde{a}</script></p>
+
+<p>数学符号，符号\bar{a}，如：<script type="math/tex">\bar{a}</script></p>
+
+<p>矢量符号，符号\vec{a}，如：<script type="math/tex">\vec{a}</script></p>
+
+<p>数学符号，符号\acute{a}，如：<script type="math/tex">\acute{a}</script></p>
+
+<p>数学符号，符号\grave{a}，如：<script type="math/tex">\grave{a}</script></p>
+
+<p>数学符号，符号\mathring{a}，如：<script type="math/tex">\mathring{a}</script></p>
+
+<p>一阶导数符号，符号\dot{a}，如：<script type="math/tex">\dot{a}</script></p>
+
+<p>二阶导数符号，符号\ddot{a}，如：<script type="math/tex">\ddot{a}</script></p>
+
+<p>上箭头，符号：\uparrow，如：<script type="math/tex">\uparrow</script></p>
+
+<p>上箭头，符号：\Uparrow，如：<script type="math/tex">\Uparrow</script></p>
+
+<p>下箭头，符号：\downarrow，如：<script type="math/tex">\downarrow</script></p>
+
+<p>下箭头，符号：\Downarrow，如：<script type="math/tex">\Downarrow</script></p>
+
+<p>左箭头，符号：\leftarrow，如：<script type="math/tex">\leftarrow</script></p>
+
+<p>左箭头，符号：\Leftarrow，如：<script type="math/tex">\Leftarrow</script></p>
+
+<p>右箭头，符号：\rightarrow，如：<script type="math/tex">\rightarrow</script></p>
+
+<p>右箭头，符号：\Rightarrow，如：<script type="math/tex">\Rightarrow</script></p>
+
+<p>底端对齐的省略号，符号：\ldots，如：<script type="math/tex">1,2,\ldots,n</script></p>
+
+<p>中线对齐的省略号，符号：\cdots，如：<script type="math/tex">x_1^2 + x_2^2 + \cdots + x_n^2</script></p>
+
+<p>竖直对齐的省略号，符号：\vdots，如：<script type="math/tex">\vdots</script></p>
+
+<p>斜对齐的省略号，符号：\ddots，如：<script type="math/tex">\ddots</script></p>
+
+<h2 id="希腊字母">希腊字母</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>字母</th>
+      <th>实现</th>
+      <th>字母</th>
+      <th>实现</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>A</td>
+      <td>α</td>
+      <td>\alhpa</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>B</td>
+      <td>β</td>
+      <td>\beta</td>
+    </tr>
+    <tr>
+      <td>Γ</td>
+      <td>\Gamma</td>
+      <td>γ</td>
+      <td>\gamma</td>
+    </tr>
+    <tr>
+      <td>Δ</td>
+      <td>\Delta</td>
+      <td>δ</td>
+      <td>\delta</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>E</td>
+      <td>ϵ</td>
+      <td>\epsilon</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>Z</td>
+      <td>ζ</td>
+      <td>\zeta</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>H</td>
+      <td>η</td>
+      <td>\eta</td>
+    </tr>
+    <tr>
+      <td>Θ</td>
+      <td>\Theta</td>
+      <td>θ</td>
+      <td>\theta</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>I</td>
+      <td>ι</td>
+      <td>\iota</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>K</td>
+      <td>κ</td>
+      <td>\kappa</td>
+    </tr>
+    <tr>
+      <td>Λ</td>
+      <td>\Lambda</td>
+      <td>λ</td>
+      <td>\lambda</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>M</td>
+      <td>μ</td>
+      <td>\mu</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>N</td>
+      <td>ν</td>
+      <td>\nu</td>
+    </tr>
+    <tr>
+      <td>Ξ</td>
+      <td>\Xi</td>
+      <td>ξ</td>
+      <td>\xi</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>O</td>
+      <td>ο</td>
+      <td>\omicron</td>
+    </tr>
+    <tr>
+      <td>Π</td>
+      <td>\Pi</td>
+      <td>π</td>
+      <td>\pi</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P</td>
+      <td>ρ</td>
+      <td>\rho</td>
+    </tr>
+    <tr>
+      <td>Σ</td>
+      <td>\Sigma</td>
+      <td>σ</td>
+      <td>\sigma</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>T</td>
+      <td>τ</td>
+      <td>\tau</td>
+    </tr>
+    <tr>
+      <td>Υ</td>
+      <td>\Upsilon</td>
+      <td>υ</td>
+      <td>\upsilon</td>
+    </tr>
+    <tr>
+      <td>Φ</td>
+      <td>\Phi</td>
+      <td>ϕ</td>
+      <td>\phi</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>χ</td>
+      <td>\chi</td>
+    </tr>
+    <tr>
+      <td>Ψ</td>
+      <td>\Psi</td>
+      <td>ψ</td>
+      <td>\psi</td>
+    </tr>
+    <tr>
+      <td>Ω</td>
+      <td>\v</td>
+      <td>ω</td>
+      <td>\omega</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="符号检索">符号检索</h2>
+<p><a href="https://latex.guide/">支持英文检索</a></p>
+
+<h2 id="方程组">方程组</h2>
+<p><script type="math/tex">% <![CDATA[
+|x| =\begin{cases}-x & \text{if } x < 0,\\0 & \text{if } x = 0,\\x & \text{if } x > 0.\end{cases} %]]></script></p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}a ={} & b + c \\={} & d + e + f + g + h + i+ j + k + l \notag \\& + m + n + o \\={} & p + q + r + s \end{align} %]]></script>
+
+<p><strong>题：</strong>已知<script type="math/tex">\{a,b,c,d\}\in{\mathbb{N}}\mbox{且满足如下方程组}\\ \begin{cases}\begin{gather}a^2+b+c+d=10 \qquad\tag{1}\\a+b^2+c+d=12 \qquad\tag{2}\\a+b+c^2+d=16 \qquad\tag{3}\\a+b+c+d^2=22 \qquad\tag{4}\end{gather}\end{cases}</script></p>
+
+<p>求<script type="math/tex">a+b+c+d=?</script></p>
+
+<p>如果<script type="math/tex">\{a,b,c,d\}\in{\mathbb{Z}}\mbox{或}\in{\mathbb{R}}\mbox{或}\in{\mathbb{C}}</script>呢？</p>
+
+<p><strong>解：</strong></p>
+
+<p>当<script type="math/tex">\{a,b,c,d\}\in{\mathbb{N}}\mbox{时,不妨设}a\leq b\leq c\leq d</script></p>
+
+<script type="math/tex; mode=display">\because 5^2=25>22 \\ \therefore \mbox{由式（4）得}d\leq4 \\ \therefore a+b+c+16\geq a+b+c+d^2=22 \\ \therefore a+b+c\geq6</script>
+
+<script type="math/tex; mode=display">\mbox{由式（2）-式（1）得：}\\ b^2-a^2+a-b=2\\ (b-a)(b+a-1)=1\times2\\ \begin{cases} b-a=1 \\b+a-1=2 \end{cases}\\ \therefore \begin{cases} a=1\\ b=2\\ c=3\\ d=4 \end{cases}\\ \therefore a+b+c+d=10</script>
+
+<p><strong>答：</strong> <script type="math/tex">\mbox{当\{a,b,c,d\}}</script> <script type="math/tex">\in{\mathbb{N}}\mbox{时，}a+b+c+d=10</script></p>
+
+<h2 id="韩信点兵">韩信点兵</h2>
+<h3 id="第一题">第一题</h3>
+<p><strong>将20以内的八个质数分别填入下面式子的括号内，使得A是整数，请问A是几？</strong>
+<script type="math/tex">A=\frac{(\quad)+(\quad)+(\quad)+(\quad)+(\quad)+(\quad)}{(\quad)+(\quad)}</script></p>
+
+<p><strong>解：</strong></p>
+
+<p>八个质数分别为：2，3，5，7，11，13，17，19</p>
+
+<script type="math/tex; mode=display">\because \mbox{偶数不能整除奇数}</script>
+
+<script type="math/tex; mode=display">\therefore 2\mbox{位于分母}</script>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}\therefore A&=\frac{(3)+(7)+(11)+(13)+(17)+(19)}{(2)+(5)}\\&=70\div7\\&=10\end{align} %]]></script>
+
+<p><strong>答：</strong> A等于10。</p>
+
+<h2 id="第三题">第三题</h2>
+<p><strong>要使<script type="math/tex">n!</script>能被990整除，问n最小应该等于几？</strong></p>
+
+<p><strong>解：</strong>
+<script type="math/tex">990=3\times3\times2\times5\times11</script></p>
+
+<script type="math/tex; mode=display">\because990|n!\\ \therefore n=11</script>
+
+<p><strong>答：</strong>n最小等于11。</p>
+
+<p>本文共3750字。</p>
+
+
+  </section>
+  
+</article>
+
+        </div>
+        <footer>
+          <div>
+            
+            &copy; 2018 ~ 2019 montanus2019 | 
+powered by jekyll | themed 
+by <a 
+href="https://montanus2019.github.io" 
+title="montanus2019">montanus</a> 
+| fork <a 
+href="https://github.com/montanus2019" title="fork me">me</a>
+          </div>
+        </footer>
+      </div> <!-- main -->
+  </body>
+</html>

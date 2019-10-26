@@ -44,16 +44,16 @@
   
   <article class="content">
     <section class="title">
-      <h2><a href="/2019/06/26/jekyll.html">mi9上termux下jekyll serve运行出错的解决办法</a></h2>
+      <h2><a href="/2019/10/25/zztj1.html">资治通鉴卷一</a></h2>
     </section>
     <section class="meta">
     <span class="time">
-      <time datetime="2019-06-26">2019-06-26</time>
+      <time datetime="2019-10-25">2019-10-25</time>
     </span>
     
     <span class="tags">
       
-      <a href="/tags.html#电脑技术" title="电脑技术">#电脑技术</a>
+      <a href="/tags.html#历史" title="历史">#历史</a>
       
     </span>
     
@@ -62,7 +62,7 @@
       class           = 'like-wrapper'
       like-shortname  = ''
       like-identifier = ''
-      like-name       = 'mi9上termux下jekyll serve运行出错的解决办法'
+      like-name       = '资治通鉴卷一'
       like-link       = '/index.markdown.bak'
       like-btn        = '&#xf087;'
     ></span>
@@ -74,29 +74,113 @@
     <!-- END this would not work on any other domain -->
     </section>
     <section class="post">
-    <p>米9手机上安装了termux后，在其中安装了jekyll，运行jekyll serve时出错：</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@rb_sysopen /proc/version Permission denied.
-</code></pre></div></div>
-<p>在网上找了一圈之后，终于在github的termux项目下找到了解决办法，现抄录如下：</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You can edit your local copy of jekyll-3.8.2 and patch it if you want..
-From the root of your jekyll site's source-directory, find the path to your jekyll gem installation by running bundle show jekyll. 
-Open the resulting path in your explorer if the directory doesn't open automatically. 
-Edit jekyll-3.8.2/lib/jekyll/utils/platform.rb by replacing the proc_version method with the following: 
-def proc_version 
-   @proc_version ||= begin 
-     Pathutil.new( 
-       "/proc/version" 
-     ).read 
-   rescue Errno::ENOENT, Errno::EACCES
-     nil 
-   end 
- end
-</code></pre></div></div>
-<p>修改后，运行时一切正常。</p>
+    
+<p><img src="http://localhost:4000/media/IMG_20190201_212037.jpg" alt="钢筋森林" /></p>
 
-<p>本文共104单词</p>
+<p>卷一中的故事</p>
 
-<p>本文共829字。</p>
+<div class="mermaid">
+graph LR;
+A[说了哪些故事]--&gt;B[晋];
+B--&gt;B0(智氏);
+B0--&gt;B1(智果论贤);
+B0--&gt;B2(智国谏难);
+B0--&gt;B3(智伯请地);
+B0--&gt;B4(豫让刺赵襄子);
+B--&gt;C[魏];
+B--&gt;D[赵];
+D--&gt;D0(赵简子);
+D0--&gt;D1(授简立后);
+D1--&gt;D11(赵襄子);
+D11-.漆智伯首为饮器.-D110(唇亡齿寒);
+D0--&gt;D2(尹铎治晋阳);
+D0--&gt;D3{三家分晋};
+C--&gt;C0(魏文侯);
+C0--&gt;C1(田子方);
+C1--&gt;C10(论仁君);
+C1--&gt;C11(谏乐);
+C1--&gt;C12(辩骄);
+C0--&gt;D3;
+C0--&gt;C3(不弃虞人之期);
+C0--&gt;C4(拒韩赵借兵);
+C0--&gt;C5(吴起);
+C5--&gt;C50[在鲁杀妻求将];
+C5--&gt;C51[吮痈购命];
+C5--&gt;C52[与武侯论险];
+C5--&gt;C53[与田文争相];
+C5--&gt;C54[见疑奔楚];
+C54-.在楚改革.-C55[被坐夷宗];
+B--&gt;E[韩];
+E--&gt;e1(刺客聂政姐姐聂瑩);
+E--&gt;E1(伐魏);
+D--&gt;E1;
+E--&gt;D3;
+A--&gt;F[卫];
+F--&gt;f1(子思);
+f1--&gt;f2(举才);
+f1--&gt;f3(示警);
+A--&gt;G(齐);
+G--&gt;g0(即墨大夫与阿大夫);
+</div>
+
+<p>时序图</p>
+
+<div class="mermaid">
+sequenceDiagram
+    participant 晋
+    participant 智
+    participant 赵
+    participant 魏
+    participant 韩
+    晋-&gt;智:孩儿们，别打了
+    智-&gt;韩:给块地
+    韩--&gt;智:给
+    智-&gt;赵:给块地
+    赵--&gt;智:不给
+    智-&gt;韩:跟我一起揍他
+    韩--&gt;智:来了
+    智-&gt;魏:跟我一起揍他
+    魏--&gt;智:来了
+    loop 思考
+        赵-&gt;赵: 打不过，跑吧
+    end
+    Note left of 魏:反了吧？ <br />
+    Note left of 韩:轻点声！<br />
+    赵-&gt;魏:唇亡齿寒
+    赵-&gt;韩:唇亡齿寒
+    赵--&gt;智:揍你！
+    魏--&gt;智:揍你！
+    韩--&gt;智:揍你！
+    Note left of 智:完了
+    赵--&gt;晋:分了你
+    魏--&gt;晋:分了你
+    韩--&gt;晋:分了你
+    Note right of 晋:Game over.
+</div>
+
+<p>甘特图</p>
+
+<div class="mermaid">
+gantt
+        dateFormat YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task :done, des1, 2014-01-06,2014-01-08
+        Active task :active, des2, 2014-01-09, 3d
+        Future task : des3, after des2, 5d
+        Future task2 : des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison :crit, done, after des1, 2d
+        Create tests for parser :crit, active, 3d
+        Future task in critical line :crit, 5d
+        Create tests for renderer :2d
+        Add to mermaid :1d
+</div>
+
+<p>本文共208单词</p>
+
+<p>本文共1824字。</p>
 
 
     </section>
@@ -107,6 +191,286 @@ def proc_version
   <ul class="listing main-listing">
     <li class="listing-seperator">Happend earlier this year</li>
   
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-11">2019-10-11</time>
+      <a href="/2019/10/11/slmath.html" title="数论导引读书笔记20191011">数论导引读书笔记20191011</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-10">2019-10-10</time>
+      <a href="/2019/10/10/slmath1.html" title="通原算法">通原算法</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-10">2019-10-10</time>
+      <a href="/2019/10/10/slmath.html" title="数论导引之读书笔记20191010">数论导引之读书笔记20191010</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-09">2019-10-09</time>
+      <a href="/2019/10/09/xxao.html" title="错题讲解">错题讲解</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-08">2019-10-08</time>
+      <a href="/2019/10/08/slmath.html" title="数论导引读书笔记20191008">数论导引读书笔记20191008</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-07">2019-10-07</time>
+      <a href="/2019/10/07/slmath.html" title="数论导引读书笔记20191007">数论导引读书笔记20191007</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-06">2019-10-06</time>
+      <a href="/2019/10/06/test.html" title="测试">测试</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-05">2019-10-05</time>
+      <a href="/2019/10/05/mathlatex.html" title="test">test</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-04">2019-10-04</time>
+      <a href="/2019/10/04/chainmath.html" title="组合数学之三色七珠手链">组合数学之三色七珠手链</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-01">2019-10-01</time>
+      <a href="/2019/10/01/yuebin.html" title="观阅兵有感">观阅兵有感</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-10-01">2019-10-01</time>
+      <a href="/2019/10/01/70math.html" title="70大庆">70大庆</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-09-30">2019-09-30</time>
+      <a href="/2019/09/30/slmath.html" title="第一章第一节习题">第一章第一节习题</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-09-29">2019-09-29</time>
+      <a href="/2019/09/29/hlgmath.html" title="华罗庚«数论导引»读书笔记--序部分">华罗庚«数论导引»读书笔记--序部分</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-09-28">2019-09-28</time>
+      <a href="/2019/09/28/math.html" title="应用韩信点兵求余数">应用韩信点兵求余数</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-09-23">2019-09-23</time>
+      <a href="/2019/09/23/math.html" title="Math">Math</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-09-20">2019-09-20</time>
+      <a href="/2019/09/20/math.html" title="Markdown 数学公式语法">Markdown 数学公式语法</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-08-13">2019-08-13</time>
+      <a href="/2019/08/13/chrome2editor.html" title="Chrome2editor">Chrome2editor</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-18">2019-07-18</time>
+      <a href="/2019/07/18/siji.html" title="校园四季">校园四季</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-16">2019-07-16</time>
+      <a href="/2019/07/16/math.html" title="横式问题">横式问题</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-15">2019-07-15</time>
+      <a href="/2019/07/15/ehomework.html" title="The Wind in the Willows">The Wind in the Willows</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-13">2019-07-13</time>
+      <a href="/2019/07/13/aesop.html" title="Aesop">Aesop</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-12">2019-07-12</time>
+      <a href="/2019/07/12/rain.html" title="Rain">Rain</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-07">2019-07-07</time>
+      <a href="/2019/07/07/yht.html" title="参观雨花台有感">参观雨花台有感</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-06">2019-07-06</time>
+      <a href="/2019/07/06/xiaoa.html" title="我的同学小A">我的同学小A</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-06">2019-07-06</time>
+      <a href="/2019/07/06/the-wind.html" title="THE WIND IN THE WILLOWS">THE WIND IN THE WILLOWS</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-06">2019-07-06</time>
+      <a href="/2019/07/06/card.html" title="卡片写作格式">卡片写作格式</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-05">2019-07-05</time>
+      <a href="/2019/07/05/tpf.html" title="通配符表格">通配符表格</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-04">2019-07-04</time>
+      <a href="/2019/07/04/mdb.html" title="卖包子的人">卖包子的人</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-04">2019-07-04</time>
+      <a href="/2019/07/04/ezy.html" title="Mr. Toad">Mr. Toad</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-03">2019-07-03</time>
+      <a href="/2019/07/03/summer-rain.html" title="夏日的雨">夏日的雨</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-03">2019-07-03</time>
+      <a href="/2019/07/03/by.html" title="趣味比喻">趣味比喻</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-02">2019-07-02</time>
+      <a href="/2019/07/02/qh.html" title="夏夜秦淮">夏夜秦淮</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-02">2019-07-02</time>
+      <a href="/2019/07/02/poem.html" title="妈妈与爸爸">妈妈与爸爸</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-02">2019-07-02</time>
+      <a href="/2019/07/02/cy2.html" title="成语小学堂•出口成章-作业2">成语小学堂•出口成章-作业2</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-01">2019-07-01</time>
+      <a href="/2019/07/01/zhongshanshang.html" title="钟山上•回忆">钟山上•回忆</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-07-01">2019-07-01</time>
+      <a href="/2019/07/01/chengyu.html" title="成语小学堂-出口成章（1-4）作业">成语小学堂-出口成章（1-4）作业</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-06-30">2019-06-30</time>
+      <a href="/2019/06/30/temperature.html" title="体感温度计算公式">体感温度计算公式</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-06-27">2019-06-27</time>
+      <a href="/2019/06/27/math.html" title="李商隐眼中的穆天子八骏之乘是超音速飞机吗？">李商隐眼中的穆天子八骏之乘是超音速飞机吗？</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-06-26">2019-06-26</time>
+      <a href="/2019/06/26/jekyll.html" title="mi9上termux下jekyll serve运行出错的解决办法">mi9上termux下jekyll serve运行出错的解决办法</a>
+    </li>
+  
+    
+    
+    <li class="listing-item">
+      <time datetime="2019-06-24">2019-06-24</time>
+      <a href="/2019/06/24/japanese.html" title="日语学习作业第一次">日语学习作业第一次</a>
+    </li>
   
     
     
